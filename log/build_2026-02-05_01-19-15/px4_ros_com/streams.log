@@ -1,0 +1,706 @@
+[0.066s] Invoking command in '/home/hj926217/ros2ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16
+[0.208s] [35m[1mConsolidate compiler generated dependencies of target goal_astar_octomap_safe_node[0m
+[0.261s] [  2%] [32mBuilding CXX object CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o[0m
+[11.082s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kvoid GoalAStarOctomapSafeNode::publishSetpoint()[m[K’:
+[11.083s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:302:21:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kdouble&[m[K’ to a value of type ‘[01m[Kstd::array<float, 3>::value_type[m[K’ {aka ‘[01m[Kfloat[m[K’}
+[11.083s]   302 |             [01;31m[KenuToNed(tx, ty, tz, sp.position[0], sp.position[1], sp.position[2])[m[K;
+[11.083s]       |             [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.085s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:129:67:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid GoalAStarOctomapSafeNode::enuToNed(double, double, double, double&, double&, double&)[m[K’
+[11.086s]   129 |     inline void enuToNed(double xe, double ye, double ze, [01;36m[Kdouble &xn[m[K, double &yn, double &zn) {
+[11.086s]       |                                                           [01;36m[K~~~~~~~~^~[m[K
+[11.086s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:316:21:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kdouble&[m[K’ to a value of type ‘[01m[Kstd::array<float, 3>::value_type[m[K’ {aka ‘[01m[Kfloat[m[K’}
+[11.086s]   316 |             [01;31m[KenuToNed(cx, cy, cz, sp.position[0], sp.position[1], sp.position[2])[m[K;
+[11.087s]       |             [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.087s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:129:67:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid GoalAStarOctomapSafeNode::enuToNed(double, double, double, double&, double&, double&)[m[K’
+[11.088s]   129 |     inline void enuToNed(double xe, double ye, double ze, [01;36m[Kdouble &xn[m[K, double &yn, double &zn) {
+[11.088s]       |                                                           [01;36m[K~~~~~~~~^~[m[K
+[16.967s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[16.968s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.970s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.974s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[16.976s] /usr/include/c++/11/bits/stl_pair.h: In instantiation of ‘[01m[Kconstexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&) [with _T1 = double; _T2 = GridKey][m[K’:
+[16.976s] [01m[K/usr/include/c++/11/bits/stl_pair.h:503:18:[m[K   required from ‘[01m[Kconstexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&) [with _T1 = double; _T2 = GridKey][m[K’
+[16.977s] [01m[K/usr/include/c++/11/bits/stl_function.h:390:20:[m[K   required from ‘[01m[Kconstexpr bool std::greater<_Tp>::operator()(const _Tp&, const _Tp&) const [with _Tp = std::pair<double, GridKey>][m[K’
+[16.977s] [01m[K/usr/include/c++/11/bits/predefined_ops.h:196:23:[m[K   required from ‘[01m[Kbool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<std::pair<double, GridKey>*, std::vector<std::pair<double, GridKey> > >; _Value = std::pair<double, GridKey>; _Compare = std::greater<std::pair<double, GridKey> >][m[K’
+[16.978s] [01m[K/usr/include/c++/11/bits/stl_heap.h:139:48:[m[K   required from ‘[01m[Kvoid std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<double, GridKey>*, std::vector<std::pair<double, GridKey> > >; _Distance = long int; _Tp = std::pair<double, GridKey>; _Compare = __gnu_cxx::__ops::_Iter_comp_val<std::greater<std::pair<double, GridKey> > >][m[K’
+[16.978s] [01m[K/usr/include/c++/11/bits/stl_heap.h:215:23:[m[K   required from ‘[01m[Kvoid std::push_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<std::pair<double, GridKey>*, std::vector<std::pair<double, GridKey> > >; _Compare = std::greater<std::pair<double, GridKey> >][m[K’
+[16.978s] [01m[K/usr/include/c++/11/bits/stl_queue.h:651:16:[m[K   required from ‘[01m[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::push(std::priority_queue<_Tp, _Sequence, _Compare>::value_type&&) [with _Tp = std::pair<double, GridKey>; _Sequence = std::vector<std::pair<double, GridKey> >; _Compare = std::greater<std::pair<double, GridKey> >; std::priority_queue<_Tp, _Sequence, _Compare>::value_type = std::pair<double, GridKey>][m[K’
+[16.979s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:467:18:[m[K   required from here
+[16.979s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<[m[K’ (operand types are ‘[01m[Kconst GridKey[m[K’ and ‘[01m[Kconst GridKey[m[K’)
+[16.980s]   491 |              || (!(__y.first < __x.first) && [01;31m[K__x.second < __y.second[m[K); }
+[16.980s]       |                                              [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[16.981s] [01m[K/usr/include/c++/11/bits/stl_pair.h:489:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)[m[K’
+[16.981s]   489 |     [01;36m[Koperator[m[K<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+[16.981s]       |     [01;36m[K^~~~~~~~[m[K
+[16.982s] [01m[K/usr/include/c++/11/bits/stl_pair.h:489:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.982s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+[16.982s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[16.983s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[16.983s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[16.983s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.984s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.985s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[16.985s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:426:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)[m[K’
+[16.985s]   426 |     [01;36m[Koperator[m[K<(const reverse_iterator<_Iterator>& __x,
+[16.985s]       |     [01;36m[K^~~~~~~~[m[K
+[16.986s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:426:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.986s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[16.986s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.987s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.987s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[16.987s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[16.987s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[16.988s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[16.988s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[16.988s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.988s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.989s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[16.989s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:465:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+[16.989s]   465 |     [01;36m[Koperator[m[K<(const reverse_iterator<_IteratorL>& __x,
+[16.990s]       |     [01;36m[K^~~~~~~~[m[K
+[16.990s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:465:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.990s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[16.990s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.990s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.991s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[16.991s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+[16.991s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[16.991s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[16.992s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[16.992s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.992s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.992s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[16.992s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1609:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+[16.993s]  1609 |     [01;36m[Koperator[m[K<(const move_iterator<_IteratorL>& __x,
+[16.993s]       |     [01;36m[K^~~~~~~~[m[K
+[16.993s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1609:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.993s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[16.993s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.994s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.994s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[16.994s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[16.994s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[16.995s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[16.995s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:67[m[K,
+[16.995s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.995s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.995s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[16.996s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1667:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)[m[K’
+[16.996s]  1667 |     [01;36m[Koperator[m[K<(const move_iterator<_Iterator>& __x,
+[16.996s]       |     [01;36m[K^~~~~~~~[m[K
+[16.996s] [01m[K/usr/include/c++/11/bits/stl_iterator.h:1667:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.997s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[16.997s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[16.997s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[16.998s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[16.998s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+[16.998s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[16.998s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[16.999s] In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[16.999s]                  from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+[16.999s]                  from [01m[K/usr/include/c++/11/memory:76[m[K,
+[16.999s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.000s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.000s] [01m[K/usr/include/c++/11/array:311:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)[m[K’
+[17.000s]   311 |     [01;36m[Koperator[m[K<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+[17.000s]       |     [01;36m[K^~~~~~~~[m[K
+[17.001s] [01m[K/usr/include/c++/11/array:311:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.001s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.001s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.001s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.002s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.002s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+[17.002s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.002s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.003s] In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+[17.003s]                  from [01m[K/usr/include/c++/11/memory:76[m[K,
+[17.003s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.003s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.003s] [01m[K/usr/include/c++/11/tuple:1566:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Tps ...>&, const std::tuple<_UTypes ...>&)[m[K’
+[17.004s]  1566 |     [01;36m[Koperator[m[K<(const tuple<_TElements...>& __t,
+[17.004s]       |     [01;36m[K^~~~~~~~[m[K
+[17.004s] [01m[K/usr/include/c++/11/tuple:1566:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.004s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.005s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.005s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.005s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.005s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::tuple<_Tps ...>[m[K’
+[17.006s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.006s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.006s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[17.006s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.006s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.007s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:795:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)[m[K’
+[17.007s]   795 |     [01;36m[Koperator[m[K<(const unique_ptr<_Tp, _Dp>& __x,
+[17.007s]       |     [01;36m[K^~~~~~~~[m[K
+[17.007s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:795:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.008s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.008s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.008s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.008s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.009s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[17.009s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.009s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.009s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[17.010s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.010s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.010s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:807:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)[m[K’
+[17.010s]   807 |     [01;36m[Koperator[m[K<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+[17.011s]       |     [01;36m[K^~~~~~~~[m[K
+[17.011s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:807:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.011s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.011s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.011s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.012s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.012s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[17.012s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.012s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.012s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[17.013s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.013s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.013s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:816:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)[m[K’
+[17.013s]   816 |     [01;36m[Koperator[m[K<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+[17.013s]       |     [01;36m[K^~~~~~~~[m[K
+[17.014s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:816:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.014s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.014s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.014s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.015s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::unique_ptr<_Tp, _Dp>[m[K’
+[17.015s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.015s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.015s] In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+[17.015s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[17.016s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.016s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.016s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1457:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)[m[K’
+[17.016s]  1457 |     [01;36m[Koperator[m[K<(const __shared_ptr<_Tp, _Lp>& __a,
+[17.016s]       |     [01;36m[K^~~~~~~~[m[K
+[17.017s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1457:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.017s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.017s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.017s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.018s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.018s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp1, _Lp>[m[K’
+[17.018s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.018s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.018s] In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+[17.019s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[17.019s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.019s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.019s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1468:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)[m[K’
+[17.019s]  1468 |     [01;36m[Koperator[m[K<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+[17.020s]       |     [01;36m[K^~~~~~~~[m[K
+[17.020s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1468:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.020s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.020s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.020s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.021s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.021s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[17.021s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.021s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.022s] In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:53[m[K,
+[17.022s]                  from [01m[K/usr/include/c++/11/memory:77[m[K,
+[17.022s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.022s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.022s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1476:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[17.023s]  1476 |     [01;36m[Koperator[m[K<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+[17.023s]       |     [01;36m[K^~~~~~~~[m[K
+[17.023s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.023s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.023s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.024s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.024s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.024s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[17.024s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.024s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.025s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[17.025s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.025s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.025s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:488:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> bool std::operator<(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)[m[K’
+[17.025s]   488 |     [01;36m[Koperator[m[K<(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+[17.026s]       |     [01;36m[K^~~~~~~~[m[K
+[17.026s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:488:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.026s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.026s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.027s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.027s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.027s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[17.027s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.027s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.028s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[17.028s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.028s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.028s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:499:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator<(const std::shared_ptr<_Tp>&, std::nullptr_t)[m[K’
+[17.028s]   499 |     [01;36m[Koperator[m[K<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+[17.029s]       |     [01;36m[K^~~~~~~~[m[K
+[17.029s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:499:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.029s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.029s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.029s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.030s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.030s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[17.030s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.030s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.030s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[17.031s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.031s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.031s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:508:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp>&)[m[K’
+[17.031s]   508 |     [01;36m[Koperator[m[K<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+[17.032s]       |     [01;36m[K^~~~~~~~[m[K
+[17.032s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:508:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.032s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.032s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.032s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.033s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.033s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::shared_ptr<_Tp>[m[K’
+[17.033s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.033s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.033s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[17.034s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.034s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.034s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.034s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.035s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.035s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.035s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.035s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.035s] [01m[K/usr/include/c++/11/string_view:589:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)[m[K’
+[17.036s]   589 |     [01;36m[Koperator[m[K< (basic_string_view<_CharT, _Traits> __x,
+[17.036s]       |     [01;36m[K^~~~~~~~[m[K
+[17.036s] [01m[K/usr/include/c++/11/string_view:589:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.036s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.036s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.037s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.037s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.037s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[KGridKey[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[17.037s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.037s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.038s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[17.038s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.038s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.038s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.038s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.039s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.039s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.039s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.039s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.040s] [01m[K/usr/include/c++/11/string_view:595:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)[m[K’
+[17.040s]   595 |     [01;36m[Koperator[m[K< (basic_string_view<_CharT, _Traits> __x,
+[17.040s]       |     [01;36m[K^~~~~~~~[m[K
+[17.040s] [01m[K/usr/include/c++/11/string_view:595:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.040s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.041s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.041s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.041s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.041s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[KGridKey[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[17.041s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.042s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.042s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[17.042s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.042s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.043s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.043s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.043s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.043s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.043s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.044s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.044s] [01m[K/usr/include/c++/11/string_view:602:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator<(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)[m[K’
+[17.044s]   602 |     [01;36m[Koperator[m[K< (__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+[17.044s]       |     [01;36m[K^~~~~~~~[m[K
+[17.045s] [01m[K/usr/include/c++/11/string_view:602:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.045s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.045s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.045s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.046s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.046s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[KGridKey[m[K’ is not derived from ‘[01m[Kstd::basic_string_view<_CharT, _Traits>[m[K’
+[17.046s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.046s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.047s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.047s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.047s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.047s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.047s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.048s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.048s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.048s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.048s] [01m[K/usr/include/c++/11/bits/basic_string.h:6340:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[17.049s]  6340 |     [01;36m[Koperator[m[K<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[17.049s]       |     [01;36m[K^~~~~~~~[m[K
+[17.049s] [01m[K/usr/include/c++/11/bits/basic_string.h:6340:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.049s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.050s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.050s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.050s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.050s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[17.051s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.051s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.051s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.051s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.052s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.052s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.052s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.052s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.052s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.053s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.053s] [01m[K/usr/include/c++/11/bits/basic_string.h:6353:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+[17.053s]  6353 |     [01;36m[Koperator[m[K<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[17.053s]       |     [01;36m[K^~~~~~~~[m[K
+[17.054s] [01m[K/usr/include/c++/11/bits/basic_string.h:6353:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.054s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.054s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.054s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.055s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.055s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+[17.055s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.055s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.056s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[17.056s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[17.056s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[17.056s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.057s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.057s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.057s] [01m[K/usr/include/c++/11/bits/basic_string.h:6365:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[17.058s]  6365 |     [01;36m[Koperator[m[K<(const _CharT* __lhs,
+[17.058s]       |     [01;36m[K^~~~~~~~[m[K
+[17.058s] [01m[K/usr/include/c++/11/bits/basic_string.h:6365:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.058s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.059s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.059s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.059s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.059s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[KGridKey[m[K’
+[17.060s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.060s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.060s] In file included from [01m[K/usr/include/c++/11/set:61[m[K,
+[17.060s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[17.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.061s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.061s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.062s] [01m[K/usr/include/c++/11/bits/stl_set.h:1023:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)[m[K’
+[17.062s]  1023 |     [01;36m[Koperator[m[K<(const set<_Key, _Compare, _Alloc>& __x,
+[17.062s]       |     [01;36m[K^~~~~~~~[m[K
+[17.062s] [01m[K/usr/include/c++/11/bits/stl_set.h:1023:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.063s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.063s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.063s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.063s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.064s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Allocator>[m[K’
+[17.064s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.064s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.064s] In file included from [01m[K/usr/include/c++/11/set:62[m[K,
+[17.065s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21[m[K,
+[17.065s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.065s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.065s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.065s] [01m[K/usr/include/c++/11/bits/stl_multiset.h:1009:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)[m[K’
+[17.066s]  1009 |     [01;36m[Koperator[m[K<(const multiset<_Key, _Compare, _Alloc>& __x,
+[17.066s]       |     [01;36m[K^~~~~~~~[m[K
+[17.066s] [01m[K/usr/include/c++/11/bits/stl_multiset.h:1009:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.066s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.067s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.067s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.067s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.067s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Allocator>[m[K’
+[17.067s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.068s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.068s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[17.068s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[17.068s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[17.069s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[17.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[17.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.069s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.070s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.070s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.070s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1930:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)[m[K’
+[17.070s]  1930 |     [01;36m[Koperator[m[K<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+[17.071s]       |     [01;36m[K^~~~~~~~[m[K
+[17.071s] [01m[K/usr/include/c++/11/bits/stl_vector.h:1930:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.071s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.071s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.071s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.072s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.072s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+[17.072s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.072s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.073s] In file included from [01m[K/usr/include/c++/11/list:63[m[K,
+[17.073s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:23[m[K,
+[17.073s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.074s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.074s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.074s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.075s] [01m[K/usr/include/c++/11/bits/stl_list.h:2085:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)[m[K’
+[17.075s]  2085 |     [01;36m[Koperator[m[K<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+[17.075s]       |     [01;36m[K^~~~~~~~[m[K
+[17.076s] [01m[K/usr/include/c++/11/bits/stl_list.h:2085:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.076s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.076s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.077s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.077s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+[17.077s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.077s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.078s] In file included from [01m[K/usr/include/c++/11/map:61[m[K,
+[17.078s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[17.078s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.078s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.078s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.079s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.079s] [01m[K/usr/include/c++/11/bits/stl_map.h:1501:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[17.079s]  1501 |     [01;36m[Koperator[m[K<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+[17.079s]       |     [01;36m[K^~~~~~~~[m[K
+[17.080s] [01m[K/usr/include/c++/11/bits/stl_map.h:1501:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.080s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.080s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.080s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.081s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.081s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Allocator>[m[K’
+[17.081s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.081s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.081s] In file included from [01m[K/usr/include/c++/11/map:62[m[K,
+[17.082s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24[m[K,
+[17.082s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.082s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.082s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.083s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.083s] [01m[K/usr/include/c++/11/bits/stl_multimap.h:1166:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)[m[K’
+[17.083s]  1166 |     [01;36m[Koperator[m[K<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+[17.083s]       |     [01;36m[K^~~~~~~~[m[K
+[17.084s] [01m[K/usr/include/c++/11/bits/stl_multimap.h:1166:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.084s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.084s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.084s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.084s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.085s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>[m[K’
+[17.085s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.085s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.085s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[17.086s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.086s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.086s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.087s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.087s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.087s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.087s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.088s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.088s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.088s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.088s] [01m[K/usr/include/c++/11/optional:1063:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_lt_t<_Tp, _Up> std::operator<(const std::optional<_Tp>&, const std::optional<_Up>&)[m[K’
+[17.089s]  1063 |     [01;36m[Koperator[m[K<(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+[17.089s]       |     [01;36m[K^~~~~~~~[m[K
+[17.089s] [01m[K/usr/include/c++/11/optional:1063:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.089s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.089s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.090s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.090s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.090s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[17.090s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.091s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.091s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[17.091s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.091s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.092s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.092s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.092s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.092s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.092s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.093s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.093s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.093s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.093s] [01m[K/usr/include/c++/11/optional:1131:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::operator<(const std::optional<_Tp>&, std::nullopt_t)[m[K’
+[17.094s]  1131 |     [01;36m[Koperator[m[K<(const optional<_Tp>& /* __lhs */, nullopt_t) noexcept
+[17.094s]       |     [01;36m[K^~~~~~~~[m[K
+[17.094s] [01m[K/usr/include/c++/11/optional:1131:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.094s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.095s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.095s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.095s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.095s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[17.095s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.096s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.096s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[17.096s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.096s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.097s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.097s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.097s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.097s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.097s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.098s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.098s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.098s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.098s] [01m[K/usr/include/c++/11/optional:1136:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr bool std::operator<(std::nullopt_t, const std::optional<_Tp>&)[m[K’
+[17.099s]  1136 |     [01;36m[Koperator[m[K<(nullopt_t, const optional<_Tp>& __rhs) noexcept
+[17.099s]       |     [01;36m[K^~~~~~~~[m[K
+[17.099s] [01m[K/usr/include/c++/11/optional:1136:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.099s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.099s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.100s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.100s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.100s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[17.100s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.101s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.101s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[17.101s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.101s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.101s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.102s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.102s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.102s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.102s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.103s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.103s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.103s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.103s] [01m[K/usr/include/c++/11/optional:1197:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_lt_t<_Tp, _Up> std::operator<(const std::optional<_Tp>&, const _Up&)[m[K’
+[17.104s]  1197 |     [01;36m[Koperator[m[K<(const optional<_Tp>& __lhs, const _Up& __rhs)
+[17.104s]       |     [01;36m[K^~~~~~~~[m[K
+[17.104s] [01m[K/usr/include/c++/11/optional:1197:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.104s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.105s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.105s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.105s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.105s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[17.105s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.106s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.106s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23[m[K,
+[17.106s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.106s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.107s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.107s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.107s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.107s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.107s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.108s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.108s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.108s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.108s] [01m[K/usr/include/c++/11/optional:1203:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr std::__optional_lt_t<_Up, _Tp> std::operator<(const _Up&, const std::optional<_Tp>&)[m[K’
+[17.109s]  1203 |     [01;36m[Koperator[m[K<(const _Up& __lhs, const optional<_Tp>& __rhs)
+[17.109s]       |     [01;36m[K^~~~~~~~[m[K
+[17.109s] [01m[K/usr/include/c++/11/optional:1203:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.109s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.109s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.110s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.110s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::optional<_Tp>[m[K’
+[17.110s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.111s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.111s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+[17.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.113s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.113s] [01m[K/usr/include/c++/11/variant:1230:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ... _Types> constexpr bool std::operator<(const std::variant<_Types ...>&, const std::variant<_Types ...>&)[m[K’
+[17.114s]  1230 |   [01;36m[K_VARIANT_RELATION_FUNCTION_TEMPLATE[m[K(<, less)
+[17.114s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[17.114s] [01m[K/usr/include/c++/11/variant:1230:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.114s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.114s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.115s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.115s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+[17.115s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.116s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.116s] In file included from [01m[K/usr/include/c++/11/deque:67[m[K,
+[17.116s]                  from [01m[K/usr/include/c++/11/stack:60[m[K,
+[17.116s]                  from [01m[K/opt/ros/humble/include/octomap/OcTreeBaseImpl.h:41[m[K,
+[17.116s]                  from [01m[K/opt/ros/humble/include/octomap/OccupancyOcTreeBase.h:44[m[K,
+[17.117s]                  from [01m[K/opt/ros/humble/include/octomap/OcTree.h:38[m[K,
+[17.117s]                  from [01m[K/opt/ros/humble/include/octomap/octomap.h:37[m[K,
+[17.117s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:11[m[K:
+[17.117s] [01m[K/usr/include/c++/11/bits/stl_deque.h:2285:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)[m[K’
+[17.118s]  2285 |     [01;36m[Koperator[m[K<(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)
+[17.118s]       |     [01;36m[K^~~~~~~~[m[K
+[17.118s] [01m[K/usr/include/c++/11/bits/stl_deque.h:2285:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.118s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.119s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.119s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.119s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.119s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::deque<_Tp, _Alloc>[m[K’
+[17.120s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.120s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.120s] In file included from [01m[K/usr/include/c++/11/stack:61[m[K,
+[17.120s]                  from [01m[K/opt/ros/humble/include/octomap/OcTreeBaseImpl.h:41[m[K,
+[17.121s]                  from [01m[K/opt/ros/humble/include/octomap/OccupancyOcTreeBase.h:44[m[K,
+[17.121s]                  from [01m[K/opt/ros/humble/include/octomap/OcTree.h:38[m[K,
+[17.121s]                  from [01m[K/opt/ros/humble/include/octomap/octomap.h:37[m[K,
+[17.121s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:11[m[K:
+[17.121s] [01m[K/usr/include/c++/11/bits/stl_stack.h:337:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Seq> bool std::operator<(const std::stack<_Tp, _Seq>&, const std::stack<_Tp, _Seq>&)[m[K’
+[17.122s]   337 |     [01;36m[Koperator[m[K<(const stack<_Tp, _Seq>& __x, const stack<_Tp, _Seq>& __y)
+[17.122s]       |     [01;36m[K^~~~~~~~[m[K
+[17.122s] [01m[K/usr/include/c++/11/bits/stl_stack.h:337:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.122s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.123s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.123s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.123s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::stack<_Tp, _Seq>[m[K’
+[17.124s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.124s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.124s] In file included from [01m[K/usr/include/c++/11/queue:64[m[K,
+[17.124s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:15[m[K:
+[17.124s] [01m[K/usr/include/c++/11/bits/stl_queue.h:362:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Seq> bool std::operator<(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)[m[K’
+[17.125s]   362 |     [01;36m[Koperator[m[K<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)
+[17.125s]       |     [01;36m[K^~~~~~~~[m[K
+[17.125s] [01m[K/usr/include/c++/11/bits/stl_queue.h:362:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.125s] In file included from [01m[K/usr/include/c++/11/bits/stl_algobase.h:64[m[K,
+[17.126s]                  from [01m[K/usr/include/c++/11/memory:63[m[K,
+[17.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[17.126s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.126s] [01m[K/usr/include/c++/11/bits/stl_pair.h:491:57:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst GridKey[m[K’ is not derived from ‘[01m[Kconst std::queue<_Tp, _Seq>[m[K’
+[17.127s]   491 |              || (!(__y.first < __x.first) && [01;36m[K__x.second < __y.second[m[K); }
+[17.127s]       |                                              [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[17.127s] In file included from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[17.127s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[17.127s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[17.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.128s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.128s] [01m[K/usr/include/c++/11/system_error:269:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator<(const std::error_code&, const std::error_code&)[m[K’
+[17.128s]   269 |   [01;36m[Koperator[m[K<(const error_code& __lhs, const error_code& __rhs) noexcept
+[17.129s]       |   [01;36m[K^~~~~~~~[m[K
+[17.129s] [01m[K/usr/include/c++/11/system_error:269:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst GridKey[m[K’ to ‘[01m[Kconst std::error_code&[m[K’
+[17.129s]   269 |   operator<([01;36m[Kconst error_code& __lhs[m[K, const error_code& __rhs) noexcept
+[17.129s]       |             [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[17.129s] [01m[K/usr/include/c++/11/system_error:398:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator<(const std::error_condition&, const std::error_condition&)[m[K’
+[17.130s]   398 |   [01;36m[Koperator[m[K<(const error_condition& __lhs,
+[17.130s]       |   [01;36m[K^~~~~~~~[m[K
+[17.130s] [01m[K/usr/include/c++/11/system_error:398:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst GridKey[m[K’ to ‘[01m[Kconst std::error_condition&[m[K’
+[17.130s]   398 |   operator<([01;36m[Kconst error_condition& __lhs[m[K,
+[17.131s]       |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[17.131s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22[m[K,
+[17.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.131s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.132s] [01m[K/usr/include/c++/11/thread:70:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool std::operator<(std::thread::id, std::thread::id)[m[K’
+[17.132s]    70 |   [01;36m[Koperator[m[K<(thread::id __x, thread::id __y) noexcept
+[17.132s]       |   [01;36m[K^~~~~~~~[m[K
+[17.132s] [01m[K/usr/include/c++/11/thread:70:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst GridKey[m[K’ to ‘[01m[Kstd::thread::id[m[K’
+[17.133s]    70 |   operator<([01;36m[Kthread::id __x[m[K, thread::id __y) noexcept
+[17.133s]       |             [01;36m[K~~~~~~~~~~~^~~[m[K
+[17.133s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+[17.133s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.135s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[17.136s] [01m[K/usr/include/c++/11/variant:1272:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr bool std::operator<(std::monostate, std::monostate)[m[K’
+[17.136s]  1272 |   constexpr bool [01;36m[Koperator[m[K<(monostate, monostate) noexcept { return false; }
+[17.136s]       |                  [01;36m[K^~~~~~~~[m[K
+[17.136s] [01m[K/usr/include/c++/11/variant:1272:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst GridKey[m[K’ to ‘[01m[Kstd::monostate[m[K’
+[17.137s]  1272 |   constexpr bool operator<([01;36m[Kmonostate[m[K, monostate) noexcept { return false; }
+[17.137s]       |                            [01;36m[K^~~~~~~~~[m[K
+[27.622s] gmake[2]: *** [CMakeFiles/goal_astar_octomap_safe_node.dir/build.make:76: CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o] Error 1
+[27.623s] gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/goal_astar_octomap_safe_node.dir/all] Error 2
+[27.624s] gmake: *** [Makefile:146: all] Error 2
+[27.632s] Invoked command in '/home/hj926217/ros2ws/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16

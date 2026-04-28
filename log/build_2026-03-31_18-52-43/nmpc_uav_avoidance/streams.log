@@ -1,0 +1,46 @@
+[0.037s] Invoking command in '/home/hj926217/ros2ws/build/nmpc_uav_avoidance': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/nmpc_uav_avoidance -- -j16 -l16
+[0.118s] [35m[1mConsolidate compiler generated dependencies of target odom_publisher[0m
+[0.119s] [35m[1mConsolidate compiler generated dependencies of target nmpc_node[0m
+[0.144s] [ 40%] Built target odom_publisher
+[0.146s] [ 60%] [32mBuilding CXX object CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o[0m
+[3.970s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:[m[K In member function ‘[01m[Kvoid nmpc_uav::NMPCNode::control_loop()[m[K’:
+[3.971s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:308:9:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint ref_start[m[K’
+[3.971s]   308 |     int [01;31m[Kref_start[m[K = 11;
+[3.971s]       |         [01;31m[K^~~~~~~~~[m[K
+[3.971s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:283:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint ref_start[m[K’ previously declared here
+[3.971s]   283 |     int [01;36m[Kref_start[m[K = 11;
+[3.972s]       |         [01;36m[K^~~~~~~~~[m[K
+[3.979s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:326:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kcy[m[K’ was not declared in this scope; did you mean ‘[01m[Kry[m[K’?
+[3.979s]   326 |         params[ref_start + j * 3 + 0] =  [01;31m[Kcy[m[K * rx + sy * ry;
+[3.980s]       |                                          [01;31m[K^~[m[K
+[3.980s]       |                                          [32m[Kry[m[K
+[3.988s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:326:52:[m[K [01;31m[Kerror: [m[K‘[01m[Ksy[m[K’ was not declared in this scope; did you mean ‘[01m[Kry[m[K’?
+[3.988s]   326 |         params[ref_start + j * 3 + 0] =  cy * rx + [01;31m[Ksy[m[K * ry;
+[3.988s]       |                                                    [01;31m[K^~[m[K
+[3.988s]       |                                                    [32m[Kry[m[K
+[3.999s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:332:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_yc[m[K’ was not declared in this scope
+[3.999s]   332 |     params[131] = [01;31m[Kobs_yc[m[K[0]; params[132] = obs_yc[1]; params[133] = obs_yc[2];
+[3.999s]       |                   [01;31m[K^~~~~~[m[K
+[4.013s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.013s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.013s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.013s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.014s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.014s]                  from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:9[m[K,
+[4.014s]                  from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:13[m[K:
+[4.014s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:338:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos_yc[m[K’ was not declared in this scope
+[4.014s]   338 |         [01;31m[Kpos_yc[m[K[0], pos_yc[1], pos_yc[2],
+[4.014s]       |         [01;31m[K^~~~~~[m[K
+[4.023s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:339:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_yc[m[K’ was not declared in this scope
+[4.023s]   339 |         [01;31m[Kvel_yc[m[K[0], vel_yc[1], vel_yc[2],
+[4.024s]       |         [01;31m[K^~~~~~[m[K
+[11.777s] gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:90: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o] Error 1
+[11.778s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/nmpc_node.dir/all] Error 2
+[11.778s] gmake: *** [Makefile:146: all] Error 2
+[11.783s] Invoked command in '/home/hj926217/ros2ws/build/nmpc_uav_avoidance' returned '2': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/nmpc_uav_avoidance -- -j16 -l16

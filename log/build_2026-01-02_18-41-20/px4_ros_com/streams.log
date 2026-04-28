@@ -1,0 +1,63 @@
+[0.014s] Invoking command in '/home/hj926217/ros2ws/build/px4_ros_com': AMENT_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib PYTHONPATH=/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16
+[0.040s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.170s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.190s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.192s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.196s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.205s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.217s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.229s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.231s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.258s] -- Found px4_msgs: 2.0.1 (/home/hj926217/ros2ws/install/px4_msgs/share/px4_msgs/cmake)
+[0.274s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.311s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.314s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.429s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.471s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.489s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.489s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.494s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.573s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.579s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.580s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.599s] -- Found cv_bridge: 4.1.0 (/home/hj926217/aruco/install/cv_bridge/share/cv_bridge/cmake)
+[0.625s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.700s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.705s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.706s] -- Configured cppcheck include dirs: /home/hj926217/ros2ws/src/px4_ros_com/include;$<BUILD_INTERFACE:/home/hj926217/ros2ws/src/px4_ros_com/include/px4_ros_com>
+[0.706s] -- Configured cppcheck exclude dirs and/or files: 
+[0.709s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.710s] -- Configured cpplint exclude dirs and/or files: 
+[0.710s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.711s] -- Added test 'lint_cmake' to check CMake code style
+[0.712s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.715s] -- Added test 'uncrustify' to check C / C++ code style
+[0.715s] -- Configured uncrustify additional arguments: 
+[0.716s] -- Added test 'xmllint' to check XML markup files
+[0.718s] -- Configuring done
+[0.723s] [33mCMake Warning (dev) at CMakeLists.txt:89 (add_executable):
+[0.723s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[0.723s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[0.723s]   command to set the policy and suppress this warning.
+[0.723s] 
+[0.723s]   File:
+[0.723s] 
+[0.723s]     /home/hj926217/ros2ws/src/px4_ros_com/src/circle_flight.cpp
+[0.723s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.723s] [0m
+[0.723s] [31mCMake Error at CMakeLists.txt:89 (add_executable):
+[0.723s]   Cannot find source file:
+[0.723s] 
+[0.723s]     .cpp
+[0.723s] 
+[0.723s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[0.724s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[0.724s] 
+[0.724s] [0m
+[0.725s] [31mCMake Error at CMakeLists.txt:89 (add_executable):
+[0.725s]   No SOURCES given to target: circle_flight
+[0.725s] 
+[0.725s] [0m
+[0.725s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.734s] gmake: *** [Makefile:746: cmake_check_build_system] Error 1
+[0.736s] Invoked command in '/home/hj926217/ros2ws/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib PYTHONPATH=/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16

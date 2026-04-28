@@ -1,0 +1,27 @@
+[0.038s] Invoking command in '/home/hj926217/ros2ws/build/nmpc_uav_avoidance': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/nmpc_uav_avoidance -- -j16 -l16
+[0.124s] [35m[1mConsolidate compiler generated dependencies of target nmpc_node[0m
+[0.143s] [ 40%] Built target odom_publisher
+[0.162s] [ 60%] [32mBuilding CXX object CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o[0m
+[0.165s] [ 80%] [32mBuilding CXX object CMakeFiles/nmpc_node.dir/src/main.cpp.o[0m
+[5.377s] In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/main.cpp:6[m[K:
+[5.377s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:40:49:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kstd::array<double, 3> nmpc_uav::interpolate_path(double)[m[K’ cannot have cv-qualifier
+[5.377s]    40 | std::array<double,3> interpolate_path(double s) [01;31m[Kconst[m[K;
+[5.378s]       |                                                 [01;31m[K^~~~~[m[K
+[5.416s] In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:1[m[K:
+[5.416s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:40:49:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kstd::array<double, 3> nmpc_uav::interpolate_path(double)[m[K’ cannot have cv-qualifier
+[5.416s]    40 | std::array<double,3> interpolate_path(double s) [01;31m[Kconst[m[K;
+[5.416s]       |                                                 [01;31m[K^~~~~[m[K
+[5.889s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:214:22:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::array<double, 3> nmpc_uav::NMPCNode::interpolate_path(double) const[m[K’
+[5.890s]   214 | std::array<double,3> [01;31m[KNMPCNode[m[K::interpolate_path(double s) const {
+[5.890s]       |                      [01;31m[K^~~~~~~~[m[K
+[5.890s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:214:22:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kstd::array<double, 3> nmpc_uav::NMPCNode::interpolate_path(double) const[m[K’
+[5.890s] In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:1[m[K:
+[5.890s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:65:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass nmpc_uav::NMPCNode[m[K’ defined here
+[5.890s]    65 | class [01;36m[KNMPCNode[m[K : public rclcpp::Node {
+[5.890s]       |       [01;36m[K^~~~~~~~[m[K
+[7.154s] gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:76: CMakeFiles/nmpc_node.dir/src/main.cpp.o] Error 1
+[7.155s] gmake[2]: *** Waiting for unfinished jobs....
+[16.418s] gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:90: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o] Error 1
+[16.418s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/nmpc_node.dir/all] Error 2
+[16.419s] gmake: *** [Makefile:146: all] Error 2
+[16.423s] Invoked command in '/home/hj926217/ros2ws/build/nmpc_uav_avoidance' returned '2': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/nmpc_uav_avoidance -- -j16 -l16

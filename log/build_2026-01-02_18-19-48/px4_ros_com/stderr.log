@@ -1,0 +1,10 @@
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/nav_path.cpp:[m[K In member function ‘[01m[Kvoid Px4PathPublisher::odomCallback(px4_msgs::msg::VehicleOdometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/nav_path.cpp:46:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Time[m[K’ has no member named ‘[01m[Kto_msg[m[K’
+   46 |       pose.header.stamp = rclcpp::Time(t_ns).[01;31m[Kto_msg[m[K();
+      |                                              [01;31m[K^~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/nav_path.cpp:48:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Time[m[K’ has no member named ‘[01m[Kto_msg[m[K’
+   48 |       pose.header.stamp = this->get_clock()->now().[01;31m[Kto_msg[m[K();
+      |                                                    [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/nav_path.dir/build.make:76: CMakeFiles/nav_path.dir/src/nav_path.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:292: CMakeFiles/nav_path.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

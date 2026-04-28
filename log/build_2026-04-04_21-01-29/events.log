@@ -1,0 +1,315 @@
+[0.000000] (-) TimerEvent: {}
+[0.001354] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.001841] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.002434] (nmpc_uav_avoidance) JobQueued: {'identifier': 'nmpc_uav_avoidance', 'dependencies': OrderedDict([('px4_msgs', '/home/hj926217/ros2ws/install/px4_msgs')])}
+[0.002610] (nmpc_uav_avoidance) JobStarted: {'identifier': 'nmpc_uav_avoidance'}
+[0.027807] (nmpc_uav_avoidance) JobProgress: {'identifier': 'nmpc_uav_avoidance', 'progress': 'cmake'}
+[0.029105] (nmpc_uav_avoidance) JobProgress: {'identifier': 'nmpc_uav_avoidance', 'progress': 'build'}
+[0.030494] (nmpc_uav_avoidance) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hj926217/ros2ws/build/nmpc_uav_avoidance', '--', '-j16', '-l16'], 'cwd': '/home/hj926217/ros2ws/build/nmpc_uav_avoidance', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hj926217'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hj926217'), ('OLDPWD', '/home/hj926217'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '4035'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hj926217/ros2ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hj926217'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hj926217'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/hj926217/.cargo/bin:/home/hj926217/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/hj926217-17Z90Q-GAFWK:@/tmp/.ICE-unix/1826,unix/hj926217-17Z90Q-GAFWK:/tmp/.ICE-unix/1826'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1ce31f93_ec43_4b24_8673_5311bdfbd66b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DHSCN3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/home/hj926217/ros2ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hj926217/ros2ws/build/nmpc_uav_avoidance'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble')]), 'shell': False}
+[0.099042] (-) TimerEvent: {}
+[0.121568] (nmpc_uav_avoidance) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nmpc_node\x1b[0m\n'}
+[0.147704] (nmpc_uav_avoidance) StdoutLine: {'line': b'[ 40%] Built target odom_publisher\n'}
+[0.162730] (nmpc_uav_avoidance) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/nmpc_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.163999] (nmpc_uav_avoidance) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o\x1b[0m\n'}
+[0.199196] (-) TimerEvent: {}
+[0.300006] (-) TimerEvent: {}
+[0.400590] (-) TimerEvent: {}
+[0.501078] (-) TimerEvent: {}
+[0.601658] (-) TimerEvent: {}
+[0.702085] (-) TimerEvent: {}
+[0.802735] (-) TimerEvent: {}
+[0.903462] (-) TimerEvent: {}
+[1.004102] (-) TimerEvent: {}
+[1.104694] (-) TimerEvent: {}
+[1.205198] (-) TimerEvent: {}
+[1.305739] (-) TimerEvent: {}
+[1.406254] (-) TimerEvent: {}
+[1.506825] (-) TimerEvent: {}
+[1.607290] (-) TimerEvent: {}
+[1.707728] (-) TimerEvent: {}
+[1.808153] (-) TimerEvent: {}
+[1.908601] (-) TimerEvent: {}
+[2.009052] (-) TimerEvent: {}
+[2.109681] (-) TimerEvent: {}
+[2.210312] (-) TimerEvent: {}
+[2.310787] (-) TimerEvent: {}
+[2.411332] (-) TimerEvent: {}
+[2.511836] (-) TimerEvent: {}
+[2.612317] (-) TimerEvent: {}
+[2.712793] (-) TimerEvent: {}
+[2.813242] (-) TimerEvent: {}
+[2.913743] (-) TimerEvent: {}
+[3.014208] (-) TimerEvent: {}
+[3.114705] (-) TimerEvent: {}
+[3.215197] (-) TimerEvent: {}
+[3.315660] (-) TimerEvent: {}
+[3.416134] (-) TimerEvent: {}
+[3.516712] (-) TimerEvent: {}
+[3.617387] (-) TimerEvent: {}
+[3.717918] (-) TimerEvent: {}
+[3.818440] (-) TimerEvent: {}
+[3.919021] (-) TimerEvent: {}
+[4.019500] (-) TimerEvent: {}
+[4.119961] (-) TimerEvent: {}
+[4.220549] (-) TimerEvent: {}
+[4.321001] (-) TimerEvent: {}
+[4.421447] (-) TimerEvent: {}
+[4.521891] (-) TimerEvent: {}
+[4.622369] (-) TimerEvent: {}
+[4.722856] (-) TimerEvent: {}
+[4.823392] (-) TimerEvent: {}
+[4.923857] (-) TimerEvent: {}
+[5.024328] (-) TimerEvent: {}
+[5.124872] (-) TimerEvent: {}
+[5.225503] (-) TimerEvent: {}
+[5.325933] (-) TimerEvent: {}
+[5.426458] (-) TimerEvent: {}
+[5.526909] (-) TimerEvent: {}
+[5.627388] (-) TimerEvent: {}
+[5.727985] (-) TimerEvent: {}
+[5.828475] (-) TimerEvent: {}
+[5.929123] (-) TimerEvent: {}
+[6.029775] (-) TimerEvent: {}
+[6.130299] (-) TimerEvent: {}
+[6.230791] (-) TimerEvent: {}
+[6.331298] (-) TimerEvent: {}
+[6.431779] (-) TimerEvent: {}
+[6.532299] (-) TimerEvent: {}
+[6.632731] (-) TimerEvent: {}
+[6.733399] (-) TimerEvent: {}
+[6.833885] (-) TimerEvent: {}
+[6.934392] (-) TimerEvent: {}
+[7.034860] (-) TimerEvent: {}
+[7.135342] (-) TimerEvent: {}
+[7.235848] (-) TimerEvent: {}
+[7.336332] (-) TimerEvent: {}
+[7.436736] (-) TimerEvent: {}
+[7.537128] (-) TimerEvent: {}
+[7.637550] (-) TimerEvent: {}
+[7.737989] (-) TimerEvent: {}
+[7.838479] (-) TimerEvent: {}
+[7.938861] (-) TimerEvent: {}
+[8.039215] (-) TimerEvent: {}
+[8.139664] (-) TimerEvent: {}
+[8.240167] (-) TimerEvent: {}
+[8.340675] (-) TimerEvent: {}
+[8.441206] (-) TimerEvent: {}
+[8.541668] (-) TimerEvent: {}
+[8.642112] (-) TimerEvent: {}
+[8.742551] (-) TimerEvent: {}
+[8.842981] (-) TimerEvent: {}
+[8.943433] (-) TimerEvent: {}
+[9.043898] (-) TimerEvent: {}
+[9.144355] (-) TimerEvent: {}
+[9.244766] (-) TimerEvent: {}
+[9.345190] (-) TimerEvent: {}
+[9.445549] (-) TimerEvent: {}
+[9.545940] (-) TimerEvent: {}
+[9.646373] (-) TimerEvent: {}
+[9.746901] (-) TimerEvent: {}
+[9.847385] (-) TimerEvent: {}
+[9.947799] (-) TimerEvent: {}
+[10.048342] (-) TimerEvent: {}
+[10.148849] (-) TimerEvent: {}
+[10.249282] (-) TimerEvent: {}
+[10.349849] (-) TimerEvent: {}
+[10.450274] (-) TimerEvent: {}
+[10.550617] (-) TimerEvent: {}
+[10.651004] (-) TimerEvent: {}
+[10.751378] (-) TimerEvent: {}
+[10.851792] (-) TimerEvent: {}
+[10.952859] (-) TimerEvent: {}
+[11.053421] (-) TimerEvent: {}
+[11.154062] (-) TimerEvent: {}
+[11.254486] (-) TimerEvent: {}
+[11.354855] (-) TimerEvent: {}
+[11.455200] (-) TimerEvent: {}
+[11.555723] (-) TimerEvent: {}
+[11.656058] (-) TimerEvent: {}
+[11.756545] (-) TimerEvent: {}
+[11.857022] (-) TimerEvent: {}
+[11.957942] (-) TimerEvent: {}
+[12.058308] (-) TimerEvent: {}
+[12.158722] (-) TimerEvent: {}
+[12.259113] (-) TimerEvent: {}
+[12.359558] (-) TimerEvent: {}
+[12.459946] (-) TimerEvent: {}
+[12.560363] (-) TimerEvent: {}
+[12.660778] (-) TimerEvent: {}
+[12.761252] (-) TimerEvent: {}
+[12.861667] (-) TimerEvent: {}
+[12.962106] (-) TimerEvent: {}
+[13.062568] (-) TimerEvent: {}
+[13.163025] (-) TimerEvent: {}
+[13.263612] (-) TimerEvent: {}
+[13.364100] (-) TimerEvent: {}
+[13.464546] (-) TimerEvent: {}
+[13.564951] (-) TimerEvent: {}
+[13.665380] (-) TimerEvent: {}
+[13.765780] (-) TimerEvent: {}
+[13.866625] (-) TimerEvent: {}
+[13.966980] (-) TimerEvent: {}
+[14.067412] (-) TimerEvent: {}
+[14.168029] (-) TimerEvent: {}
+[14.268487] (-) TimerEvent: {}
+[14.368960] (-) TimerEvent: {}
+[14.469358] (-) TimerEvent: {}
+[14.569796] (-) TimerEvent: {}
+[14.670235] (-) TimerEvent: {}
+[14.770708] (-) TimerEvent: {}
+[14.871145] (-) TimerEvent: {}
+[14.971634] (-) TimerEvent: {}
+[15.072071] (-) TimerEvent: {}
+[15.172545] (-) TimerEvent: {}
+[15.273045] (-) TimerEvent: {}
+[15.373596] (-) TimerEvent: {}
+[15.474116] (-) TimerEvent: {}
+[15.574644] (-) TimerEvent: {}
+[15.675092] (-) TimerEvent: {}
+[15.775997] (-) TimerEvent: {}
+[15.876392] (-) TimerEvent: {}
+[15.976894] (-) TimerEvent: {}
+[16.077374] (-) TimerEvent: {}
+[16.177885] (-) TimerEvent: {}
+[16.278333] (-) TimerEvent: {}
+[16.378725] (-) TimerEvent: {}
+[16.479164] (-) TimerEvent: {}
+[16.579605] (-) TimerEvent: {}
+[16.680112] (-) TimerEvent: {}
+[16.780570] (-) TimerEvent: {}
+[16.880989] (-) TimerEvent: {}
+[16.981362] (-) TimerEvent: {}
+[17.081804] (-) TimerEvent: {}
+[17.182247] (-) TimerEvent: {}
+[17.282654] (-) TimerEvent: {}
+[17.383040] (-) TimerEvent: {}
+[17.483484] (-) TimerEvent: {}
+[17.583974] (-) TimerEvent: {}
+[17.684360] (-) TimerEvent: {}
+[17.784923] (-) TimerEvent: {}
+[17.885356] (-) TimerEvent: {}
+[17.985795] (-) TimerEvent: {}
+[18.086324] (-) TimerEvent: {}
+[18.186899] (-) TimerEvent: {}
+[18.287371] (-) TimerEvent: {}
+[18.387819] (-) TimerEvent: {}
+[18.488230] (-) TimerEvent: {}
+[18.589135] (-) TimerEvent: {}
+[18.689566] (-) TimerEvent: {}
+[18.790018] (-) TimerEvent: {}
+[18.890604] (-) TimerEvent: {}
+[18.991087] (-) TimerEvent: {}
+[19.091550] (-) TimerEvent: {}
+[19.192110] (-) TimerEvent: {}
+[19.292626] (-) TimerEvent: {}
+[19.393114] (-) TimerEvent: {}
+[19.493703] (-) TimerEvent: {}
+[19.594173] (-) TimerEvent: {}
+[19.694593] (-) TimerEvent: {}
+[19.795036] (-) TimerEvent: {}
+[19.895551] (-) TimerEvent: {}
+[19.995975] (-) TimerEvent: {}
+[20.096421] (-) TimerEvent: {}
+[20.196969] (-) TimerEvent: {}
+[20.297383] (-) TimerEvent: {}
+[20.398135] (-) TimerEvent: {}
+[20.498937] (-) TimerEvent: {}
+[20.599479] (-) TimerEvent: {}
+[20.699956] (-) TimerEvent: {}
+[20.800585] (-) TimerEvent: {}
+[20.901065] (-) TimerEvent: {}
+[21.001749] (-) TimerEvent: {}
+[21.102183] (-) TimerEvent: {}
+[21.202785] (-) TimerEvent: {}
+[21.303183] (-) TimerEvent: {}
+[21.403585] (-) TimerEvent: {}
+[21.503992] (-) TimerEvent: {}
+[21.604368] (-) TimerEvent: {}
+[21.704778] (-) TimerEvent: {}
+[21.805207] (-) TimerEvent: {}
+[21.905638] (-) TimerEvent: {}
+[22.006046] (-) TimerEvent: {}
+[22.106515] (-) TimerEvent: {}
+[22.207085] (-) TimerEvent: {}
+[22.307513] (-) TimerEvent: {}
+[22.408007] (-) TimerEvent: {}
+[22.508453] (-) TimerEvent: {}
+[22.609017] (-) TimerEvent: {}
+[22.709568] (-) TimerEvent: {}
+[22.810080] (-) TimerEvent: {}
+[22.910570] (-) TimerEvent: {}
+[23.011048] (-) TimerEvent: {}
+[23.111540] (-) TimerEvent: {}
+[23.212045] (-) TimerEvent: {}
+[23.312529] (-) TimerEvent: {}
+[23.412991] (-) TimerEvent: {}
+[23.513460] (-) TimerEvent: {}
+[23.613894] (-) TimerEvent: {}
+[23.714356] (-) TimerEvent: {}
+[23.814797] (-) TimerEvent: {}
+[23.915245] (-) TimerEvent: {}
+[24.015767] (-) TimerEvent: {}
+[24.116183] (-) TimerEvent: {}
+[24.216641] (-) TimerEvent: {}
+[24.317069] (-) TimerEvent: {}
+[24.417479] (-) TimerEvent: {}
+[24.517899] (-) TimerEvent: {}
+[24.618293] (-) TimerEvent: {}
+[24.718639] (-) TimerEvent: {}
+[24.819076] (-) TimerEvent: {}
+[24.919485] (-) TimerEvent: {}
+[25.019873] (-) TimerEvent: {}
+[25.120244] (-) TimerEvent: {}
+[25.220641] (-) TimerEvent: {}
+[25.321030] (-) TimerEvent: {}
+[25.421453] (-) TimerEvent: {}
+[25.459061] (nmpc_uav_avoidance) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable nmpc_node\x1b[0m\n'}
+[25.521942] (-) TimerEvent: {}
+[25.622355] (-) TimerEvent: {}
+[25.722764] (-) TimerEvent: {}
+[25.823154] (-) TimerEvent: {}
+[25.923687] (-) TimerEvent: {}
+[26.024041] (-) TimerEvent: {}
+[26.124425] (-) TimerEvent: {}
+[26.225353] (-) TimerEvent: {}
+[26.325911] (-) TimerEvent: {}
+[26.426321] (-) TimerEvent: {}
+[26.526665] (-) TimerEvent: {}
+[26.627156] (-) TimerEvent: {}
+[26.727556] (-) TimerEvent: {}
+[26.827967] (-) TimerEvent: {}
+[26.928343] (-) TimerEvent: {}
+[27.025252] (nmpc_uav_avoidance) StdoutLine: {'line': b'[100%] Built target nmpc_node\n'}
+[27.028430] (-) TimerEvent: {}
+[27.047226] (nmpc_uav_avoidance) CommandEnded: {'returncode': 0}
+[27.048804] (nmpc_uav_avoidance) JobProgress: {'identifier': 'nmpc_uav_avoidance', 'progress': 'install'}
+[27.068409] (nmpc_uav_avoidance) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hj926217/ros2ws/build/nmpc_uav_avoidance'], 'cwd': '/home/hj926217/ros2ws/build/nmpc_uav_avoidance', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hj926217'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hj926217'), ('OLDPWD', '/home/hj926217'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '4035'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hj926217/ros2ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hj926217'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hj926217'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/hj926217/.cargo/bin:/home/hj926217/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/hj926217-17Z90Q-GAFWK:@/tmp/.ICE-unix/1826,unix/hj926217-17Z90Q-GAFWK:/tmp/.ICE-unix/1826'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1ce31f93_ec43_4b24_8673_5311bdfbd66b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DHSCN3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/home/hj926217/ros2ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hj926217/ros2ws/build/nmpc_uav_avoidance'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble')]), 'shell': False}
+[27.085971] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.086486] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Installing: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/lib/nmpc_uav_avoidance/nmpc_node\n'}
+[27.125047] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Set runtime path of "/home/hj926217/ros2ws/install/nmpc_uav_avoidance/lib/nmpc_uav_avoidance/nmpc_node" to ""\n'}
+[27.125371] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/lib/nmpc_uav_avoidance/odom_publisher\n'}
+[27.125588] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/include\n'}
+[27.125924] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/include/nmpc_uav_avoidance\n'}
+[27.126092] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp\n'}
+[27.126242] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Installing: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp\n'}
+[27.126569] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/launch\n'}
+[27.126809] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/launch/nmpc_launch.py\n'}
+[27.126992] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/ament_index/resource_index/package_run_dependencies/nmpc_uav_avoidance\n'}
+[27.127186] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/ament_index/resource_index/parent_prefix_path/nmpc_uav_avoidance\n'}
+[27.127348] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/environment/ament_prefix_path.sh\n'}
+[27.127494] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/environment/ament_prefix_path.dsv\n'}
+[27.127631] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/environment/path.sh\n'}
+[27.127810] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/environment/path.dsv\n'}
+[27.127969] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/local_setup.bash\n'}
+[27.128104] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/local_setup.sh\n'}
+[27.128235] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/local_setup.zsh\n'}
+[27.128404] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/local_setup.dsv\n'}
+[27.128536] (-) TimerEvent: {}
+[27.128727] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Installing: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/package.dsv\n'}
+[27.128882] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/ament_index/resource_index/packages/nmpc_uav_avoidance\n'}
+[27.129014] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/cmake/nmpc_uav_avoidanceConfig.cmake\n'}
+[27.129145] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/cmake/nmpc_uav_avoidanceConfig-version.cmake\n'}
+[27.129269] (nmpc_uav_avoidance) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/nmpc_uav_avoidance/share/nmpc_uav_avoidance/package.xml\n'}
+[27.130851] (nmpc_uav_avoidance) CommandEnded: {'returncode': 0}
+[27.154966] (nmpc_uav_avoidance) JobEnded: {'identifier': 'nmpc_uav_avoidance', 'rc': 0}
+[27.156052] (-) EventReactorShutdown: {}

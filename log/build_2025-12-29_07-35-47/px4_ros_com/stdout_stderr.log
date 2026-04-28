@@ -1,0 +1,41 @@
+[35m[1mConsolidate compiler generated dependencies of target aruco_position_sub[0m
+[ 10%] Built target frame_transforms
+[ 20%] Built target sensor_combined_listener
+[ 30%] Built target vertiport_land
+[ 60%] Built target tf2_control
+[ 60%] Built target vehicle_gps_position_listener
+[ 60%] Built target debug_vect_advertiser
+[ 70%] Built target offboard_control_srv
+[ 75%] [32mBuilding CXX object CMakeFiles/aruco_position_sub.dir/src/aruco_position_sub.cpp.o[0m
+[ 85%] Built target aruco_position_publisher_node
+[ 95%] Built target offboard_control
+[ 95%] Built target ament_cmake_python_copy_px4_ros_com
+Traceback (most recent call last):
+  File "/home/hj926217/ros2ws/build/px4_ros_com/ament_cmake_python/px4_ros_com/setup.py", line 1, in <module>
+    from setuptools import find_packages
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+gmake[2]: *** [CMakeFiles/aruco_position_sub.dir/build.make:76: CMakeFiles/aruco_position_sub.dir/src/aruco_position_sub.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:288: CMakeFiles/aruco_position_sub.dir/all] Interrupt
+    import setuptools.version
+  File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3267, in <module>
+    def _initialize_master_working_set():
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3241, in _call_aside
+    f(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3279, in _initialize_master_working_set
+    working_set = WorkingSet._build_master()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 564, in _build_master
+    ws = cls()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 557, in __init__
+    self.add_entry(entry)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 613, in add_entry
+    for dist in find_distributions(entry, True):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2077, in find_on_path
+    for dist in factory(fullpath):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2135, in distributions_from_metadata
+    if len(os.listdir(path)) == 0:
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_px4_ros_com_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:444: CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target nmpc_node[0m
+[ 40%] Built target odom_publisher
+[ 60%] [32mBuilding CXX object CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o[0m
+[ 80%] [32m[1mLinking CXX executable nmpc_node[0m
+/usr/bin/ld: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o: in function `nmpc_uav::NMPCNode::NMPCNode()':
+nmpc_node.cpp:(.text+0x170b): undefined reference to `nmpc_uav::NMPCNode::path_callback(std::shared_ptr<nav_msgs::msg::Path_<std::allocator<void> > >)'
+/usr/bin/ld: nmpc_node.cpp:(.text+0x186d): undefined reference to `nmpc_uav::NMPCNode::vehicle_status_callback(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)'
+/usr/bin/ld: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o: in function `nmpc_uav::NMPCNode::~NMPCNode()':
+nmpc_node.cpp:(.text+0x27c0): undefined reference to `nmpc_uav::NMPCNode::disarm()'
+/usr/bin/ld: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o: in function `nmpc_uav::NMPCNode::control_loop()':
+nmpc_node.cpp:(.text+0x2ca9): undefined reference to `nmpc_uav::NMPCNode::set_offboard_mode()'
+/usr/bin/ld: nmpc_node.cpp:(.text+0x2cc6): undefined reference to `nmpc_uav::NMPCNode::update_reference()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:216: nmpc_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/nmpc_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

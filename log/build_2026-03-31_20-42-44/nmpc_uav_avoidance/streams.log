@@ -1,0 +1,18 @@
+[0.027s] Invoking command in '/home/hj926217/ros2ws/build/nmpc_uav_avoidance': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/nmpc_uav_avoidance -- -j16 -l16
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target nmpc_node[0m
+[0.103s] [ 40%] Built target odom_publisher
+[0.113s] [ 60%] [32mBuilding CXX object CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o[0m
+[21.904s] [ 80%] [32m[1mLinking CXX executable nmpc_node[0m
+[23.194s] /usr/bin/ld: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o: in function `nmpc_uav::NMPCNode::NMPCNode()':
+[23.194s] nmpc_node.cpp:(.text+0x170b): undefined reference to `nmpc_uav::NMPCNode::path_callback(std::shared_ptr<nav_msgs::msg::Path_<std::allocator<void> > >)'
+[23.195s] /usr/bin/ld: nmpc_node.cpp:(.text+0x186d): undefined reference to `nmpc_uav::NMPCNode::vehicle_status_callback(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)'
+[23.198s] /usr/bin/ld: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o: in function `nmpc_uav::NMPCNode::~NMPCNode()':
+[23.198s] nmpc_node.cpp:(.text+0x27c0): undefined reference to `nmpc_uav::NMPCNode::disarm()'
+[23.200s] /usr/bin/ld: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o: in function `nmpc_uav::NMPCNode::control_loop()':
+[23.200s] nmpc_node.cpp:(.text+0x2ca9): undefined reference to `nmpc_uav::NMPCNode::set_offboard_mode()'
+[23.202s] /usr/bin/ld: nmpc_node.cpp:(.text+0x2cc6): undefined reference to `nmpc_uav::NMPCNode::update_reference()'
+[23.344s] collect2: error: ld returned 1 exit status
+[23.346s] gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:216: nmpc_node] Error 1
+[23.347s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/nmpc_node.dir/all] Error 2
+[23.347s] gmake: *** [Makefile:146: all] Error 2
+[23.353s] Invoked command in '/home/hj926217/ros2ws/build/nmpc_uav_avoidance' returned '2': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/nmpc_uav_avoidance -- -j16 -l16

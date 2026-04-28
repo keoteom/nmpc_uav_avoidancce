@@ -1,0 +1,10 @@
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_locked_setpoint()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:242:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleThrustSetpoint = struct px4_msgs::msg::VehicleThrustSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleThrustSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Khas_low_throttle[m[K’
+  242 |       thrust_msg.[01;31m[Khas_low_throttle[m[K = true;  // 이 플래그를 사용한다고 가정하는 부분
+      |                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:245:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleThrustSetpoint = struct px4_msgs::msg::VehicleThrustSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleThrustSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Khas_low_throttle[m[K’
+  245 |       if (thrust_msg.[01;31m[Khas_low_throttle[m[K) {
+      |                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/aruco_position_sub.dir/build.make:76: CMakeFiles/aruco_position_sub.dir/src/aruco_position_sub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:288: CMakeFiles/aruco_position_sub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

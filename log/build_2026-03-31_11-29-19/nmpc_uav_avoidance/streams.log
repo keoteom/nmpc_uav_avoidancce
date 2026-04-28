@@ -1,0 +1,89 @@
+[0.012s] Invoking command in '/home/hj926217/ros2ws/build/nmpc_uav_avoidance': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/nmpc_uav_avoidance -- -j16 -l16
+[0.061s] [ 40%] Built target odom_publisher
+[0.065s] [ 60%] [32mBuilding CXX object CMakeFiles/nmpc_node.dir/src/main.cpp.o[0m
+[0.066s] [ 80%] [32mBuilding CXX object CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o[0m
+[1.991s] In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+[1.991s]                  from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/main.cpp:6[m[K:
+[1.991s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:[m[K In member function ‘[01m[Knmpc_uav::OpEnResult nmpc_uav::OpEnSolver::solve(const std::vector<double, std::allocator<double> >&)[m[K’:
+[1.992s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:74:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst double*[m[K’ to ‘[01m[Kdouble*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.992s]    74 |             [01;31m[Kparams.data()[m[K,              // parameter vector (135 doubles)
+[1.992s]       |             [01;31m[K~~~~~~~~~~~^~[m[K
+[1.992s]       |                        [01;31m[K|[m[K
+[1.992s]       |                        [01;31m[Kconst double*[m[K
+[1.992s] In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+[1.992s]                  from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:13[m[K:
+[1.992s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:[m[K In member function ‘[01m[Knmpc_uav::OpEnResult nmpc_uav::OpEnSolver::solve(const std::vector<double, std::allocator<double> >&)[m[K’:
+[1.992s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:74:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst double*[m[K’ to ‘[01m[Kdouble*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.992s]    74 |             [01;31m[Kparams.data()[m[K,              // parameter vector (135 doubles)
+[1.992s]       |             [01;31m[K~~~~~~~~~~~^~[m[K
+[1.992s]       |                        [01;31m[K|[m[K
+[1.992s]       |                        [01;31m[Kconst double*[m[K
+[1.992s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:72:71:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Knmpc_uav_obstacleSolverStatus nmpc_uav_obstacle_solve(nmpc_uav_obstacleCache*, double*, const double*, const double*, const double*)[m[K’
+[1.993s]    72 |         nmpc_uav_obstacleSolverStatus status = [01;31m[Knmpc_uav_obstacle_solve([m[K
+[1.993s]       |                                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.993s]    73 | [01;31m[K            cache_,[m[K
+[1.993s]       |             [01;31m[K~~~~~~~[m[K                                                    
+[1.993s]    74 | [01;31m[K            params.data(),              // parameter vector (135 doubles)[m[K
+[1.993s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.993s]    75 | [01;31m[K            u_warm_.empty() ? nullptr : u_warm_.data(),  // warm start[m[K
+[1.993s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+[1.993s]    76 | [01;31m[K            result.solution.data()      // output solution[m[K
+[1.993s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K             
+[1.993s]    77 | [01;31m[K        )[m[K;
+[1.993s]       |         [01;31m[K~[m[K                                                              
+[1.993s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:72:71:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Knmpc_uav_obstacleSolverStatus nmpc_uav_obstacle_solve(nmpc_uav_obstacleCache*, double*, const double*, const double*, const double*)[m[K’
+[1.994s]    72 |         nmpc_uav_obstacleSolverStatus status = [01;31m[Knmpc_uav_obstacle_solve([m[K
+[1.994s]       |                                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.994s]    73 | [01;31m[K            cache_,[m[K
+[1.994s]       |             [01;31m[K~~~~~~~[m[K                                                    
+[1.994s]    74 | [01;31m[K            params.data(),              // parameter vector (135 doubles)[m[K
+[1.994s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.994s]    75 | [01;31m[K            u_warm_.empty() ? nullptr : u_warm_.data(),  // warm start[m[K
+[1.994s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+[1.994s]    76 | [01;31m[K            result.solution.data()      // output solution[m[K
+[1.994s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K             
+[1.994s]    77 | [01;31m[K        )[m[K;
+[1.994s]       |         [01;31m[K~[m[K                                                              
+[1.994s] In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:20[m[K,
+[1.994s]                  from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+[1.994s]                  from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/main.cpp:6[m[K:
+[1.994s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/nmpc_solver/nmpc_uav_obstacle/nmpc_uav_obstacle_bindings.h:152:38:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.995s]   152 | struct nmpc_uav_obstacleSolverStatus [01;36m[Knmpc_uav_obstacle_solve[m[K(struct nmpc_uav_obstacleCache *instance,
+[1.995s]       |                                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.995s] In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:20[m[K,
+[1.995s]                  from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+[1.995s]                  from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:13[m[K:
+[1.995s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/nmpc_solver/nmpc_uav_obstacle/nmpc_uav_obstacle_bindings.h:152:38:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.995s]   152 | struct nmpc_uav_obstacleSolverStatus [01;36m[Knmpc_uav_obstacle_solve[m[K(struct nmpc_uav_obstacleCache *instance,
+[1.995s]       |                                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.995s] In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+[1.995s]                  from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/main.cpp:6[m[K:
+[1.995s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:83:59:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Ksolve_time_us[m[K’; did you mean ‘[01m[Ksolve_time_ns[m[K’?
+[1.995s]    83 |         result.solve_time_ms = static_cast<double>(status.[01;31m[Ksolve_time_us[m[K) / 1000.0;
+[1.995s]       |                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[1.995s]       |                                                           [32m[Ksolve_time_ns[m[K
+[1.995s] In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+[1.996s]                  from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:13[m[K:
+[1.996s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:83:59:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Ksolve_time_us[m[K’; did you mean ‘[01m[Ksolve_time_ns[m[K’?
+[1.996s]    83 |         result.solve_time_ms = static_cast<double>(status.[01;31m[Ksolve_time_us[m[K) / 1000.0;
+[1.996s]       |                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[1.996s]       |                                                           [32m[Ksolve_time_ns[m[K
+[1.996s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:86:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Kexit_code[m[K’
+[1.996s]    86 |         switch (status.[01;31m[Kexit_code[m[K) {
+[1.996s]       |                        [01;31m[K^~~~~~~~~[m[K
+[1.996s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:86:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Kexit_code[m[K’
+[1.996s]    86 |         switch (status.[01;31m[Kexit_code[m[K) {
+[1.996s]       |                        [01;31m[K^~~~~~~~~[m[K
+[1.996s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:96:72:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Kexit_code[m[K’
+[1.996s]    96 |      result.exit_status = "Failed(" + std::to_string(status.[01;31m[Kexit_code[m[K) + ")";
+[1.996s]       |                                                             [01;31m[K^~~~~~~~~[m[K
+[1.996s] 
+[1.996s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:96:72:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Kexit_code[m[K’
+[1.996s]    96 |                 result.exit_status = "Failed(" + std::to_string(status.[01;31m[Kexit_code[m[K) + ")";
+[1.996s]       |                                                                        [01;31m[K^~~~~~~~~[m[K
+[2.483s] gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:76: CMakeFiles/nmpc_node.dir/src/main.cpp.o] Error 1
+[2.483s] gmake[2]: *** Waiting for unfinished jobs....
+[6.194s] gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:90: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o] Error 1
+[6.194s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/nmpc_node.dir/all] Error 2
+[6.194s] gmake: *** [Makefile:146: all] Error 2
+[6.196s] Invoked command in '/home/hj926217/ros2ws/build/nmpc_uav_avoidance' returned '2': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/nmpc_uav_avoidance -- -j16 -l16

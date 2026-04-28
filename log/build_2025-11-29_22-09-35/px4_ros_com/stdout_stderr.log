@@ -1,0 +1,47 @@
+[35m[1mConsolidate compiler generated dependencies of target tf2_control[0m
+[ 14%] Built target frame_transforms
+[ 28%] Built target sensor_combined_listener
+[ 42%] Built target debug_vect_advertiser
+[ 57%] Built target offboard_control
+[ 71%] Built target vehicle_gps_position_listener
+[ 85%] Built target offboard_control_srv
+[ 85%] Built target ament_cmake_python_copy_px4_ros_com
+[ 92%] [32mBuilding CXX object CMakeFiles/tf2_control.dir/src/examples/offboard/tf2_control.cpp.o[0m
+running egg_info
+writing px4_ros_com.egg-info/PKG-INFO
+writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+writing top-level names to px4_ros_com.egg-info/top_level.txt
+reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[ 92%] Built target ament_cmake_python_build_px4_ros_com_egg
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/tf2_control.cpp:[m[K In constructor ‘[01m[KDynamicTFPublisher::DynamicTFPublisher()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/tf2_control.cpp:13:24:[m[K [01;35m[Kwarning: [m[Kparentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+   13 |         rclcpp::QoS qos[01;35m[K(rclcpp::KeepAll())[m[K;  // 모든 메시지를 보관
+      |                        [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/tf2_control.cpp:13:24:[m[K [01;36m[Knote: [m[Kreplace parentheses with braces to declare a variable
+   13 |         rclcpp::QoS qos[01;36m[K(rclcpp::KeepAll())[m[K;  // 모든 메시지를 보관
+      |                        [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                        [31m[K-[m[K
+      |                        [32m[K{[m[K                 [31m[K-[m[K
+      |                                          [32m[K}[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/tf2_control.cpp:19:95:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KDynamicTFPublisher::create_subscription<px4_msgs::msg::VehicleLocalPosition>(const char [35], rclcpp::QoS (&)(rclcpp::KeepAll (*)()), std::_Bind_helper<false, void (DynamicTFPublisher::*)(std::shared_ptr<px4_msgs::msg::VehicleLocalPosition_<std::allocator<void> > >), DynamicTFPublisher*, const std::_Placeholder<1>&>::type)[m[K’
+   19 |         vehicle_position_sub_ = [01;31m[Kthis->create_subscription<px4_msgs::msg::VehicleLocalPosition>([m[K
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   20 | [01;31m[K            "/fmu/out/vehicle_local_position_v1", qos, std::bind(&DynamicTFPublisher::vehicle_position_callback, this, std::placeholders::_1)[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   21 | [01;31m[K        )[m[K;
+      |         [01;31m[K~[m[K                                                                                      
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/tf2_control.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/tf2_control.cpp:20:51:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kqos[m[K’ (type ‘[01m[Krclcpp::QoS(rclcpp::KeepAll (*)())[m[K’) to type ‘[01m[Kconst rclcpp::QoS&[m[K’
+   20 |             "/fmu/out/vehicle_local_position_v1", [01;36m[Kqos[m[K, std::bind(&DynamicTFPublisher::vehicle_position_callback, this, std::placeholders::_1)
+      |                                                   [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/tf2_control.dir/build.make:76: CMakeFiles/tf2_control.dir/src/examples/offboard/tf2_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:256: CMakeFiles/tf2_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

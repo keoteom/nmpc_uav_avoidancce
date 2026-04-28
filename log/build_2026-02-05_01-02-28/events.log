@@ -1,0 +1,564 @@
+[0.000000] (-) TimerEvent: {}
+[0.000433] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000532] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/hj926217/ros2ws/install/px4_msgs')])}
+[0.000597] (px4_ros_com) JobStarted: {'identifier': 'px4_ros_com'}
+[0.039480] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'cmake'}
+[0.042454] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'build'}
+[0.045924] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hj926217/ros2ws/build/px4_ros_com', '--', '-j16', '-l16'], 'cwd': '/home/hj926217/ros2ws/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hj926217'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/hj926217'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '2960'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hj926217/ros2ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hj926217'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hj926217'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/hj926217/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/hj926217-17Z90Q-GAFWK:@/tmp/.ICE-unix/1749,unix/hj926217-17Z90Q-GAFWK:/tmp/.ICE-unix/1749'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/791c11c8_51c8_4eca_ab7c_47edf87510fc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZRIAK3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hj926217/ros2ws/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble')]), 'shell': False}
+[0.097769] (-) TimerEvent: {}
+[0.201549] (-) TimerEvent: {}
+[0.278685] (px4_ros_com) StdoutLine: {'line': b'[  5%] Built target frame_transforms\n'}
+[0.279502] (px4_ros_com) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/path_follower.dir/src/path_follower.cpp.o\x1b[0m\n'}
+[0.279957] (px4_ros_com) StdoutLine: {'line': b'[ 12%] Built target gripper_send_two\n'}
+[0.283636] (px4_ros_com) StdoutLine: {'line': b'[ 17%] Built target gripper_send_zero\n'}
+[0.284360] (px4_ros_com) StdoutLine: {'line': b'[ 22%] Built target vehicle_gps_position_listener\n'}
+[0.293150] (px4_ros_com) StdoutLine: {'line': b'[ 27%] Built target sensor_combined_listener\n'}
+[0.293818] (px4_ros_com) StdoutLine: {'line': b'[ 37%] Built target debug_vect_advertiser\n'}
+[0.294596] (px4_ros_com) StdoutLine: {'line': b'[ 37%] Built target goal_marker_pub\n'}
+[0.306414] (px4_ros_com) StdoutLine: {'line': b'[ 42%] Built target landing_target_sender_mavros\n'}
+[0.307199] (-) TimerEvent: {}
+[0.317483] (px4_ros_com) StdoutLine: {'line': b'[ 60%] Built target tf2_control\n'}
+[0.322423] (px4_ros_com) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o\x1b[0m\n'}
+[0.324668] (px4_ros_com) StdoutLine: {'line': b'[ 60%] Built target goal_to_path\n'}
+[0.325158] (px4_ros_com) StdoutLine: {'line': b'[ 60%] Built target ground_odom\n'}
+[0.325807] (px4_ros_com) StdoutLine: {'line': b'[ 65%] Built target circle_flight\n'}
+[0.329167] (px4_ros_com) StdoutLine: {'line': b'[ 70%] Built target nav_path\n'}
+[0.335135] (px4_ros_com) StdoutLine: {'line': b'[ 75%] Built target aruco_position_sub\n'}
+[0.391587] (px4_ros_com) StdoutLine: {'line': b'[ 80%] Built target offboard_control\n'}
+[0.401533] (px4_ros_com) StdoutLine: {'line': b'[ 85%] Built target offboard_control_srv\n'}
+[0.402455] (px4_ros_com) StdoutLine: {'line': b'[ 90%] Built target vertiport_land\n'}
+[0.408156] (-) TimerEvent: {}
+[0.414375] (px4_ros_com) StdoutLine: {'line': b'[ 95%] Built target aruco_position_publisher_node\n'}
+[0.419879] (px4_ros_com) StdoutLine: {'line': b'[ 95%] Built target ament_cmake_python_copy_px4_ros_com\n'}
+[0.508343] (-) TimerEvent: {}
+[0.609050] (-) TimerEvent: {}
+[0.709784] (-) TimerEvent: {}
+[0.810989] (-) TimerEvent: {}
+[0.911941] (-) TimerEvent: {}
+[1.012726] (-) TimerEvent: {}
+[1.113456] (-) TimerEvent: {}
+[1.214103] (-) TimerEvent: {}
+[1.315402] (-) TimerEvent: {}
+[1.416658] (-) TimerEvent: {}
+[1.517583] (-) TimerEvent: {}
+[1.551399] (px4_ros_com) StdoutLine: {'line': b'running egg_info\n'}
+[1.555089] (px4_ros_com) StdoutLine: {'line': b'writing px4_ros_com.egg-info/PKG-INFO\n'}
+[1.555807] (px4_ros_com) StdoutLine: {'line': b'writing dependency_links to px4_ros_com.egg-info/dependency_links.txt\n'}
+[1.556633] (px4_ros_com) StdoutLine: {'line': b'writing top-level names to px4_ros_com.egg-info/top_level.txt\n'}
+[1.565004] (px4_ros_com) StdoutLine: {'line': b"reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[1.566804] (px4_ros_com) StdoutLine: {'line': b"writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[1.618218] (-) TimerEvent: {}
+[1.663127] (px4_ros_com) StdoutLine: {'line': b'[ 95%] Built target ament_cmake_python_build_px4_ros_com_egg\n'}
+[1.718451] (-) TimerEvent: {}
+[1.819577] (-) TimerEvent: {}
+[1.920255] (-) TimerEvent: {}
+[2.021039] (-) TimerEvent: {}
+[2.122200] (-) TimerEvent: {}
+[2.222888] (-) TimerEvent: {}
+[2.323866] (-) TimerEvent: {}
+[2.424683] (-) TimerEvent: {}
+[2.525373] (-) TimerEvent: {}
+[2.626168] (-) TimerEvent: {}
+[2.726848] (-) TimerEvent: {}
+[2.827457] (-) TimerEvent: {}
+[2.928185] (-) TimerEvent: {}
+[3.028946] (-) TimerEvent: {}
+[3.129832] (-) TimerEvent: {}
+[3.230586] (-) TimerEvent: {}
+[3.331177] (-) TimerEvent: {}
+[3.431888] (-) TimerEvent: {}
+[3.533035] (-) TimerEvent: {}
+[3.633747] (-) TimerEvent: {}
+[3.734576] (-) TimerEvent: {}
+[3.835514] (-) TimerEvent: {}
+[3.936306] (-) TimerEvent: {}
+[4.036989] (-) TimerEvent: {}
+[4.137991] (-) TimerEvent: {}
+[4.238935] (-) TimerEvent: {}
+[4.339611] (-) TimerEvent: {}
+[4.440627] (-) TimerEvent: {}
+[4.541445] (-) TimerEvent: {}
+[4.642389] (-) TimerEvent: {}
+[4.742930] (-) TimerEvent: {}
+[4.843614] (-) TimerEvent: {}
+[4.944469] (-) TimerEvent: {}
+[5.045352] (-) TimerEvent: {}
+[5.146011] (-) TimerEvent: {}
+[5.246768] (-) TimerEvent: {}
+[5.347441] (-) TimerEvent: {}
+[5.448092] (-) TimerEvent: {}
+[5.548861] (-) TimerEvent: {}
+[5.650018] (-) TimerEvent: {}
+[5.750966] (-) TimerEvent: {}
+[5.851863] (-) TimerEvent: {}
+[5.952659] (-) TimerEvent: {}
+[6.053968] (-) TimerEvent: {}
+[6.154708] (-) TimerEvent: {}
+[6.255564] (-) TimerEvent: {}
+[6.356226] (-) TimerEvent: {}
+[6.456919] (-) TimerEvent: {}
+[6.557543] (-) TimerEvent: {}
+[6.658240] (-) TimerEvent: {}
+[6.758869] (-) TimerEvent: {}
+[6.859557] (-) TimerEvent: {}
+[6.960387] (-) TimerEvent: {}
+[7.061158] (-) TimerEvent: {}
+[7.161823] (-) TimerEvent: {}
+[7.262403] (-) TimerEvent: {}
+[7.363046] (-) TimerEvent: {}
+[7.463947] (-) TimerEvent: {}
+[7.565404] (-) TimerEvent: {}
+[7.666314] (-) TimerEvent: {}
+[7.767405] (-) TimerEvent: {}
+[7.868174] (-) TimerEvent: {}
+[7.969186] (-) TimerEvent: {}
+[8.069986] (-) TimerEvent: {}
+[8.170742] (-) TimerEvent: {}
+[8.271410] (-) TimerEvent: {}
+[8.372112] (-) TimerEvent: {}
+[8.473127] (-) TimerEvent: {}
+[8.573946] (-) TimerEvent: {}
+[8.674837] (-) TimerEvent: {}
+[8.775709] (-) TimerEvent: {}
+[8.876417] (-) TimerEvent: {}
+[8.977072] (-) TimerEvent: {}
+[9.077905] (-) TimerEvent: {}
+[9.178730] (-) TimerEvent: {}
+[9.279371] (-) TimerEvent: {}
+[9.380359] (-) TimerEvent: {}
+[9.481263] (-) TimerEvent: {}
+[9.582065] (-) TimerEvent: {}
+[9.682676] (-) TimerEvent: {}
+[9.783571] (-) TimerEvent: {}
+[9.884898] (-) TimerEvent: {}
+[9.985525] (-) TimerEvent: {}
+[10.086132] (-) TimerEvent: {}
+[10.186770] (-) TimerEvent: {}
+[10.287447] (-) TimerEvent: {}
+[10.377020] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GoalAStarOctomapSafeNode::onOctomap(octomap_msgs::msg::Octomap_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.377830] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:240:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Khas_path\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.378178] (px4_ros_com) StderrLine: {'line': b'  240 |         bool \x1b[01;35m\x1b[Khas_path\x1b[m\x1b[K = false;\n'}
+[10.378454] (px4_ros_com) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[10.387692] (-) TimerEvent: {}
+[10.462699] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GoalAStarOctomapSafeNode::publishStopSetpoint()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.463252] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:504:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[10.463582] (px4_ros_com) StderrLine: {'line': b'  504 |         stop_sp.position = start_pose_.pose.\x1b[01;31m\x1b[Kposition\x1b[m\x1b[K;\n'}
+[10.463811] (px4_ros_com) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[10.464026] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[10.464245] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[10.464494] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[10.464718] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[10.464923] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[10.465126] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(const std::array<float, 3>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.465400] (px4_ros_com) StderrLine: {'line': b'   95 |     struct \x1b[01;36m\x1b[Karray\x1b[m\x1b[K\n'}
+[10.465618] (px4_ros_com) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[10.465813] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<float, 3>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.466027] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(std::array<float, 3>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.466346] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.471398] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:508:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ktype_mask\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.471901] (px4_ros_com) StderrLine: {'line': b'  508 |         stop_sp.\x1b[01;31m\x1b[Ktype_mask\x1b[m\x1b[K = px4_msgs::msg::TrajectorySetpoint::POSITION_VALID |\n'}
+[10.472143] (px4_ros_com) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.472395] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:508:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPOSITION_VALID\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[10.472641] (px4_ros_com) StderrLine: {'line': b'  508 |         stop_sp.type_mask = px4_msgs::msg::TrajectorySetpoint::\x1b[01;31m\x1b[KPOSITION_VALID\x1b[m\x1b[K |\n'}
+[10.472851] (px4_ros_com) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.473064] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:509:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVELOCITY_VALID\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[10.473334] (px4_ros_com) StderrLine: {'line': b'  509 |                            px4_msgs::msg::TrajectorySetpoint::\x1b[01;31m\x1b[KVELOCITY_VALID\x1b[m\x1b[K |\n'}
+[10.473594] (px4_ros_com) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.473808] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:510:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KYAW_VALID\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[10.474024] (px4_ros_com) StderrLine: {'line': b'  510 |                            px4_msgs::msg::TrajectorySetpoint::\x1b[01;31m\x1b[KYAW_VALID\x1b[m\x1b[K;\n'}
+[10.474229] (px4_ros_com) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.487857] (-) TimerEvent: {}
+[10.490979] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GoalAStarOctomapSafeNode::onPublishTimer()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.491660] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:647:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[10.491981] (px4_ros_com) StderrLine: {'line': b'  647 |             hover_sp.position = current_pos.pose.\x1b[01;31m\x1b[Kposition\x1b[m\x1b[K;\n'}
+[10.492229] (px4_ros_com) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[10.493505] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[10.493952] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[10.494387] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[10.494809] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[10.495126] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[10.495446] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(const std::array<float, 3>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.495754] (px4_ros_com) StderrLine: {'line': b'   95 |     struct \x1b[01;36m\x1b[Karray\x1b[m\x1b[K\n'}
+[10.496037] (px4_ros_com) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[10.496384] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<float, 3>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.497630] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(std::array<float, 3>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.498024] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.498315] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:650:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ktype_mask\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.498506] (px4_ros_com) StderrLine: {'line': b'  650 |             hover_sp.\x1b[01;31m\x1b[Ktype_mask\x1b[m\x1b[K = px4_msgs::msg::TrajectorySetpoint::POSITION_VALID |\n'}
+[10.498638] (px4_ros_com) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.498760] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:650:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPOSITION_VALID\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[10.498911] (px4_ros_com) StderrLine: {'line': b'  650 |             hover_sp.type_mask = px4_msgs::msg::TrajectorySetpoint::\x1b[01;31m\x1b[KPOSITION_VALID\x1b[m\x1b[K |\n'}
+[10.499045] (px4_ros_com) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.499221] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:651:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KYAW_VALID\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[10.499453] (px4_ros_com) StderrLine: {'line': b'  651 |                                 px4_msgs::msg::TrajectorySetpoint::\x1b[01;31m\x1b[KYAW_VALID\x1b[m\x1b[K;\n'}
+[10.499646] (px4_ros_com) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.499790] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:663:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[10.499937] (px4_ros_com) StderrLine: {'line': b'  663 |         sp.position = target_pose.pose.\x1b[01;31m\x1b[Kposition\x1b[m\x1b[K;\n'}
+[10.500059] (px4_ros_com) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[10.500193] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[10.500366] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[10.500572] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[10.500762] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[10.500953] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[10.501143] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(const std::array<float, 3>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.501371] (px4_ros_com) StderrLine: {'line': b'   95 |     struct \x1b[01;36m\x1b[Karray\x1b[m\x1b[K\n'}
+[10.501575] (px4_ros_com) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[10.501773] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<float, 3>&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.501968] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(std::array<float, 3>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.502165] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:95:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.502454] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:666:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ktype_mask\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.502660] (px4_ros_com) StderrLine: {'line': b'  666 |         sp.\x1b[01;31m\x1b[Ktype_mask\x1b[m\x1b[K = px4_msgs::msg::TrajectorySetpoint::POSITION_VALID |\n'}
+[10.502808] (px4_ros_com) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.502999] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:666:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPOSITION_VALID\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[10.503193] (px4_ros_com) StderrLine: {'line': b'  666 |         sp.type_mask = px4_msgs::msg::TrajectorySetpoint::\x1b[01;31m\x1b[KPOSITION_VALID\x1b[m\x1b[K |\n'}
+[10.503354] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.503541] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:667:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KYAW_VALID\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[10.503741] (px4_ros_com) StderrLine: {'line': b'  667 |                       px4_msgs::msg::TrajectorySetpoint::\x1b[01;31m\x1b[KYAW_VALID\x1b[m\x1b[K;\n'}
+[10.503926] (px4_ros_com) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.504100] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:680:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _position_type = struct std::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct std::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.504305] (px4_ros_com) StderrLine: {'line': b'  680 |                 double dx = sp.position.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K - current_pos.pose.position.x;\n'}
+[10.504499] (px4_ros_com) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.504625] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:681:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _position_type = struct std::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct std::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.504807] (px4_ros_com) StderrLine: {'line': b'  681 |                 double dy = sp.position.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K - current_pos.pose.position.y;\n'}
+[10.504952] (px4_ros_com) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.505100] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:682:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _position_type = struct std::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct std::array<float, 3>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kz\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.505256] (px4_ros_com) StderrLine: {'line': b'  682 |                 double dz = sp.position.\x1b[01;31m\x1b[Kz\x1b[m\x1b[K - current_pos.pose.position.z;\n'}
+[10.505409] (px4_ros_com) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.588025] (-) TimerEvent: {}
+[10.688735] (-) TimerEvent: {}
+[10.789470] (-) TimerEvent: {}
+[10.890432] (-) TimerEvent: {}
+[10.991252] (-) TimerEvent: {}
+[11.091769] (-) TimerEvent: {}
+[11.192565] (-) TimerEvent: {}
+[11.293227] (-) TimerEvent: {}
+[11.393860] (-) TimerEvent: {}
+[11.494614] (-) TimerEvent: {}
+[11.595503] (-) TimerEvent: {}
+[11.696114] (-) TimerEvent: {}
+[11.796706] (-) TimerEvent: {}
+[11.897395] (-) TimerEvent: {}
+[11.998057] (-) TimerEvent: {}
+[12.099351] (-) TimerEvent: {}
+[12.200099] (-) TimerEvent: {}
+[12.300902] (-) TimerEvent: {}
+[12.401871] (-) TimerEvent: {}
+[12.502787] (-) TimerEvent: {}
+[12.603437] (-) TimerEvent: {}
+[12.704121] (-) TimerEvent: {}
+[12.804862] (-) TimerEvent: {}
+[12.905599] (-) TimerEvent: {}
+[13.006330] (-) TimerEvent: {}
+[13.107063] (-) TimerEvent: {}
+[13.207771] (-) TimerEvent: {}
+[13.308449] (-) TimerEvent: {}
+[13.409307] (-) TimerEvent: {}
+[13.509868] (-) TimerEvent: {}
+[13.610596] (-) TimerEvent: {}
+[13.711197] (-) TimerEvent: {}
+[13.811843] (-) TimerEvent: {}
+[13.912589] (-) TimerEvent: {}
+[14.013226] (-) TimerEvent: {}
+[14.113875] (-) TimerEvent: {}
+[14.214544] (-) TimerEvent: {}
+[14.315816] (-) TimerEvent: {}
+[14.416511] (-) TimerEvent: {}
+[14.517120] (-) TimerEvent: {}
+[14.617747] (-) TimerEvent: {}
+[14.718464] (-) TimerEvent: {}
+[14.819330] (-) TimerEvent: {}
+[14.920053] (-) TimerEvent: {}
+[15.021163] (-) TimerEvent: {}
+[15.121829] (-) TimerEvent: {}
+[15.222517] (-) TimerEvent: {}
+[15.323345] (-) TimerEvent: {}
+[15.424141] (-) TimerEvent: {}
+[15.524754] (-) TimerEvent: {}
+[15.625360] (-) TimerEvent: {}
+[15.726020] (-) TimerEvent: {}
+[15.826781] (-) TimerEvent: {}
+[15.927677] (-) TimerEvent: {}
+[16.028348] (-) TimerEvent: {}
+[16.129195] (-) TimerEvent: {}
+[16.229813] (-) TimerEvent: {}
+[16.330595] (-) TimerEvent: {}
+[16.431307] (-) TimerEvent: {}
+[16.532440] (-) TimerEvent: {}
+[16.633138] (-) TimerEvent: {}
+[16.733895] (-) TimerEvent: {}
+[16.834509] (-) TimerEvent: {}
+[16.935591] (-) TimerEvent: {}
+[17.036371] (-) TimerEvent: {}
+[17.137515] (-) TimerEvent: {}
+[17.239048] (-) TimerEvent: {}
+[17.339705] (-) TimerEvent: {}
+[17.440352] (-) TimerEvent: {}
+[17.541187] (-) TimerEvent: {}
+[17.642549] (-) TimerEvent: {}
+[17.743175] (-) TimerEvent: {}
+[17.844110] (-) TimerEvent: {}
+[17.944807] (-) TimerEvent: {}
+[18.045898] (-) TimerEvent: {}
+[18.146561] (-) TimerEvent: {}
+[18.247135] (-) TimerEvent: {}
+[18.347901] (-) TimerEvent: {}
+[18.448709] (-) TimerEvent: {}
+[18.549673] (-) TimerEvent: {}
+[18.650367] (-) TimerEvent: {}
+[18.750948] (-) TimerEvent: {}
+[18.851540] (-) TimerEvent: {}
+[18.952414] (-) TimerEvent: {}
+[19.053356] (-) TimerEvent: {}
+[19.154046] (-) TimerEvent: {}
+[19.254706] (-) TimerEvent: {}
+[19.355357] (-) TimerEvent: {}
+[19.456032] (-) TimerEvent: {}
+[19.556637] (-) TimerEvent: {}
+[19.657524] (-) TimerEvent: {}
+[19.758154] (-) TimerEvent: {}
+[19.858897] (-) TimerEvent: {}
+[19.959745] (-) TimerEvent: {}
+[20.060480] (-) TimerEvent: {}
+[20.161213] (-) TimerEvent: {}
+[20.261920] (-) TimerEvent: {}
+[20.362601] (-) TimerEvent: {}
+[20.463423] (-) TimerEvent: {}
+[20.564167] (-) TimerEvent: {}
+[20.665156] (-) TimerEvent: {}
+[20.765859] (-) TimerEvent: {}
+[20.866687] (-) TimerEvent: {}
+[20.967753] (-) TimerEvent: {}
+[21.068358] (-) TimerEvent: {}
+[21.169088] (-) TimerEvent: {}
+[21.269822] (-) TimerEvent: {}
+[21.370658] (-) TimerEvent: {}
+[21.471538] (-) TimerEvent: {}
+[21.572260] (-) TimerEvent: {}
+[21.673196] (-) TimerEvent: {}
+[21.773764] (-) TimerEvent: {}
+[21.874300] (-) TimerEvent: {}
+[21.975046] (-) TimerEvent: {}
+[22.076029] (-) TimerEvent: {}
+[22.177021] (-) TimerEvent: {}
+[22.277774] (-) TimerEvent: {}
+[22.378396] (-) TimerEvent: {}
+[22.479008] (-) TimerEvent: {}
+[22.579945] (-) TimerEvent: {}
+[22.680533] (-) TimerEvent: {}
+[22.781501] (-) TimerEvent: {}
+[22.882195] (-) TimerEvent: {}
+[22.982804] (-) TimerEvent: {}
+[23.083422] (-) TimerEvent: {}
+[23.184007] (-) TimerEvent: {}
+[23.284623] (-) TimerEvent: {}
+[23.385367] (-) TimerEvent: {}
+[23.486158] (-) TimerEvent: {}
+[23.586757] (-) TimerEvent: {}
+[23.687389] (-) TimerEvent: {}
+[23.788110] (-) TimerEvent: {}
+[23.888768] (-) TimerEvent: {}
+[23.989461] (-) TimerEvent: {}
+[24.090317] (-) TimerEvent: {}
+[24.190961] (-) TimerEvent: {}
+[24.291541] (-) TimerEvent: {}
+[24.392158] (-) TimerEvent: {}
+[24.492885] (-) TimerEvent: {}
+[24.593735] (-) TimerEvent: {}
+[24.694244] (-) TimerEvent: {}
+[24.794862] (-) TimerEvent: {}
+[24.895635] (-) TimerEvent: {}
+[24.996311] (-) TimerEvent: {}
+[25.097309] (-) TimerEvent: {}
+[25.197963] (-) TimerEvent: {}
+[25.298809] (-) TimerEvent: {}
+[25.399655] (-) TimerEvent: {}
+[25.500679] (-) TimerEvent: {}
+[25.602688] (-) TimerEvent: {}
+[25.703438] (-) TimerEvent: {}
+[25.804182] (-) TimerEvent: {}
+[25.905132] (-) TimerEvent: {}
+[26.006104] (-) TimerEvent: {}
+[26.106762] (-) TimerEvent: {}
+[26.208157] (-) TimerEvent: {}
+[26.308718] (-) TimerEvent: {}
+[26.409407] (-) TimerEvent: {}
+[26.510889] (-) TimerEvent: {}
+[26.611404] (-) TimerEvent: {}
+[26.712040] (-) TimerEvent: {}
+[26.812577] (-) TimerEvent: {}
+[26.913221] (-) TimerEvent: {}
+[27.013742] (-) TimerEvent: {}
+[27.114469] (-) TimerEvent: {}
+[27.214994] (-) TimerEvent: {}
+[27.315614] (-) TimerEvent: {}
+[27.416150] (-) TimerEvent: {}
+[27.516979] (-) TimerEvent: {}
+[27.617644] (-) TimerEvent: {}
+[27.718188] (-) TimerEvent: {}
+[27.818709] (-) TimerEvent: {}
+[27.909647] (px4_ros_com) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/goal_astar_octomap_safe_node.dir/build.make:76: CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o] Error 1\n'}
+[27.910953] (px4_ros_com) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/goal_astar_octomap_safe_node.dir/all] Error 2\n'}
+[27.911561] (px4_ros_com) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[27.918942] (-) TimerEvent: {}
+[28.019557] (-) TimerEvent: {}
+[28.120300] (-) TimerEvent: {}
+[28.221077] (-) TimerEvent: {}
+[28.321808] (-) TimerEvent: {}
+[28.422604] (-) TimerEvent: {}
+[28.523438] (-) TimerEvent: {}
+[28.624089] (-) TimerEvent: {}
+[28.724618] (-) TimerEvent: {}
+[28.825201] (-) TimerEvent: {}
+[28.925804] (-) TimerEvent: {}
+[29.026438] (-) TimerEvent: {}
+[29.127257] (-) TimerEvent: {}
+[29.227935] (-) TimerEvent: {}
+[29.328497] (-) TimerEvent: {}
+[29.429048] (-) TimerEvent: {}
+[29.529713] (-) TimerEvent: {}
+[29.630405] (-) TimerEvent: {}
+[29.731169] (-) TimerEvent: {}
+[29.832152] (-) TimerEvent: {}
+[29.932937] (-) TimerEvent: {}
+[30.033554] (-) TimerEvent: {}
+[30.134180] (-) TimerEvent: {}
+[30.234825] (-) TimerEvent: {}
+[30.335479] (-) TimerEvent: {}
+[30.436115] (-) TimerEvent: {}
+[30.536765] (-) TimerEvent: {}
+[30.637497] (-) TimerEvent: {}
+[30.738226] (-) TimerEvent: {}
+[30.838808] (-) TimerEvent: {}
+[30.939365] (-) TimerEvent: {}
+[31.039985] (-) TimerEvent: {}
+[31.140678] (-) TimerEvent: {}
+[31.241448] (-) TimerEvent: {}
+[31.342241] (-) TimerEvent: {}
+[31.442972] (-) TimerEvent: {}
+[31.543688] (-) TimerEvent: {}
+[31.644394] (-) TimerEvent: {}
+[31.745349] (-) TimerEvent: {}
+[31.846015] (-) TimerEvent: {}
+[31.946670] (-) TimerEvent: {}
+[32.047315] (-) TimerEvent: {}
+[32.147879] (-) TimerEvent: {}
+[32.248523] (-) TimerEvent: {}
+[32.349302] (-) TimerEvent: {}
+[32.450135] (-) TimerEvent: {}
+[32.551071] (-) TimerEvent: {}
+[32.651879] (-) TimerEvent: {}
+[32.752625] (-) TimerEvent: {}
+[32.853187] (-) TimerEvent: {}
+[32.953874] (-) TimerEvent: {}
+[33.054578] (-) TimerEvent: {}
+[33.155751] (-) TimerEvent: {}
+[33.256419] (-) TimerEvent: {}
+[33.356957] (-) TimerEvent: {}
+[33.457731] (-) TimerEvent: {}
+[33.558585] (-) TimerEvent: {}
+[33.659375] (-) TimerEvent: {}
+[33.759964] (-) TimerEvent: {}
+[33.860668] (-) TimerEvent: {}
+[33.961195] (-) TimerEvent: {}
+[34.061868] (-) TimerEvent: {}
+[34.162564] (-) TimerEvent: {}
+[34.263435] (-) TimerEvent: {}
+[34.364734] (-) TimerEvent: {}
+[34.466318] (-) TimerEvent: {}
+[34.567095] (-) TimerEvent: {}
+[34.667901] (-) TimerEvent: {}
+[34.768492] (-) TimerEvent: {}
+[34.869111] (-) TimerEvent: {}
+[34.969873] (-) TimerEvent: {}
+[35.070612] (-) TimerEvent: {}
+[35.171309] (-) TimerEvent: {}
+[35.271929] (-) TimerEvent: {}
+[35.372703] (-) TimerEvent: {}
+[35.473398] (-) TimerEvent: {}
+[35.574070] (-) TimerEvent: {}
+[35.674890] (-) TimerEvent: {}
+[35.775835] (-) TimerEvent: {}
+[35.877049] (-) TimerEvent: {}
+[35.978780] (-) TimerEvent: {}
+[36.079653] (-) TimerEvent: {}
+[36.180224] (-) TimerEvent: {}
+[36.281028] (-) TimerEvent: {}
+[36.381620] (-) TimerEvent: {}
+[36.482201] (-) TimerEvent: {}
+[36.582978] (-) TimerEvent: {}
+[36.683652] (-) TimerEvent: {}
+[36.784421] (-) TimerEvent: {}
+[36.885034] (-) TimerEvent: {}
+[36.985712] (-) TimerEvent: {}
+[37.086360] (-) TimerEvent: {}
+[37.187026] (-) TimerEvent: {}
+[37.287739] (-) TimerEvent: {}
+[37.388500] (-) TimerEvent: {}
+[37.489215] (-) TimerEvent: {}
+[37.589870] (-) TimerEvent: {}
+[37.691248] (-) TimerEvent: {}
+[37.791872] (-) TimerEvent: {}
+[37.892561] (-) TimerEvent: {}
+[37.993493] (-) TimerEvent: {}
+[38.094296] (-) TimerEvent: {}
+[38.194905] (-) TimerEvent: {}
+[38.295543] (-) TimerEvent: {}
+[38.396404] (-) TimerEvent: {}
+[38.497033] (-) TimerEvent: {}
+[38.597708] (-) TimerEvent: {}
+[38.698410] (-) TimerEvent: {}
+[38.799244] (-) TimerEvent: {}
+[38.899867] (-) TimerEvent: {}
+[39.000699] (-) TimerEvent: {}
+[39.101332] (-) TimerEvent: {}
+[39.202014] (-) TimerEvent: {}
+[39.302767] (-) TimerEvent: {}
+[39.403418] (-) TimerEvent: {}
+[39.503981] (-) TimerEvent: {}
+[39.604690] (-) TimerEvent: {}
+[39.705442] (-) TimerEvent: {}
+[39.706019] (px4_ros_com) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable path_follower\x1b[0m\n'}
+[39.805609] (-) TimerEvent: {}
+[39.906292] (-) TimerEvent: {}
+[40.006937] (-) TimerEvent: {}
+[40.107659] (-) TimerEvent: {}
+[40.208301] (-) TimerEvent: {}
+[40.308891] (-) TimerEvent: {}
+[40.409495] (-) TimerEvent: {}
+[40.510227] (-) TimerEvent: {}
+[40.611047] (-) TimerEvent: {}
+[40.711708] (-) TimerEvent: {}
+[40.812387] (-) TimerEvent: {}
+[40.913002] (-) TimerEvent: {}
+[41.013929] (-) TimerEvent: {}
+[41.114681] (-) TimerEvent: {}
+[41.215327] (-) TimerEvent: {}
+[41.315894] (-) TimerEvent: {}
+[41.416560] (-) TimerEvent: {}
+[41.517328] (-) TimerEvent: {}
+[41.618160] (-) TimerEvent: {}
+[41.719182] (-) TimerEvent: {}
+[41.819849] (-) TimerEvent: {}
+[41.920522] (-) TimerEvent: {}
+[42.021339] (-) TimerEvent: {}
+[42.122092] (-) TimerEvent: {}
+[42.222762] (-) TimerEvent: {}
+[42.323847] (-) TimerEvent: {}
+[42.424503] (-) TimerEvent: {}
+[42.525206] (-) TimerEvent: {}
+[42.625979] (-) TimerEvent: {}
+[42.727019] (-) TimerEvent: {}
+[42.827771] (-) TimerEvent: {}
+[42.928507] (-) TimerEvent: {}
+[43.029385] (-) TimerEvent: {}
+[43.130128] (-) TimerEvent: {}
+[43.230774] (-) TimerEvent: {}
+[43.331578] (-) TimerEvent: {}
+[43.432253] (-) TimerEvent: {}
+[43.533014] (-) TimerEvent: {}
+[43.616521] (px4_ros_com) StdoutLine: {'line': b'[ 97%] Built target path_follower\n'}
+[43.619417] (px4_ros_com) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[43.625599] (px4_ros_com) CommandEnded: {'returncode': 2}
+[43.633262] (-) TimerEvent: {}
+[43.662501] (px4_ros_com) JobEnded: {'identifier': 'px4_ros_com', 'rc': 2}
+[43.673853] (-) EventReactorShutdown: {}

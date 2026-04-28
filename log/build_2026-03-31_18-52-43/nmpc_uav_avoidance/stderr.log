@@ -1,0 +1,40 @@
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:[m[K In member function ‘[01m[Kvoid nmpc_uav::NMPCNode::control_loop()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:308:9:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint ref_start[m[K’
+  308 |     int [01;31m[Kref_start[m[K = 11;
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:283:9:[m[K [01;36m[Knote: [m[K‘[01m[Kint ref_start[m[K’ previously declared here
+  283 |     int [01;36m[Kref_start[m[K = 11;
+      |         [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:326:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kcy[m[K’ was not declared in this scope; did you mean ‘[01m[Kry[m[K’?
+  326 |         params[ref_start + j * 3 + 0] =  [01;31m[Kcy[m[K * rx + sy * ry;
+      |                                          [01;31m[K^~[m[K
+      |                                          [32m[Kry[m[K
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:326:52:[m[K [01;31m[Kerror: [m[K‘[01m[Ksy[m[K’ was not declared in this scope; did you mean ‘[01m[Kry[m[K’?
+  326 |         params[ref_start + j * 3 + 0] =  cy * rx + [01;31m[Ksy[m[K * ry;
+      |                                                    [01;31m[K^~[m[K
+      |                                                    [32m[Kry[m[K
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:332:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs_yc[m[K’ was not declared in this scope
+  332 |     params[131] = [01;31m[Kobs_yc[m[K[0]; params[132] = obs_yc[1]; params[133] = obs_yc[2];
+      |                   [01;31m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:9[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:13[m[K:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:338:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpos_yc[m[K’ was not declared in this scope
+  338 |         [01;31m[Kpos_yc[m[K[0], pos_yc[1], pos_yc[2],
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:339:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_yc[m[K’ was not declared in this scope
+  339 |         [01;31m[Kvel_yc[m[K[0], vel_yc[1], vel_yc[2],
+      |         [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:90: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/nmpc_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

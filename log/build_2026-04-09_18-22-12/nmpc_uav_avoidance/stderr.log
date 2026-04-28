@@ -1,0 +1,21 @@
+In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/main.cpp:6[m[K:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:40:49:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kstd::array<double, 3> nmpc_uav::interpolate_path(double)[m[K’ cannot have cv-qualifier
+   40 | std::array<double,3> interpolate_path(double s) [01;31m[Kconst[m[K;
+      |                                                 [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:1[m[K:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:40:49:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kstd::array<double, 3> nmpc_uav::interpolate_path(double)[m[K’ cannot have cv-qualifier
+   40 | std::array<double,3> interpolate_path(double s) [01;31m[Kconst[m[K;
+      |                                                 [01;31m[K^~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:214:22:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::array<double, 3> nmpc_uav::NMPCNode::interpolate_path(double) const[m[K’
+  214 | std::array<double,3> [01;31m[KNMPCNode[m[K::interpolate_path(double s) const {
+      |                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:214:22:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kstd::array<double, 3> nmpc_uav::NMPCNode::interpolate_path(double) const[m[K’
+In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:1[m[K:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:65:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass nmpc_uav::NMPCNode[m[K’ defined here
+   65 | class [01;36m[KNMPCNode[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:76: CMakeFiles/nmpc_node.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:90: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/nmpc_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

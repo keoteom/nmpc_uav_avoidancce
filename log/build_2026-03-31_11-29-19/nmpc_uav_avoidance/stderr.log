@@ -1,0 +1,84 @@
+In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/main.cpp:6[m[K:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:[m[K In member function ‘[01m[Knmpc_uav::OpEnResult nmpc_uav::OpEnSolver::solve(const std::vector<double, std::allocator<double> >&)[m[K’:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:74:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst double*[m[K’ to ‘[01m[Kdouble*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   74 |             [01;31m[Kparams.data()[m[K,              // parameter vector (135 doubles)
+      |             [01;31m[K~~~~~~~~~~~^~[m[K
+      |                        [01;31m[K|[m[K
+      |                        [01;31m[Kconst double*[m[K
+In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:13[m[K:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:[m[K In member function ‘[01m[Knmpc_uav::OpEnResult nmpc_uav::OpEnSolver::solve(const std::vector<double, std::allocator<double> >&)[m[K’:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:74:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst double*[m[K’ to ‘[01m[Kdouble*[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   74 |             [01;31m[Kparams.data()[m[K,              // parameter vector (135 doubles)
+      |             [01;31m[K~~~~~~~~~~~^~[m[K
+      |                        [01;31m[K|[m[K
+      |                        [01;31m[Kconst double*[m[K
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:72:71:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Knmpc_uav_obstacleSolverStatus nmpc_uav_obstacle_solve(nmpc_uav_obstacleCache*, double*, const double*, const double*, const double*)[m[K’
+   72 |         nmpc_uav_obstacleSolverStatus status = [01;31m[Knmpc_uav_obstacle_solve([m[K
+      |                                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   73 | [01;31m[K            cache_,[m[K
+      |             [01;31m[K~~~~~~~[m[K                                                    
+   74 | [01;31m[K            params.data(),              // parameter vector (135 doubles)[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   75 | [01;31m[K            u_warm_.empty() ? nullptr : u_warm_.data(),  // warm start[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+   76 | [01;31m[K            result.solution.data()      // output solution[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K             
+   77 | [01;31m[K        )[m[K;
+      |         [01;31m[K~[m[K                                                              
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:72:71:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Knmpc_uav_obstacleSolverStatus nmpc_uav_obstacle_solve(nmpc_uav_obstacleCache*, double*, const double*, const double*, const double*)[m[K’
+   72 |         nmpc_uav_obstacleSolverStatus status = [01;31m[Knmpc_uav_obstacle_solve([m[K
+      |                                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   73 | [01;31m[K            cache_,[m[K
+      |             [01;31m[K~~~~~~~[m[K                                                    
+   74 | [01;31m[K            params.data(),              // parameter vector (135 doubles)[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   75 | [01;31m[K            u_warm_.empty() ? nullptr : u_warm_.data(),  // warm start[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+   76 | [01;31m[K            result.solution.data()      // output solution[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K             
+   77 | [01;31m[K        )[m[K;
+      |         [01;31m[K~[m[K                                                              
+In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:20[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/main.cpp:6[m[K:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/nmpc_solver/nmpc_uav_obstacle/nmpc_uav_obstacle_bindings.h:152:38:[m[K [01;36m[Knote: [m[Kdeclared here
+  152 | struct nmpc_uav_obstacleSolverStatus [01;36m[Knmpc_uav_obstacle_solve[m[K(struct nmpc_uav_obstacleCache *instance,
+      |                                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:20[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:13[m[K:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/nmpc_solver/nmpc_uav_obstacle/nmpc_uav_obstacle_bindings.h:152:38:[m[K [01;36m[Knote: [m[Kdeclared here
+  152 | struct nmpc_uav_obstacleSolverStatus [01;36m[Knmpc_uav_obstacle_solve[m[K(struct nmpc_uav_obstacleCache *instance,
+      |                                      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/main.cpp:6[m[K:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:83:59:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Ksolve_time_us[m[K’; did you mean ‘[01m[Ksolve_time_ns[m[K’?
+   83 |         result.solve_time_ms = static_cast<double>(status.[01;31m[Ksolve_time_us[m[K) / 1000.0;
+      |                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                           [32m[Ksolve_time_ns[m[K
+In file included from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/nmpc_node.hpp:20[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:13[m[K:
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:83:59:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Ksolve_time_us[m[K’; did you mean ‘[01m[Ksolve_time_ns[m[K’?
+   83 |         result.solve_time_ms = static_cast<double>(status.[01;31m[Ksolve_time_us[m[K) / 1000.0;
+      |                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                           [32m[Ksolve_time_ns[m[K
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:86:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Kexit_code[m[K’
+   86 |         switch (status.[01;31m[Kexit_code[m[K) {
+      |                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:86:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Kexit_code[m[K’
+   86 |         switch (status.[01;31m[Kexit_code[m[K) {
+      |                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:96:72:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Kexit_code[m[K’
+   96 |      result.exit_status = "Failed(" + std::to_string(status.[01;31m[Kexit_code[m[K) + ")";
+      |                                                             [01;31m[K^~~~~~~~~[m[K
+
+[01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/include/nmpc_uav_avoidance/open_solver.hpp:96:72:[m[K [01;31m[Kerror: [m[K‘[01m[Knmpc_uav_obstacleSolverStatus[m[K’ {aka ‘[01m[Kstruct nmpc_uav_obstacleSolverStatus[m[K’} has no member named ‘[01m[Kexit_code[m[K’
+   96 |                 result.exit_status = "Failed(" + std::to_string(status.[01;31m[Kexit_code[m[K) + ")";
+      |                                                                        [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:76: CMakeFiles/nmpc_node.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:90: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/nmpc_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

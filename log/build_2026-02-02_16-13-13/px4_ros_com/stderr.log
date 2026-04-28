@@ -1,0 +1,43 @@
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kvoid GoalAStarOctomapSafeNode::onOctomap(octomap_msgs::msg::Octomap_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:172:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<octomap::AbstractOcTree>[m[K’ has no member named ‘[01m[Krelease[m[K’
+  172 |     auto *oct = dynamic_cast<octomap::OcTree*>(tree.[01;31m[Krelease[m[K());
+      |                                                     [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = interactive_markers::InteractiveMarkerServer; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; _Tp = interactive_markers::InteractiveMarkerServer][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = interactive_markers::InteractiveMarkerServer; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; _Tp = interactive_markers::InteractiveMarkerServer; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<interactive_markers::InteractiveMarkerServer>][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; _Tp = interactive_markers::InteractiveMarkerServer; _Alloc = std::allocator<interactive_markers::InteractiveMarkerServer>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = interactive_markers::InteractiveMarkerServer; _Alloc = std::allocator<interactive_markers::InteractiveMarkerServer>; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<interactive_markers::InteractiveMarkerServer>; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; _Tp = interactive_markers::InteractiveMarkerServer; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<interactive_markers::InteractiveMarkerServer>; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; _Tp = interactive_markers::InteractiveMarkerServer][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = interactive_markers::InteractiveMarkerServer; _Alloc = std::allocator<interactive_markers::InteractiveMarkerServer>; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = interactive_markers::InteractiveMarkerServer; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}][m[K’
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:83:77:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kinteractive_markers::InteractiveMarkerServer::InteractiveMarkerServer(std::shared_ptr<rclcpp::Node>, const char [24])[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:8[m[K:
+[01m[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:89:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class NodePtr> interactive_markers::InteractiveMarkerServer::InteractiveMarkerServer(const string&, NodePtr, const rclcpp::QoS&, const rclcpp::QoS&)[m[K’
+   89 |   [01;36m[KInteractiveMarkerServer[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:89:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::forward<std::shared_ptr<rclcpp::Node> >((* & __args#0))[m[K’ (type ‘[01m[Kstd::shared_ptr<rclcpp::Node>[m[K’) to type ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+  162 |         { [01;36m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:8[m[K:
+[01m[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:78:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kinteractive_markers::InteractiveMarkerServer::InteractiveMarkerServer(const string&, rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeTopicsInterface::SharedPtr, rclcpp::node_interfaces::NodeServicesInterface::SharedPtr, const rclcpp::QoS&, const rclcpp::QoS&)[m[K’
+   78 |   [01;36m[KInteractiveMarkerServer[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:78:3:[m[K [01;36m[Knote: [m[K  candidate expects 8 arguments, 2 provided
+gmake[2]: *** [CMakeFiles/goal_astar_octomap_safe_node.dir/build.make:76: CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/goal_astar_octomap_safe_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

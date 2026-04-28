@@ -1,0 +1,143 @@
+[0.000000] (-) TimerEvent: {}
+[0.001363] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.002206] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/hj926217/ros2ws/install/px4_msgs')])}
+[0.002774] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.022278] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.024654] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'build'}
+[0.026079] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hj926217/ros2ws/build/px4_msgs', '--', '-j16', '-l16'], 'cwd': '/home/hj926217/ros2ws/build/px4_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hj926217'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/lib:'), ('HOME', '/home/hj926217'), ('OLDPWD', '/home/hj926217/ros2ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '10991'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'hj926217'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hj926217'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/home/hj926217/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/hj926217-17Z90Q-GAFWK:@/tmp/.ICE-unix/1701,unix/hj926217-17Z90Q-GAFWK:/tmp/.ICE-unix/1701'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/94d257b5_2679_499c_9f90_91a52361575f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WT6QH3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hj926217/ros2ws/build/px4_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.099227] (-) TimerEvent: {}
+[0.199803] (-) TimerEvent: {}
+[0.302936] (-) TimerEvent: {}
+[0.403677] (-) TimerEvent: {}
+[0.504234] (-) TimerEvent: {}
+[0.605023] (-) TimerEvent: {}
+[0.705858] (-) TimerEvent: {}
+[0.808138] (-) TimerEvent: {}
+[0.910178] (-) TimerEvent: {}
+[1.010798] (-) TimerEvent: {}
+[1.112720] (-) TimerEvent: {}
+[1.213335] (-) TimerEvent: {}
+[1.313957] (-) TimerEvent: {}
+[1.414656] (-) TimerEvent: {}
+[1.515274] (-) TimerEvent: {}
+[1.616629] (-) TimerEvent: {}
+[1.717176] (-) TimerEvent: {}
+[1.817670] (-) TimerEvent: {}
+[1.918182] (-) TimerEvent: {}
+[2.021683] (-) TimerEvent: {}
+[2.122262] (-) TimerEvent: {}
+[2.222883] (-) TimerEvent: {}
+[2.323859] (-) TimerEvent: {}
+[2.398241] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target px4_msgs__cpp\n'}
+[2.424297] (-) TimerEvent: {}
+[2.524893] (-) TimerEvent: {}
+[2.625441] (-) TimerEvent: {}
+[2.699521] (px4_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_px4_msgs\n'}
+[2.726332] (-) TimerEvent: {}
+[2.827596] (-) TimerEvent: {}
+[2.929016] (-) TimerEvent: {}
+[3.027687] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/action_request__type_support.cpp.o\x1b[0m\n'}
+[3.029402] (-) TimerEvent: {}
+[3.130104] (-) TimerEvent: {}
+[3.232671] (-) TimerEvent: {}
+[3.333274] (-) TimerEvent: {}
+[3.433844] (-) TimerEvent: {}
+[3.534688] (-) TimerEvent: {}
+[3.635354] (-) TimerEvent: {}
+[3.736053] (-) TimerEvent: {}
+[3.839713] (-) TimerEvent: {}
+[3.940344] (-) TimerEvent: {}
+[4.041073] (-) TimerEvent: {}
+[4.141694] (-) TimerEvent: {}
+[4.242277] (-) TimerEvent: {}
+[4.256667] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/airspeed_wind__type_support.cpp.o\x1b[0m\n'}
+[4.342363] (-) TimerEvent: {}
+[4.443087] (-) TimerEvent: {}
+[4.544567] (-) TimerEvent: {}
+[4.645269] (-) TimerEvent: {}
+[4.746813] (-) TimerEvent: {}
+[4.847369] (-) TimerEvent: {}
+[4.949835] (-) TimerEvent: {}
+[5.050695] (-) TimerEvent: {}
+[5.151208] (-) TimerEvent: {}
+[5.246197] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/arming_check_reply__type_support.cpp.o\x1b[0m\n'}
+[5.251425] (-) TimerEvent: {}
+[5.352091] (-) TimerEvent: {}
+[5.452763] (-) TimerEvent: {}
+[5.553347] (-) TimerEvent: {}
+[5.653879] (-) TimerEvent: {}
+[5.754567] (-) TimerEvent: {}
+[5.855668] (-) TimerEvent: {}
+[5.956269] (-) TimerEvent: {}
+[6.057896] (-) TimerEvent: {}
+[6.159672] (-) TimerEvent: {}
+[6.260629] (-) TimerEvent: {}
+[6.310775] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/arming_check_request__type_support.cpp.o\x1b[0m\n'}
+[6.360789] (-) TimerEvent: {}
+[6.461303] (-) TimerEvent: {}
+[6.561832] (-) TimerEvent: {}
+[6.662834] (-) TimerEvent: {}
+[6.763498] (-) TimerEvent: {}
+[6.864696] (-) TimerEvent: {}
+[6.965438] (-) TimerEvent: {}
+[7.066244] (-) TimerEvent: {}
+[7.168527] (-) TimerEvent: {}
+[7.269107] (-) TimerEvent: {}
+[7.311291] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/autotune_attitude_control_status__type_support.cpp.o\x1b[0m\n'}
+[7.369252] (-) TimerEvent: {}
+[7.469979] (-) TimerEvent: {}
+[7.571196] (-) TimerEvent: {}
+[7.671819] (-) TimerEvent: {}
+[7.773147] (-) TimerEvent: {}
+[7.876391] (-) TimerEvent: {}
+[7.976952] (-) TimerEvent: {}
+[8.077737] (-) TimerEvent: {}
+[8.178746] (-) TimerEvent: {}
+[8.279833] (-) TimerEvent: {}
+[8.380358] (-) TimerEvent: {}
+[8.393319] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/battery_status__type_support.cpp.o\x1b[0m\n'}
+[8.480515] (-) TimerEvent: {}
+[8.581023] (-) TimerEvent: {}
+[8.681579] (-) TimerEvent: {}
+[8.785243] (-) TimerEvent: {}
+[8.886678] (-) TimerEvent: {}
+[8.989670] (-) TimerEvent: {}
+[9.090211] (-) TimerEvent: {}
+[9.190734] (-) TimerEvent: {}
+[9.292844] (-) TimerEvent: {}
+[9.393377] (-) TimerEvent: {}
+[9.430786] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/buffer128__type_support.cpp.o\x1b[0m\n'}
+[9.493621] (-) TimerEvent: {}
+[9.594095] (-) TimerEvent: {}
+[9.694644] (-) TimerEvent: {}
+[9.795187] (-) TimerEvent: {}
+[9.896282] (-) TimerEvent: {}
+[9.997111] (-) TimerEvent: {}
+[10.097615] (-) TimerEvent: {}
+[10.199305] (-) TimerEvent: {}
+[10.299818] (-) TimerEvent: {}
+[10.401642] (-) TimerEvent: {}
+[10.463888] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/button_event__type_support.cpp.o\x1b[0m\n'}
+[10.501772] (-) TimerEvent: {}
+[10.602249] (-) TimerEvent: {}
+[10.702828] (-) TimerEvent: {}
+[10.803361] (-) TimerEvent: {}
+[10.906345] (-) TimerEvent: {}
+[11.006937] (-) TimerEvent: {}
+[11.107850] (-) TimerEvent: {}
+[11.209362] (-) TimerEvent: {}
+[11.309854] (-) TimerEvent: {}
+[11.410347] (-) TimerEvent: {}
+[11.445126] (px4_msgs) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/camera_capture__type_support.cpp.o\x1b[0m\n'}
+[11.512656] (-) TimerEvent: {}
+[11.613155] (-) TimerEvent: {}
+[11.713673] (-) TimerEvent: {}
+[11.814197] (-) TimerEvent: {}
+[11.846202] (px4_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:1836: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/px4_msgs/msg/detail/camera_capture__type_support.cpp.o] Interrupt\n'}
+[11.846806] (px4_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/px4_msgs__rosidl_typesupport_introspection_cpp.dir/all] Interrupt\n'}
+[11.847210] (px4_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[11.854288] (px4_msgs) CommandEnded: {'returncode': -2}
+[11.914517] (-) TimerEvent: {}
+[11.946563] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[11.957995] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[11.958090] (-) EventReactorShutdown: {}

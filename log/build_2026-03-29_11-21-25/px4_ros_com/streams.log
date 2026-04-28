@@ -1,0 +1,62 @@
+[0.015s] Invoking command in '/home/hj926217/ros2ws/build/px4_ros_com': AMENT_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16
+[0.111s] [35m[1mConsolidate compiler generated dependencies of target rrt_star_planner[0m
+[0.157s] [  4%] Built target frame_transforms
+[0.165s] [  8%] Built target vehicle_gps_position_listener
+[0.166s] [ 21%] Built target vtol_mission_node
+[0.166s] [ 13%] Built target gripper_send_two
+[0.166s] [ 26%] Built target goal_marker_pub
+[0.166s] [ 39%] Built target global_path
+[0.168s] [ 39%] Built target goal_to_path
+[0.169s] [ 39%] Built target landing_target_sender_mavros
+[0.169s] [ 43%] Built target sensor_combined_listener
+[0.170s] [ 45%] [32mBuilding CXX object CMakeFiles/rrt_star_planner.dir/src/rrt_star_planner.cpp.o[0m
+[0.170s] [ 50%] Built target gripper_send_zero
+[0.175s] [ 63%] Built target nav_path
+[0.175s] [ 63%] Built target path_follower
+[0.178s] [ 63%] Built target ground_odom
+[0.178s] [ 17%] Built target debug_vect_advertiser
+[0.184s] [ 67%] Built target local_path
+[0.219s] [ 71%] Built target aruco_position_sub
+[0.222s] [ 76%] Built target circle_flight
+[0.225s] [ 80%] Built target tf2_control
+[0.227s] [ 80%] Built target ament_cmake_python_copy_px4_ros_com
+[0.227s] [ 84%] Built target offboard_control
+[0.228s] [ 89%] Built target vertiport_land
+[0.229s] [ 93%] Built target aruco_position_publisher_node
+[0.231s] [ 97%] Built target offboard_control_srv
+[0.470s] running egg_info
+[0.471s] writing px4_ros_com.egg-info/PKG-INFO
+[0.471s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.471s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.473s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.474s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.502s] [ 97%] Built target ament_cmake_python_build_px4_ros_com_egg
+[2.893s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:[m[K In member function ‘[01m[Kvoid RRTStarPlanner::planPath()[m[K’:
+[2.893s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:121:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+[2.893s]   121 |             double new_x = /* ... */[01;31m[K;[m[K double new_y = /* ... */; double new_z = /* ... */;
+[2.894s]       |                                     [01;31m[K^[m[K
+[2.894s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:121:63:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+[2.894s]   121 |           double new_x = /* ... */; double new_y = /* ... */[01;31m[K;[m[K double new_z = /* ... */;
+[2.894s]       |                                                             [01;31m[K^[m[K
+[2.894s] 
+[2.894s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:121:89:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+[2.894s]   121 |  new_x = /* ... */; double new_y = /* ... */; double new_z = /* ... */[01;31m[K;[m[K
+[2.894s]       |                                                                       [01;31m[K^[m[K
+[2.894s] 
+[2.894s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:127:66:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+[2.894s]   127 |             double dist_cost = /* distance from nearest to new */[01;31m[K;[m[K
+[2.894s]       |                                                                  [01;31m[K^[m[K
+[2.894s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:131:52:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K][m[K’ token
+[2.894s]   131 |             double total_cost = tree[/*nearest_id*/[01;31m[K][m[K.cost + dist_cost + deviation_penalty;
+[2.894s]       |                                                    [01;31m[K^[m[K
+[2.894s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:131:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktotal_cost[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.894s]   131 |             double [01;35m[Ktotal_cost[m[K = tree[/*nearest_id*/].cost + dist_cost + deviation_penalty;
+[2.894s]       |                    [01;35m[K^~~~~~~~~~[m[K
+[2.894s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:[m[K In member function ‘[01m[Kvoid RRTStarPlanner::publishAndSavePath(const std::vector<RRTNode>&)[m[K’:
+[2.894s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:141:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktree[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.894s]   141 |     void publishAndSavePath([01;35m[Kconst std::vector<RRTNode>& tree[m[K /*, int goal_id*/) {
+[2.894s]       |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[7.404s] gmake[2]: *** [CMakeFiles/rrt_star_planner.dir/build.make:76: CMakeFiles/rrt_star_planner.dir/src/rrt_star_planner.cpp.o] Error 1
+[7.405s] gmake[1]: *** [CMakeFiles/Makefile2:184: CMakeFiles/rrt_star_planner.dir/all] Error 2
+[7.405s] gmake: *** [Makefile:146: all] Error 2
+[7.407s] Invoked command in '/home/hj926217/ros2ws/build/px4_ros_com' returned '2': AMENT_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16

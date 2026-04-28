@@ -1,0 +1,45 @@
+[35m[1mConsolidate compiler generated dependencies of target local_path[0m
+[  4%] Built target gripper_send_two
+[ 11%] Built target frame_transforms
+[ 14%] Built target gripper_send_zero
+[ 19%] Built target goal_marker_pub
+[ 23%] Built target landing_target_sender_mavros
+[ 28%] Built target path_follower
+[ 33%] Built target global_path
+[ 35%] [32mBuilding CXX object CMakeFiles/local_path.dir/src/local_path.cpp.o[0m
+[ 40%] Built target circle_flight
+[ 45%] Built target tf2_control
+[ 50%] Built target offboard_control
+[ 54%] Built target offboard_control_srv
+[ 59%] Built target aruco_position_publisher_node
+[ 64%] Built target aruco_position_sub
+[ 64%] Built target ament_cmake_python_copy_px4_ros_com
+[ 69%] Built target sensor_combined_listener
+[ 73%] Built target vertiport_land
+[ 78%] Built target debug_vect_advertiser
+[ 83%] Built target vehicle_gps_position_listener
+[ 88%] Built target ground_odom
+[ 92%] Built target nav_path
+[ 97%] Built target goal_to_path
+running egg_info
+writing px4_ros_com.egg-info/PKG-INFO
+writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+writing top-level names to px4_ros_com.egg-info/top_level.txt
+reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_px4_ros_com_egg
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/local_path.cpp:287:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kreminder[m[K’ has not been declared
+  287 | e void cellToXYZ(int x, int y, int z, double& X, double& Y, [01;31m[Kreminder[m[K: the tool instructions say
+      |                                                             [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/local_path.cpp:287:76:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K:[m[K’ token
+  287 | ellToXYZ(int x, int y, int z, double& X, double& Y, reminder[01;31m[K:[m[K the tool instructions say
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/local_path.cpp:[m[K In member function ‘[01m[Kvoid OctomapLocalGoalPlanner::cellToXYZ(int, int, int, double&, double&, int) const[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/local_path.cpp:291:5:[m[K [01;31m[Kerror: [m[K‘[01m[KZ[m[K’ was not declared in this scope
+  291 |     [01;31m[KZ[m[K = z_min_ + z * res_;
+      |     [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/local_path.dir/build.make:76: CMakeFiles/local_path.dir/src/local_path.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:180: CMakeFiles/local_path.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

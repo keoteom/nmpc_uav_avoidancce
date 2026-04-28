@@ -1,0 +1,988 @@
+[0.000000] (-) TimerEvent: {}
+[0.001719] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.002329] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/hj926217/ros2ws/install/px4_msgs')])}
+[0.002577] (px4_ros_com) JobStarted: {'identifier': 'px4_ros_com'}
+[0.051022] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'cmake'}
+[0.052790] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'build'}
+[0.058492] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hj926217/ros2ws/build/px4_ros_com', '--', '-j16', '-l16'], 'cwd': '/home/hj926217/ros2ws/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hj926217'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/hj926217'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '2960'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hj926217/ros2ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hj926217'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hj926217'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/hj926217/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/hj926217-17Z90Q-GAFWK:@/tmp/.ICE-unix/1749,unix/hj926217-17Z90Q-GAFWK:/tmp/.ICE-unix/1749'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/791c11c8_51c8_4eca_ab7c_47edf87510fc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZRIAK3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hj926217/ros2ws/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble')]), 'shell': False}
+[0.098498] (-) TimerEvent: {}
+[0.199183] (-) TimerEvent: {}
+[0.210128] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target goal_astar_octomap_safe_node\x1b[0m\n'}
+[0.262846] (px4_ros_com) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o\x1b[0m\n'}
+[0.299922] (-) TimerEvent: {}
+[0.401003] (-) TimerEvent: {}
+[0.502306] (-) TimerEvent: {}
+[0.603612] (-) TimerEvent: {}
+[0.707619] (-) TimerEvent: {}
+[0.811510] (-) TimerEvent: {}
+[0.912247] (-) TimerEvent: {}
+[1.012908] (-) TimerEvent: {}
+[1.113674] (-) TimerEvent: {}
+[1.214294] (-) TimerEvent: {}
+[1.314944] (-) TimerEvent: {}
+[1.415787] (-) TimerEvent: {}
+[1.516608] (-) TimerEvent: {}
+[1.617964] (-) TimerEvent: {}
+[1.719982] (-) TimerEvent: {}
+[1.821246] (-) TimerEvent: {}
+[1.921965] (-) TimerEvent: {}
+[2.022722] (-) TimerEvent: {}
+[2.123594] (-) TimerEvent: {}
+[2.224804] (-) TimerEvent: {}
+[2.326161] (-) TimerEvent: {}
+[2.427247] (-) TimerEvent: {}
+[2.527969] (-) TimerEvent: {}
+[2.628851] (-) TimerEvent: {}
+[2.729579] (-) TimerEvent: {}
+[2.830274] (-) TimerEvent: {}
+[2.931043] (-) TimerEvent: {}
+[3.032168] (-) TimerEvent: {}
+[3.133375] (-) TimerEvent: {}
+[3.234239] (-) TimerEvent: {}
+[3.335781] (-) TimerEvent: {}
+[3.436392] (-) TimerEvent: {}
+[3.537178] (-) TimerEvent: {}
+[3.638349] (-) TimerEvent: {}
+[3.739234] (-) TimerEvent: {}
+[3.840059] (-) TimerEvent: {}
+[3.941093] (-) TimerEvent: {}
+[4.042025] (-) TimerEvent: {}
+[4.142978] (-) TimerEvent: {}
+[4.243761] (-) TimerEvent: {}
+[4.344652] (-) TimerEvent: {}
+[4.445369] (-) TimerEvent: {}
+[4.546235] (-) TimerEvent: {}
+[4.647144] (-) TimerEvent: {}
+[4.748139] (-) TimerEvent: {}
+[4.849062] (-) TimerEvent: {}
+[4.950112] (-) TimerEvent: {}
+[5.052092] (-) TimerEvent: {}
+[5.152838] (-) TimerEvent: {}
+[5.253561] (-) TimerEvent: {}
+[5.354521] (-) TimerEvent: {}
+[5.455242] (-) TimerEvent: {}
+[5.556121] (-) TimerEvent: {}
+[5.657468] (-) TimerEvent: {}
+[5.758211] (-) TimerEvent: {}
+[5.858988] (-) TimerEvent: {}
+[5.959688] (-) TimerEvent: {}
+[6.060297] (-) TimerEvent: {}
+[6.161345] (-) TimerEvent: {}
+[6.262736] (-) TimerEvent: {}
+[6.363992] (-) TimerEvent: {}
+[6.465050] (-) TimerEvent: {}
+[6.565734] (-) TimerEvent: {}
+[6.667367] (-) TimerEvent: {}
+[6.768614] (-) TimerEvent: {}
+[6.869945] (-) TimerEvent: {}
+[6.970548] (-) TimerEvent: {}
+[7.071088] (-) TimerEvent: {}
+[7.172112] (-) TimerEvent: {}
+[7.273589] (-) TimerEvent: {}
+[7.375639] (-) TimerEvent: {}
+[7.476713] (-) TimerEvent: {}
+[7.577608] (-) TimerEvent: {}
+[7.678409] (-) TimerEvent: {}
+[7.779501] (-) TimerEvent: {}
+[7.880090] (-) TimerEvent: {}
+[7.980779] (-) TimerEvent: {}
+[8.081571] (-) TimerEvent: {}
+[8.182312] (-) TimerEvent: {}
+[8.283025] (-) TimerEvent: {}
+[8.383784] (-) TimerEvent: {}
+[8.484546] (-) TimerEvent: {}
+[8.585503] (-) TimerEvent: {}
+[8.686390] (-) TimerEvent: {}
+[8.787267] (-) TimerEvent: {}
+[8.887913] (-) TimerEvent: {}
+[8.988575] (-) TimerEvent: {}
+[9.089271] (-) TimerEvent: {}
+[9.190214] (-) TimerEvent: {}
+[9.291041] (-) TimerEvent: {}
+[9.392070] (-) TimerEvent: {}
+[9.493191] (-) TimerEvent: {}
+[9.594081] (-) TimerEvent: {}
+[9.694747] (-) TimerEvent: {}
+[9.795503] (-) TimerEvent: {}
+[9.896205] (-) TimerEvent: {}
+[9.997015] (-) TimerEvent: {}
+[10.097665] (-) TimerEvent: {}
+[10.198293] (-) TimerEvent: {}
+[10.299598] (-) TimerEvent: {}
+[10.400944] (-) TimerEvent: {}
+[10.501724] (-) TimerEvent: {}
+[10.603623] (-) TimerEvent: {}
+[10.704624] (-) TimerEvent: {}
+[10.805735] (-) TimerEvent: {}
+[10.907733] (-) TimerEvent: {}
+[11.008533] (-) TimerEvent: {}
+[11.083779] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GoalAStarOctomapSafeNode::publishSetpoint()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.084807] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:302:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind non-const lvalue reference of type \xe2\x80\x98\x1b[01m\x1b[Kdouble&\x1b[m\x1b[K\xe2\x80\x99 to a value of type \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[11.085268] (px4_ros_com) StderrLine: {'line': b'  302 |             \x1b[01;31m\x1b[KenuToNed(tx, ty, tz, sp.position[0], sp.position[1], sp.position[2])\x1b[m\x1b[K;\n'}
+[11.085662] (px4_ros_com) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.086115] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:129:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid GoalAStarOctomapSafeNode::enuToNed(double, double, double, double&, double&, double&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.088050] (px4_ros_com) StderrLine: {'line': b'  129 |     inline void enuToNed(double xe, double ye, double ze, \x1b[01;36m\x1b[Kdouble &xn\x1b[m\x1b[K, double &yn, double &zn) {\n'}
+[11.088563] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[K~~~~~~~~^~\x1b[m\x1b[K\n'}
+[11.088760] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:316:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind non-const lvalue reference of type \xe2\x80\x98\x1b[01m\x1b[Kdouble&\x1b[m\x1b[K\xe2\x80\x99 to a value of type \xe2\x80\x98\x1b[01m\x1b[Kstd::array<float, 3>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[11.088950] (px4_ros_com) StderrLine: {'line': b'  316 |             \x1b[01;31m\x1b[KenuToNed(cx, cy, cz, sp.position[0], sp.position[1], sp.position[2])\x1b[m\x1b[K;\n'}
+[11.089110] (px4_ros_com) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.089308] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:129:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid GoalAStarOctomapSafeNode::enuToNed(double, double, double, double&, double&, double&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.089587] (px4_ros_com) StderrLine: {'line': b'  129 |     inline void enuToNed(double xe, double ye, double ze, \x1b[01;36m\x1b[Kdouble &xn\x1b[m\x1b[K, double &yn, double &zn) {\n'}
+[11.090408] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[K~~~~~~~~^~\x1b[m\x1b[K\n'}
+[11.108662] (-) TimerEvent: {}
+[11.209522] (-) TimerEvent: {}
+[11.310364] (-) TimerEvent: {}
+[11.411496] (-) TimerEvent: {}
+[11.512393] (-) TimerEvent: {}
+[11.613286] (-) TimerEvent: {}
+[11.714350] (-) TimerEvent: {}
+[11.816193] (-) TimerEvent: {}
+[11.917050] (-) TimerEvent: {}
+[12.018520] (-) TimerEvent: {}
+[12.119598] (-) TimerEvent: {}
+[12.220619] (-) TimerEvent: {}
+[12.321432] (-) TimerEvent: {}
+[12.422121] (-) TimerEvent: {}
+[12.522798] (-) TimerEvent: {}
+[12.624089] (-) TimerEvent: {}
+[12.724909] (-) TimerEvent: {}
+[12.825774] (-) TimerEvent: {}
+[12.926747] (-) TimerEvent: {}
+[13.027559] (-) TimerEvent: {}
+[13.128305] (-) TimerEvent: {}
+[13.229227] (-) TimerEvent: {}
+[13.330346] (-) TimerEvent: {}
+[13.431371] (-) TimerEvent: {}
+[13.532235] (-) TimerEvent: {}
+[13.633162] (-) TimerEvent: {}
+[13.733905] (-) TimerEvent: {}
+[13.834980] (-) TimerEvent: {}
+[13.935601] (-) TimerEvent: {}
+[14.036298] (-) TimerEvent: {}
+[14.136964] (-) TimerEvent: {}
+[14.237687] (-) TimerEvent: {}
+[14.338582] (-) TimerEvent: {}
+[14.439292] (-) TimerEvent: {}
+[14.540391] (-) TimerEvent: {}
+[14.641879] (-) TimerEvent: {}
+[14.742869] (-) TimerEvent: {}
+[14.843575] (-) TimerEvent: {}
+[14.944565] (-) TimerEvent: {}
+[15.045374] (-) TimerEvent: {}
+[15.146093] (-) TimerEvent: {}
+[15.246862] (-) TimerEvent: {}
+[15.347576] (-) TimerEvent: {}
+[15.448849] (-) TimerEvent: {}
+[15.549478] (-) TimerEvent: {}
+[15.650528] (-) TimerEvent: {}
+[15.752128] (-) TimerEvent: {}
+[15.853184] (-) TimerEvent: {}
+[15.954060] (-) TimerEvent: {}
+[16.055263] (-) TimerEvent: {}
+[16.156410] (-) TimerEvent: {}
+[16.257123] (-) TimerEvent: {}
+[16.358192] (-) TimerEvent: {}
+[16.459283] (-) TimerEvent: {}
+[16.560086] (-) TimerEvent: {}
+[16.660869] (-) TimerEvent: {}
+[16.761798] (-) TimerEvent: {}
+[16.862746] (-) TimerEvent: {}
+[16.963347] (-) TimerEvent: {}
+[16.966526] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[16.970036] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[16.970829] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[16.974271] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[16.976672] (px4_ros_com) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_pair.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kconstexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&) [with _T1 = double; _T2 = GridKey]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.978444] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:503:18:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kconstexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&) [with _T1 = double; _T2 = GridKey]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.978902] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_function.h:390:20:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kconstexpr bool std::greater<_Tp>::operator()(const _Tp&, const _Tp&) const [with _Tp = std::pair<double, GridKey>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.979424] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/predefined_ops.h:196:23:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<std::pair<double, GridKey>*, std::vector<std::pair<double, GridKey> > >; _Value = std::pair<double, GridKey>; _Compare = std::greater<std::pair<double, GridKey> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.979826] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:139:48:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<std::pair<double, GridKey>*, std::vector<std::pair<double, GridKey> > >; _Distance = long int; _Tp = std::pair<double, GridKey>; _Compare = __gnu_cxx::__ops::_Iter_comp_val<std::greater<std::pair<double, GridKey> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.980236] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:215:23:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::push_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<std::pair<double, GridKey>*, std::vector<std::pair<double, GridKey> > >; _Compare = std::greater<std::pair<double, GridKey> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.980705] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_queue.h:651:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::push(std::priority_queue<_Tp, _Sequence, _Compare>::value_type&&) [with _Tp = std::pair<double, GridKey>; _Sequence = std::vector<std::pair<double, GridKey> >; _Compare = std::greater<std::pair<double, GridKey> >; std::priority_queue<_Tp, _Sequence, _Compare>::value_type = std::pair<double, GridKey>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.981009] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:467:18:\x1b[m\x1b[K   required from here\n'}
+[16.981286] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator<\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[16.981946] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;31m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[16.982581] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.983059] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:489:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.983471] (px4_ros_com) StderrLine: {'line': b'  489 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)\n'}
+[16.983793] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[16.984073] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:489:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.984331] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::pair<_T1, _T2>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.984669] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[16.984958] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.985240] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[16.985716] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[16.986293] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[16.986811] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[16.987294] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:426:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.987607] (px4_ros_com) StderrLine: {'line': b'  426 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const reverse_iterator<_Iterator>& __x,\n'}
+[16.987882] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[16.988140] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:426:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.988400] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[16.988807] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[16.989095] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[16.989364] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[16.989670] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.989936] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[16.990174] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.990392] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[16.990648] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[16.990877] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[16.991097] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[16.991355] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:465:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.991785] (px4_ros_com) StderrLine: {'line': b'  465 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const reverse_iterator<_IteratorL>& __x,\n'}
+[16.992033] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[16.992238] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:465:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.992476] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[16.992715] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[16.992918] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[16.993118] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[16.993353] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.993596] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[16.993805] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.994012] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[16.994213] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[16.994416] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[16.994671] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[16.994875] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1609:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.995087] (px4_ros_com) StderrLine: {'line': b' 1609 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const move_iterator<_IteratorL>& __x,\n'}
+[16.995287] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[16.995515] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1609:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.995730] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[16.995929] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[16.996130] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[16.996334] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[16.996573] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.996793] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[16.997030] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.997241] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[16.997469] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[16.997700] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[16.997909] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[16.998148] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1667:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.998362] (px4_ros_com) StderrLine: {'line': b' 1667 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const move_iterator<_Iterator>& __x,\n'}
+[16.998646] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[16.998907] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1667:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.999164] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[16.999425] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[16.999720] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[16.999982] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.000278] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.000584] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.000819] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.001031] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[17.001253] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[17.001513] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[17.001775] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.002003] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.002211] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:311:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, long unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.002419] (px4_ros_com) StderrLine: {'line': b'  311 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)\n'}
+[17.002752] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.003038] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:311:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.003334] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.003659] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.003924] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.004156] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.004424] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<_Tp, _Nm>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.004667] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.004868] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.005070] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[17.005267] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[17.005513] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.005741] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.005942] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1566:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Tps ...>&, const std::tuple<_UTypes ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.006230] (px4_ros_com) StderrLine: {'line': b' 1566 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const tuple<_TElements...>& __t,\n'}
+[17.006454] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.006678] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1566:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.006887] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.007093] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.007299] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.007522] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.007746] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::tuple<_Tps ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.007987] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.008209] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.008411] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[17.008644] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.008853] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.009062] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:795:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.009328] (px4_ros_com) StderrLine: {'line': b'  795 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const unique_ptr<_Tp, _Dp>& __x,\n'}
+[17.009561] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.009767] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:795:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.010008] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.010236] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.010508] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.010818] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.011082] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.011354] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.011668] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.011939] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[17.012207] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.012414] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.012641] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:807:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.012843] (px4_ros_com) StderrLine: {'line': b'  807 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)\n'}
+[17.013042] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.013239] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:807:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.013450] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.013663] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.013857] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.014051] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.014268] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.014487] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.014720] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.014913] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[17.015104] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.015294] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.015501] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:816:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.015716] (px4_ros_com) StderrLine: {'line': b'  816 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)\n'}
+[17.015908] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.016096] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:816:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.016287] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.016502] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.016709] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.016901] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.017093] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.017290] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.017507] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.017716] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[17.017909] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[17.018125] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.018318] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.018556] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1457:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.018771] (px4_ros_com) StderrLine: {'line': b' 1457 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const __shared_ptr<_Tp, _Lp>& __a,\n'}
+[17.018966] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.019157] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1457:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.019370] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.019598] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.019798] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.019991] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.020182] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp1, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.020377] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.020616] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.020837] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[17.021049] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[17.021245] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.021487] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.021771] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1468:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.021976] (px4_ros_com) StderrLine: {'line': b' 1468 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept\n'}
+[17.022171] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.022362] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1468:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.022583] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.022778] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.022969] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.023170] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.023365] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.023595] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.023799] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.023991] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[17.024208] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[17.024401] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.024643] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.024858] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1476:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.025056] (px4_ros_com) StderrLine: {'line': b' 1476 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept\n'}
+[17.025249] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.025455] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1476:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.025676] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.025874] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.026092] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.026285] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.026491] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__shared_ptr<_Tp, _Lp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.026720] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.026914] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.027107] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[17.027300] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.027519] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.027724] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:488:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> bool std::operator<(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.027922] (px4_ros_com) StderrLine: {'line': b'  488 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept\n'}
+[17.028117] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.028312] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:488:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.028546] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.028833] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.029042] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.029242] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.029476] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.029716] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.029909] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.030100] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[17.030298] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.030513] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.030715] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:499:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> bool std::operator<(const std::shared_ptr<_Tp>&, std::nullptr_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.030910] (px4_ros_com) StderrLine: {'line': b'  499 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept\n'}
+[17.031101] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.031293] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:499:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.031504] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.031711] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.031906] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.032100] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.032291] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.032516] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.032753] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.032969] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[17.033169] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.033365] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.033622] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:508:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.033878] (px4_ros_com) StderrLine: {'line': b'  508 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept\n'}
+[17.034073] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.034281] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:508:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.034490] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.034727] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.034921] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.035121] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.035317] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.035550] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.035755] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.035948] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:48\x1b[m\x1b[K,\n'}
+[17.036144] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[17.036370] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[17.036611] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[17.036814] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[17.037010] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[17.037204] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[17.037396] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.037617] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.037818] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:589:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.038017] (px4_ros_com) StderrLine: {'line': b'  589 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K< (basic_string_view<_CharT, _Traits> __x,\n'}
+[17.038208] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.038410] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:589:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.038655] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.038851] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.039044] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.039239] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.039432] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KGridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.039658] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.039850] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.040048] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:48\x1b[m\x1b[K,\n'}
+[17.040244] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[17.040466] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[17.040712] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[17.040930] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[17.041134] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[17.041332] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[17.041579] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.041807] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.042001] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:595:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.042207] (px4_ros_com) StderrLine: {'line': b'  595 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K< (basic_string_view<_CharT, _Traits> __x,\n'}
+[17.042398] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.042619] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:595:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.042843] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.043037] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.043230] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.043456] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.043671] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KGridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.043890] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.044085] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.044306] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:48\x1b[m\x1b[K,\n'}
+[17.044560] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[17.044790] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[17.045011] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[17.045237] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[17.045463] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[17.045697] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[17.045924] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.046143] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.046362] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:602:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits> constexpr bool std::operator<(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.046648] (px4_ros_com) StderrLine: {'line': b'  602 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K< (__type_identity_t<basic_string_view<_CharT, _Traits>> __x,\n'}
+[17.046873] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.047088] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/string_view:602:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.047317] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.047572] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.047804] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.048029] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.048257] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KGridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_string_view<_CharT, _Traits>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.048495] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.048732] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.048952] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[17.049196] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[17.049421] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[17.049685] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[17.049915] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[17.050139] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[17.050354] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.050608] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.050828] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6340:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.051055] (px4_ros_com) StderrLine: {'line': b' 6340 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[17.051276] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.051525] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6340:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.051764] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.051986] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.052247] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.052495] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.052756] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.053030] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.053270] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.053530] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[17.053773] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[17.053996] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[17.054223] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[17.054451] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[17.054695] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[17.054934] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.055154] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.055369] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6353:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.055626] (px4_ros_com) StderrLine: {'line': b' 6353 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[17.055850] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.056077] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6353:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.056328] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.056675] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.056907] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.057139] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.057386] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.057663] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.057890] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.058136] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[17.058352] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[17.058604] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[17.058827] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[17.059041] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[17.059259] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[17.059491] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.059731] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.059950] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6365:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.060185] (px4_ros_com) StderrLine: {'line': b' 6365 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const _CharT* __lhs,\n'}
+[17.060462] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.060696] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6365:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.060915] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.061133] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.061347] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.061596] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.061849] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[KGridKey\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.062106] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.062330] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.062629] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/set:61\x1b[m\x1b[K,\n'}
+[17.062859] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21\x1b[m\x1b[K,\n'}
+[17.063077] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.063293] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.063531] (-) TimerEvent: {}
+[17.063896] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.064200] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:1023:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.064458] (px4_ros_com) StderrLine: {'line': b' 1023 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const set<_Key, _Compare, _Alloc>& __x,\n'}
+[17.064716] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.064934] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_set.h:1023:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.065148] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.065362] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.065620] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.065839] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.066048] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::set<_Key, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.066305] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.066548] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.066780] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/set:62\x1b[m\x1b[K,\n'}
+[17.066992] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:21\x1b[m\x1b[K,\n'}
+[17.067208] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.067428] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.067686] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.067904] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multiset.h:1009:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.068124] (px4_ros_com) StderrLine: {'line': b' 1009 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const multiset<_Key, _Compare, _Alloc>& __x,\n'}
+[17.068346] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.068582] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multiset.h:1009:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.068797] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.069025] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.069239] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.069469] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.069705] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::multiset<_Key, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.069921] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.070161] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.070374] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[17.070629] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[17.070854] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[17.071072] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[17.071319] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[17.071571] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[17.071848] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.072066] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.072278] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.072539] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1930:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.072788] (px4_ros_com) StderrLine: {'line': b' 1930 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)\n'}
+[17.073010] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.073228] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1930:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.073470] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.073708] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.073929] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.074151] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.074371] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.074622] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.074841] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.075071] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/list:63\x1b[m\x1b[K,\n'}
+[17.075350] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:23\x1b[m\x1b[K,\n'}
+[17.075689] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[17.076014] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.076317] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.076662] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.076957] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_list.h:2085:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.077321] (px4_ros_com) StderrLine: {'line': b' 2085 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)\n'}
+[17.077706] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.077993] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_list.h:2085:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.078268] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.078564] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.078826] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.079049] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.079279] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::list<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.079562] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.079798] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.080016] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/map:61\x1b[m\x1b[K,\n'}
+[17.080230] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24\x1b[m\x1b[K,\n'}
+[17.080454] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[17.080686] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.080896] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.081109] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.081347] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:1501:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.081627] (px4_ros_com) StderrLine: {'line': b' 1501 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const map<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[17.081852] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.082072] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_map.h:1501:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.082299] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.082547] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.082778] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.083002] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.083257] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::map<_Key, _Tp, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.083498] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.083739] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.083959] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/map:62\x1b[m\x1b[K,\n'}
+[17.084176] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:24\x1b[m\x1b[K,\n'}
+[17.084396] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[17.084649] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.084876] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.085099] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.085315] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multimap.h:1166:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.085574] (px4_ros_com) StderrLine: {'line': b' 1166 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,\n'}
+[17.085808] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.086027] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_multimap.h:1166:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.086245] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.086481] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.086718] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.086951] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.087170] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::multimap<_Key, _Tp, _Compare, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.087425] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.087693] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.087919] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[17.088141] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[17.088393] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[17.088720] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[17.088966] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[17.089195] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[17.089427] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[17.089752] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[17.089985] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.090240] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.090473] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.090741] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1063:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_lt_t<_Tp, _Up> std::operator<(const std::optional<_Tp>&, const std::optional<_Up>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.090977] (px4_ros_com) StderrLine: {'line': b' 1063 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)\n'}
+[17.091204] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.091427] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1063:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.091700] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.091921] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.092146] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.092369] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.092627] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.092860] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.093082] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.093306] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[17.093576] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[17.093800] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[17.094018] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[17.094269] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[17.094507] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[17.094742] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[17.094956] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[17.095169] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.095385] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.095631] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.095850] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1131:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::operator<(const std::optional<_Tp>&, std::nullopt_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.096098] (px4_ros_com) StderrLine: {'line': b' 1131 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const optional<_Tp>& /* __lhs */, nullopt_t) noexcept\n'}
+[17.096315] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.096559] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1131:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.096783] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.096997] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.097209] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.097422] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.097664] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.097885] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.098097] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.098315] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[17.098555] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[17.098777] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[17.098994] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[17.099212] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[17.099508] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[17.099737] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[17.099967] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[17.100179] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.100388] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.100626] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.100843] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1136:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr bool std::operator<(std::nullopt_t, const std::optional<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.101059] (px4_ros_com) StderrLine: {'line': b' 1136 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(nullopt_t, const optional<_Tp>& __rhs) noexcept\n'}
+[17.101268] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.101487] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1136:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.101720] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.101936] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.102148] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.102359] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.102603] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.102825] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.103038] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.103253] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[17.103475] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[17.103709] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[17.103923] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[17.104163] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[17.104373] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[17.104620] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[17.104856] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[17.105071] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.105282] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.105542] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.105783] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1197:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_lt_t<_Tp, _Up> std::operator<(const std::optional<_Tp>&, const _Up&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.106012] (px4_ros_com) StderrLine: {'line': b' 1197 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const optional<_Tp>& __lhs, const _Up& __rhs)\n'}
+[17.106236] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.106498] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1197:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.106757] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.106976] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.107187] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.107403] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.107652] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.107881] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.108098] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.108334] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:23\x1b[m\x1b[K,\n'}
+[17.108577] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[17.108820] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[17.109034] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[17.109255] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[17.109480] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[17.109720] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[17.109935] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[17.110150] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.110389] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.110636] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.110852] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1203:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr std::__optional_lt_t<_Up, _Tp> std::operator<(const _Up&, const std::optional<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.111068] (px4_ros_com) StderrLine: {'line': b' 1203 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const _Up& __lhs, const optional<_Tp>& __rhs)\n'}
+[17.111280] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.111519] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/optional:1203:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.111746] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.111959] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.112172] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.112385] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.112648] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::optional<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.112882] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.113093] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.113304] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[17.113535] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[17.113762] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[17.113979] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[17.114197] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[17.114410] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[17.114653] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[17.114875] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[17.115091] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.115304] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.115567] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.115787] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1230:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _Types> constexpr bool std::operator<(const std::variant<_Types ...>&, const std::variant<_Types ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.116008] (px4_ros_com) StderrLine: {'line': b' 1230 |   \x1b[01;36m\x1b[K_VARIANT_RELATION_FUNCTION_TEMPLATE\x1b[m\x1b[K(<, less)\n'}
+[17.116221] (px4_ros_com) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.116432] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1230:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.116674] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.116886] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.117095] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.117323] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.117564] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::variant<_Types ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.117806] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.118018] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.118228] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/deque:67\x1b[m\x1b[K,\n'}
+[17.118450] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stack:60\x1b[m\x1b[K,\n'}
+[17.118692] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/octomap/OcTreeBaseImpl.h:41\x1b[m\x1b[K,\n'}
+[17.118922] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/octomap/OccupancyOcTreeBase.h:44\x1b[m\x1b[K,\n'}
+[17.119137] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/octomap/OcTree.h:38\x1b[m\x1b[K,\n'}
+[17.119353] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/octomap/octomap.h:37\x1b[m\x1b[K,\n'}
+[17.119621] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:11\x1b[m\x1b[K:\n'}
+[17.119841] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_deque.h:2285:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.120054] (px4_ros_com) StderrLine: {'line': b' 2285 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const deque<_Tp, _Alloc>& __x, const deque<_Tp, _Alloc>& __y)\n'}
+[17.120267] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.120491] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_deque.h:2285:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.120771] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.120983] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.121200] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.121427] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.121767] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::deque<_Tp, _Alloc>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.122015] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.122242] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.122505] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/stack:61\x1b[m\x1b[K,\n'}
+[17.122773] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/octomap/OcTreeBaseImpl.h:41\x1b[m\x1b[K,\n'}
+[17.122998] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/octomap/OccupancyOcTreeBase.h:44\x1b[m\x1b[K,\n'}
+[17.123230] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/octomap/OcTree.h:38\x1b[m\x1b[K,\n'}
+[17.123470] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/octomap/octomap.h:37\x1b[m\x1b[K,\n'}
+[17.123710] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:11\x1b[m\x1b[K:\n'}
+[17.123930] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_stack.h:337:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Seq> bool std::operator<(const std::stack<_Tp, _Seq>&, const std::stack<_Tp, _Seq>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.124158] (px4_ros_com) StderrLine: {'line': b'  337 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const stack<_Tp, _Seq>& __x, const stack<_Tp, _Seq>& __y)\n'}
+[17.124375] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.124632] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_stack.h:337:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.124856] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.125074] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.125293] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.125534] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.125763] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::stack<_Tp, _Seq>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.125986] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.126233] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.126481] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/queue:64\x1b[m\x1b[K,\n'}
+[17.126716] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:15\x1b[m\x1b[K:\n'}
+[17.126930] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_queue.h:362:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Seq> bool std::operator<(const std::queue<_Tp, _Seq>&, const std::queue<_Tp, _Seq>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.127167] (px4_ros_com) StderrLine: {'line': b'  362 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const queue<_Tp, _Seq>& __x, const queue<_Tp, _Seq>& __y)\n'}
+[17.127382] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.127630] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_queue.h:362:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[17.127850] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:64\x1b[m\x1b[K,\n'}
+[17.128066] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[17.128280] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.128521] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.128753] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_pair.h:491:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::queue<_Tp, _Seq>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.128991] (px4_ros_com) StderrLine: {'line': b'  491 |              || (!(__y.first < __x.first) && \x1b[01;36m\x1b[K__x.second < __y.second\x1b[m\x1b[K); }\n'}
+[17.129205] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.129419] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[17.129661] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[17.129881] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[17.130095] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.130307] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.130538] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:269:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator<(const std::error_code&, const std::error_code&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.130770] (px4_ros_com) StderrLine: {'line': b'  269 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const error_code& __lhs, const error_code& __rhs) noexcept\n'}
+[17.130983] (px4_ros_com) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.131212] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:269:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_code&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.131473] (px4_ros_com) StderrLine: {'line': b'  269 |   operator<(\x1b[01;36m\x1b[Kconst error_code& __lhs\x1b[m\x1b[K, const error_code& __rhs) noexcept\n'}
+[17.131714] (px4_ros_com) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[17.131929] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:398:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator<(const std::error_condition&, const std::error_condition&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.132141] (px4_ros_com) StderrLine: {'line': b'  398 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(const error_condition& __lhs,\n'}
+[17.132350] (px4_ros_com) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.132591] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/system_error:398:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::error_condition&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.132809] (px4_ros_com) StderrLine: {'line': b'  398 |   operator<(\x1b[01;36m\x1b[Kconst error_condition& __lhs\x1b[m\x1b[K,\n'}
+[17.133017] (px4_ros_com) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[17.133229] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22\x1b[m\x1b[K,\n'}
+[17.133462] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.133699] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.133916] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.134133] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/thread:70:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kbool std::operator<(std::thread::id, std::thread::id)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.134354] (px4_ros_com) StderrLine: {'line': b'   70 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(thread::id __x, thread::id __y) noexcept\n'}
+[17.134637] (px4_ros_com) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.134885] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/thread:70:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::thread::id\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.135108] (px4_ros_com) StderrLine: {'line': b'   70 |   operator<(\x1b[01;36m\x1b[Kthread::id __x\x1b[m\x1b[K, thread::id __y) noexcept\n'}
+[17.135320] (px4_ros_com) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[17.135609] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[17.135833] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[17.136062] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[17.136275] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[17.136506] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[17.136732] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[17.136964] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[17.137184] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[17.137419] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[17.137667] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.137889] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[17.138105] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1272:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr bool std::operator<(std::monostate, std::monostate)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.138319] (px4_ros_com) StderrLine: {'line': b' 1272 |   constexpr bool \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K<(monostate, monostate) noexcept { return false; }\n'}
+[17.138560] (px4_ros_com) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[17.138784] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1272:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst GridKey\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::monostate\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.139000] (px4_ros_com) StderrLine: {'line': b' 1272 |   constexpr bool operator<(\x1b[01;36m\x1b[Kmonostate\x1b[m\x1b[K, monostate) noexcept { return false; }\n'}
+[17.139212] (px4_ros_com) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[17.163800] (-) TimerEvent: {}
+[17.265819] (-) TimerEvent: {}
+[17.366761] (-) TimerEvent: {}
+[17.467639] (-) TimerEvent: {}
+[17.568785] (-) TimerEvent: {}
+[17.670142] (-) TimerEvent: {}
+[17.771972] (-) TimerEvent: {}
+[17.873541] (-) TimerEvent: {}
+[17.974636] (-) TimerEvent: {}
+[18.075900] (-) TimerEvent: {}
+[18.176571] (-) TimerEvent: {}
+[18.277226] (-) TimerEvent: {}
+[18.378049] (-) TimerEvent: {}
+[18.478715] (-) TimerEvent: {}
+[18.579596] (-) TimerEvent: {}
+[18.680500] (-) TimerEvent: {}
+[18.781240] (-) TimerEvent: {}
+[18.882165] (-) TimerEvent: {}
+[18.982855] (-) TimerEvent: {}
+[19.084268] (-) TimerEvent: {}
+[19.185279] (-) TimerEvent: {}
+[19.285945] (-) TimerEvent: {}
+[19.387143] (-) TimerEvent: {}
+[19.487847] (-) TimerEvent: {}
+[19.588582] (-) TimerEvent: {}
+[19.689780] (-) TimerEvent: {}
+[19.790548] (-) TimerEvent: {}
+[19.891395] (-) TimerEvent: {}
+[19.992327] (-) TimerEvent: {}
+[20.093650] (-) TimerEvent: {}
+[20.194384] (-) TimerEvent: {}
+[20.295525] (-) TimerEvent: {}
+[20.396786] (-) TimerEvent: {}
+[20.498149] (-) TimerEvent: {}
+[20.599035] (-) TimerEvent: {}
+[20.700809] (-) TimerEvent: {}
+[20.802001] (-) TimerEvent: {}
+[20.903530] (-) TimerEvent: {}
+[21.004431] (-) TimerEvent: {}
+[21.105421] (-) TimerEvent: {}
+[21.206247] (-) TimerEvent: {}
+[21.307500] (-) TimerEvent: {}
+[21.408305] (-) TimerEvent: {}
+[21.509482] (-) TimerEvent: {}
+[21.611047] (-) TimerEvent: {}
+[21.712018] (-) TimerEvent: {}
+[21.812887] (-) TimerEvent: {}
+[21.914862] (-) TimerEvent: {}
+[22.015558] (-) TimerEvent: {}
+[22.116337] (-) TimerEvent: {}
+[22.217098] (-) TimerEvent: {}
+[22.317873] (-) TimerEvent: {}
+[22.418678] (-) TimerEvent: {}
+[22.519634] (-) TimerEvent: {}
+[22.620566] (-) TimerEvent: {}
+[22.721522] (-) TimerEvent: {}
+[22.822907] (-) TimerEvent: {}
+[22.923604] (-) TimerEvent: {}
+[23.024422] (-) TimerEvent: {}
+[23.125128] (-) TimerEvent: {}
+[23.225777] (-) TimerEvent: {}
+[23.326423] (-) TimerEvent: {}
+[23.427032] (-) TimerEvent: {}
+[23.527585] (-) TimerEvent: {}
+[23.628486] (-) TimerEvent: {}
+[23.729165] (-) TimerEvent: {}
+[23.830295] (-) TimerEvent: {}
+[23.931690] (-) TimerEvent: {}
+[24.032660] (-) TimerEvent: {}
+[24.133816] (-) TimerEvent: {}
+[24.234613] (-) TimerEvent: {}
+[24.335423] (-) TimerEvent: {}
+[24.436644] (-) TimerEvent: {}
+[24.538432] (-) TimerEvent: {}
+[24.641759] (-) TimerEvent: {}
+[24.743098] (-) TimerEvent: {}
+[24.845069] (-) TimerEvent: {}
+[24.946555] (-) TimerEvent: {}
+[25.047288] (-) TimerEvent: {}
+[25.148418] (-) TimerEvent: {}
+[25.249263] (-) TimerEvent: {}
+[25.352831] (-) TimerEvent: {}
+[25.453777] (-) TimerEvent: {}
+[25.554552] (-) TimerEvent: {}
+[25.655566] (-) TimerEvent: {}
+[25.756389] (-) TimerEvent: {}
+[25.857254] (-) TimerEvent: {}
+[25.957870] (-) TimerEvent: {}
+[26.058966] (-) TimerEvent: {}
+[26.160641] (-) TimerEvent: {}
+[26.261721] (-) TimerEvent: {}
+[26.362860] (-) TimerEvent: {}
+[26.464081] (-) TimerEvent: {}
+[26.564854] (-) TimerEvent: {}
+[26.665737] (-) TimerEvent: {}
+[26.766499] (-) TimerEvent: {}
+[26.867174] (-) TimerEvent: {}
+[26.967980] (-) TimerEvent: {}
+[27.068781] (-) TimerEvent: {}
+[27.169673] (-) TimerEvent: {}
+[27.270325] (-) TimerEvent: {}
+[27.371072] (-) TimerEvent: {}
+[27.471949] (-) TimerEvent: {}
+[27.572940] (-) TimerEvent: {}
+[27.623885] (px4_ros_com) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/goal_astar_octomap_safe_node.dir/build.make:76: CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o] Error 1\n'}
+[27.625164] (px4_ros_com) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/goal_astar_octomap_safe_node.dir/all] Error 2\n'}
+[27.625871] (px4_ros_com) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[27.633641] (px4_ros_com) CommandEnded: {'returncode': 2}
+[27.673693] (-) TimerEvent: {}
+[27.683763] (px4_ros_com) JobEnded: {'identifier': 'px4_ros_com', 'rc': 2}
+[27.708194] (-) EventReactorShutdown: {}

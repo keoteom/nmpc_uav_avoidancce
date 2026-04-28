@@ -1,0 +1,91 @@
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kvoid GoalAStarOctomapSafeNode::onOctomap(octomap_msgs::msg::Octomap_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:240:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Khas_path[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  240 |         bool [01;35m[Khas_path[m[K = false;
+      |              [01;35m[K^~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kvoid GoalAStarOctomapSafeNode::publishStopSetpoint()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:504:45:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kstd::array<float, 3>[m[K’} and ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’})
+  504 |         stop_sp.position = start_pose_.pose.[01;31m[Kposition[m[K;
+      |                                             [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(const std::array<float, 3>&)[m[K’
+   95 |     struct [01;36m[Karray[m[K
+      |            [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::array<float, 3>&[m[K’
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(std::array<float, 3>&&)[m[K’
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::array<float, 3>&&[m[K’
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:508:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktype_mask[m[K’
+  508 |         stop_sp.[01;31m[Ktype_mask[m[K = px4_msgs::msg::TrajectorySetpoint::POSITION_VALID |
+      |                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:508:64:[m[K [01;31m[Kerror: [m[K‘[01m[KPOSITION_VALID[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint[m[K’ {aka ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’}
+  508 |         stop_sp.type_mask = px4_msgs::msg::TrajectorySetpoint::[01;31m[KPOSITION_VALID[m[K |
+      |                                                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:509:63:[m[K [01;31m[Kerror: [m[K‘[01m[KVELOCITY_VALID[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint[m[K’ {aka ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’}
+  509 |                            px4_msgs::msg::TrajectorySetpoint::[01;31m[KVELOCITY_VALID[m[K |
+      |                                                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:510:63:[m[K [01;31m[Kerror: [m[K‘[01m[KYAW_VALID[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint[m[K’ {aka ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’}
+  510 |                            px4_msgs::msg::TrajectorySetpoint::[01;31m[KYAW_VALID[m[K;
+      |                                                               [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kvoid GoalAStarOctomapSafeNode::onPublishTimer()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:647:50:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kstd::array<float, 3>[m[K’} and ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’})
+  647 |             hover_sp.position = current_pos.pose.[01;31m[Kposition[m[K;
+      |                                                  [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(const std::array<float, 3>&)[m[K’
+   95 |     struct [01;36m[Karray[m[K
+      |            [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::array<float, 3>&[m[K’
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(std::array<float, 3>&&)[m[K’
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::array<float, 3>&&[m[K’
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:650:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktype_mask[m[K’
+  650 |             hover_sp.[01;31m[Ktype_mask[m[K = px4_msgs::msg::TrajectorySetpoint::POSITION_VALID |
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:650:69:[m[K [01;31m[Kerror: [m[K‘[01m[KPOSITION_VALID[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint[m[K’ {aka ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’}
+  650 |             hover_sp.type_mask = px4_msgs::msg::TrajectorySetpoint::[01;31m[KPOSITION_VALID[m[K |
+      |                                                                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:651:68:[m[K [01;31m[Kerror: [m[K‘[01m[KYAW_VALID[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint[m[K’ {aka ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’}
+  651 |                                 px4_msgs::msg::TrajectorySetpoint::[01;31m[KYAW_VALID[m[K;
+      |                                                                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:663:40:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kstd::array<float, 3>[m[K’} and ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’})
+  663 |         sp.position = target_pose.pose.[01;31m[Kposition[m[K;
+      |                                        [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(const std::array<float, 3>&)[m[K’
+   95 |     struct [01;36m[Karray[m[K
+      |            [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’} to ‘[01m[Kconst std::array<float, 3>&[m[K’
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(std::array<float, 3>&&)[m[K’
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >[m[K’} to ‘[01m[Kstd::array<float, 3>&&[m[K’
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:666:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktype_mask[m[K’
+  666 |         sp.[01;31m[Ktype_mask[m[K = px4_msgs::msg::TrajectorySetpoint::POSITION_VALID |
+      |            [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:666:59:[m[K [01;31m[Kerror: [m[K‘[01m[KPOSITION_VALID[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint[m[K’ {aka ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’}
+  666 |         sp.type_mask = px4_msgs::msg::TrajectorySetpoint::[01;31m[KPOSITION_VALID[m[K |
+      |                                                           [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:667:58:[m[K [01;31m[Kerror: [m[K‘[01m[KYAW_VALID[m[K’ is not a member of ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint[m[K’ {aka ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’}
+  667 |                       px4_msgs::msg::TrajectorySetpoint::[01;31m[KYAW_VALID[m[K;
+      |                                                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:680:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _position_type = struct std::array<float, 3>[m[K’ {aka ‘[01m[Kstruct std::array<float, 3>[m[K’} has no member named ‘[01m[Kx[m[K’
+  680 |                 double dx = sp.position.[01;31m[Kx[m[K - current_pos.pose.position.x;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:681:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _position_type = struct std::array<float, 3>[m[K’ {aka ‘[01m[Kstruct std::array<float, 3>[m[K’} has no member named ‘[01m[Ky[m[K’
+  681 |                 double dy = sp.position.[01;31m[Ky[m[K - current_pos.pose.position.y;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:682:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _position_type = struct std::array<float, 3>[m[K’ {aka ‘[01m[Kstruct std::array<float, 3>[m[K’} has no member named ‘[01m[Kz[m[K’
+  682 |                 double dz = sp.position.[01;31m[Kz[m[K - current_pos.pose.position.z;
+      |                                         [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/goal_astar_octomap_safe_node.dir/build.make:76: CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/goal_astar_octomap_safe_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

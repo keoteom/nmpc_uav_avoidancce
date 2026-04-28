@@ -1,0 +1,58 @@
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:166:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg_[m[K’ is not a member of ‘[01m[Kpx4_msgs[m[K’; did you mean ‘[01m[Kmsg[m[K’?
+  166 |   rclcpp::Subscription<px4_msgs::[01;31m[Kmsg_[m[K
+      |                                  [01;31m[K^~~~[m[K
+      |                                  [32m[Kmsg[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:166:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:166:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:166:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:166:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:166:38:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  166 |   rclcpp::Subscription<px4_msgs::msg_
+      |                                      [01;31m[K^[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:166:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:21:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   21 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:[m[K In constructor ‘[01m[KLocalPathOffboardFollower::LocalPathOffboardFollower()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:73:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kon_local_path[m[K’ is not a member of ‘[01m[KLocalPathOffboardFollower[m[K’
+   73 |       std::bind(&LocalPathOffboardFollower::[01;31m[Kon_local_path[m[K, this, std::placeholders::_1));
+      |                                             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:77:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kon_reverse[m[K’ is not a member of ‘[01m[KLocalPathOffboardFollower[m[K’
+   77 |       std::bind(&LocalPathOffboardFollower::[01;31m[Kon_reverse[m[K, this, std::placeholders::_1));
+      |                                             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:82:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kon_local_pos[m[K’ is not a member of ‘[01m[KLocalPathOffboardFollower[m[K’
+   82 |       std::bind(&LocalPathOffboardFollower::[01;31m[Kon_local_pos[m[K, this, std::placeholders::_1));
+      |                                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:87:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kon_attitude[m[K’ is not a member of ‘[01m[KLocalPathOffboardFollower[m[K’
+   87 |       std::bind(&LocalPathOffboardFollower::[01;31m[Kon_attitude[m[K, this, std::placeholders::_1));
+      |                                             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:89:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kattitude_sub_v1_[m[K’ was not declared in this scope; did you mean ‘[01m[Kattitude_sub_[m[K’?
+   89 |     [01;31m[Kattitude_sub_v1_[m[K = this->create_subscription<px4_msgs::msg::VehicleAttitude>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kattitude_sub_[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:91:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kon_attitude[m[K’ is not a member of ‘[01m[KLocalPathOffboardFollower[m[K’
+   91 |       std::bind(&LocalPathOffboardFollower::[01;31m[Kon_attitude[m[K, this, std::placeholders::_1));
+      |                                             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:94:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_mode_pub_[m[K’ was not declared in this scope
+   94 |     [01;31m[Koffboard_mode_pub_[m[K = this->create_publisher<px4_msgs::msg::OffboardControlMode>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:97:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktraj_sp_pub_[m[K’ was not declared in this scope
+   97 |     [01;31m[Ktraj_sp_pub_[m[K = this->create_publisher<px4_msgs::msg::TrajectorySetpoint>(
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:100:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_cmd_pub_[m[K’ was not declared in this scope
+  100 |     [01;31m[Kvehicle_cmd_pub_[m[K = this->create_publisher<px4_msgs::msg::VehicleCommand>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:104:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+  104 |     [01;31m[Ktimer_[m[K = this->create_wall_timer(
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Ktimer_t[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:106:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kon_timer[m[K’ is not a member of ‘[01m[KLocalPathOffboardFollower[m[K’
+  106 |       std::bind(&LocalPathOffboardFollower::[01;31m[Kon_timer[m[K, this));
+      |                                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:[m[K At global scope:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:166:38:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  166 |   rclcpp::Subscription<px4_msgs::msg_
+      |                                      [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/path_follower.dir/build.make:76: CMakeFiles/path_follower.dir/src/path_follower.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/path_follower.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

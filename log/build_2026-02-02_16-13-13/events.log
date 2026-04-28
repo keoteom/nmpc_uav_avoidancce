@@ -1,0 +1,470 @@
+[0.000000] (-) TimerEvent: {}
+[0.001057] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.001303] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/hj926217/ros2ws/install/px4_msgs')])}
+[0.001362] (px4_ros_com) JobStarted: {'identifier': 'px4_ros_com'}
+[0.025401] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'cmake'}
+[0.027018] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'build'}
+[0.028286] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hj926217/ros2ws/build/px4_ros_com', '--', '-j16', '-l16'], 'cwd': '/home/hj926217/ros2ws/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hj926217'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/hj926217'), ('OLDPWD', '/home/hj926217'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '7061'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hj926217/ros2ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hj926217'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hj926217'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/hj926217/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/hj926217-17Z90Q-GAFWK:@/tmp/.ICE-unix/1776,unix/hj926217-17Z90Q-GAFWK:/tmp/.ICE-unix/1776'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a93e4595_33fb_4810_9886_59627bfe8781'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KMU4J3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hj926217/ros2ws/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble')]), 'shell': False}
+[0.099630] (-) TimerEvent: {}
+[0.144156] (px4_ros_com) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199759] (-) TimerEvent: {}
+[0.300226] (-) TimerEvent: {}
+[0.368876] (px4_ros_com) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.400354] (-) TimerEvent: {}
+[0.411874] (px4_ros_com) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.416015] (px4_ros_com) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.426587] (px4_ros_com) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.446422] (px4_ros_com) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.470216] (px4_ros_com) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.496165] (px4_ros_com) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.500357] (px4_ros_com) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.500680] (-) TimerEvent: {}
+[0.551645] (px4_ros_com) StdoutLine: {'line': b'-- Found px4_msgs: 2.0.1 (/home/hj926217/ros2ws/install/px4_msgs/share/px4_msgs/cmake)\n'}
+[0.572940] (px4_ros_com) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.600914] (-) TimerEvent: {}
+[0.618740] (px4_ros_com) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.622028] (px4_ros_com) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.701032] (-) TimerEvent: {}
+[0.799910] (px4_ros_com) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.801182] (-) TimerEvent: {}
+[0.867314] (px4_ros_com) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.892676] (px4_ros_com) StdoutLine: {'line': b'-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.893143] (px4_ros_com) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.900846] (px4_ros_com) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.901292] (-) TimerEvent: {}
+[1.001687] (-) TimerEvent: {}
+[1.040404] (px4_ros_com) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.050752] (px4_ros_com) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.052628] (px4_ros_com) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.076196] (px4_ros_com) StdoutLine: {'line': b'-- Found cv_bridge: 4.1.0 (/home/hj926217/aruco/install/cv_bridge/share/cv_bridge/cmake)\n'}
+[1.096422] (px4_ros_com) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.101848] (-) TimerEvent: {}
+[1.143561] (px4_ros_com) StdoutLine: {'line': b'-- Found interactive_markers: 2.3.2 (/opt/ros/humble/share/interactive_markers/cmake)\n'}
+[1.149559] (px4_ros_com) StdoutLine: {'line': b'-- Found mavros_msgs: 2.12.0 (/opt/ros/humble/share/mavros_msgs/cmake)\n'}
+[1.202089] (-) TimerEvent: {}
+[1.218485] (px4_ros_com) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.236381] (px4_ros_com) StdoutLine: {'line': b'-- Found tf2_sensor_msgs: 0.25.16 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)\n'}
+[1.245428] (px4_ros_com) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.295176] (px4_ros_com) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.302187] (-) TimerEvent: {}
+[1.347222] (px4_ros_com) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.402351] (-) TimerEvent: {}
+[1.502795] (-) TimerEvent: {}
+[1.603209] (-) TimerEvent: {}
+[1.703618] (-) TimerEvent: {}
+[1.804072] (-) TimerEvent: {}
+[1.904571] (-) TimerEvent: {}
+[1.905260] (px4_ros_com) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.913524] (px4_ros_com) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.004729] (-) TimerEvent: {}
+[2.105150] (-) TimerEvent: {}
+[2.160914] (px4_ros_com) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.170675] (px4_ros_com) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.180821] (px4_ros_com) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.205274] (-) TimerEvent: {}
+[2.305726] (-) TimerEvent: {}
+[2.385197] (px4_ros_com) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.405868] (-) TimerEvent: {}
+[2.506348] (-) TimerEvent: {}
+[2.606831] (-) TimerEvent: {}
+[2.618275] (px4_ros_com) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.706986] (-) TimerEvent: {}
+[2.807440] (-) TimerEvent: {}
+[2.840333] (px4_ros_com) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[2.864060] (px4_ros_com) StdoutLine: {'line': b'-- Found octomap_msgs: 2.0.1 (/opt/ros/humble/share/octomap_msgs/cmake)\n'}
+[2.907578] (-) TimerEvent: {}
+[2.946091] (px4_ros_com) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.007728] (-) TimerEvent: {}
+[3.068229] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.076208] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.077782] (px4_ros_com) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/hj926217/ros2ws/src/px4_ros_com/include;$<BUILD_INTERFACE:/home/hj926217/ros2ws/src/px4_ros_com/include/px4_ros_com>\n'}
+[3.077870] (px4_ros_com) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.082595] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.082683] (px4_ros_com) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[3.083665] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.085282] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.086756] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.091433] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.091585] (px4_ros_com) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.092440] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.094823] (px4_ros_com) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.107839] (-) TimerEvent: {}
+[3.208230] (-) TimerEvent: {}
+[3.308626] (-) TimerEvent: {}
+[3.330276] (px4_ros_com) StdoutLine: {'line': b'-- Generating done\n'}
+[3.390920] (px4_ros_com) StdoutLine: {'line': b'-- Build files have been written to: /home/hj926217/ros2ws/build/px4_ros_com\n'}
+[3.408791] (-) TimerEvent: {}
+[3.454822] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target frame_transforms\x1b[0m\n'}
+[3.457928] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sensor_combined_listener\x1b[0m\n'}
+[3.458592] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vehicle_gps_position_listener\x1b[0m\n'}
+[3.458767] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target path_follower\x1b[0m\n'}
+[3.458907] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target goal_marker_pub\x1b[0m\n'}
+[3.461198] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gripper_send_zero\x1b[0m\n'}
+[3.461597] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target aruco_position_sub\x1b[0m\n'}
+[3.461970] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target circle_flight\x1b[0m\n'}
+[3.463894] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target landing_target_sender_mavros\x1b[0m\n'}
+[3.468195] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gripper_send_two\x1b[0m\n'}
+[3.468505] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ground_odom\x1b[0m\n'}
+[3.469096] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target debug_vect_advertiser\x1b[0m\n'}
+[3.478511] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tf2_control\x1b[0m\n'}
+[3.478898] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nav_path\x1b[0m\n'}
+[3.480597] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target goal_to_path\x1b[0m\n'}
+[3.482460] (px4_ros_com) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o\x1b[0m\n'}
+[3.509134] (-) TimerEvent: {}
+[3.523892] (px4_ros_com) StdoutLine: {'line': b'[  7%] Built target frame_transforms\n'}
+[3.532686] (px4_ros_com) StdoutLine: {'line': b'[ 15%] Built target circle_flight\n'}
+[3.533061] (px4_ros_com) StdoutLine: {'line': b'[ 17%] Built target sensor_combined_listener\n'}
+[3.533693] (px4_ros_com) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/path_follower.dir/src/path_follower.cpp.o\x1b[0m\n'}
+[3.533996] (px4_ros_com) StdoutLine: {'line': b'[ 25%] Built target gripper_send_zero\n'}
+[3.534160] (px4_ros_com) StdoutLine: {'line': b'[ 30%] Built target debug_vect_advertiser\n'}
+[3.534328] (px4_ros_com) StdoutLine: {'line': b'[ 35%] Built target gripper_send_two\n'}
+[3.534455] (px4_ros_com) StdoutLine: {'line': b'[ 40%] Built target ground_odom\n'}
+[3.534580] (px4_ros_com) StdoutLine: {'line': b'[ 45%] Built target vehicle_gps_position_listener\n'}
+[3.536477] (px4_ros_com) StdoutLine: {'line': b'[ 52%] Built target landing_target_sender_mavros\n'}
+[3.536847] (px4_ros_com) StdoutLine: {'line': b'[ 55%] Built target nav_path\n'}
+[3.541876] (px4_ros_com) StdoutLine: {'line': b'[ 75%] Built target aruco_position_sub\n'}
+[3.542974] (px4_ros_com) StdoutLine: {'line': b'[ 75%] Built target goal_to_path\n'}
+[3.543471] (px4_ros_com) StdoutLine: {'line': b'[ 75%] Built target tf2_control\n'}
+[3.545009] (px4_ros_com) StdoutLine: {'line': b'[ 75%] Built target goal_marker_pub\n'}
+[3.552251] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vertiport_land\x1b[0m\n'}
+[3.559771] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target offboard_control\x1b[0m\n'}
+[3.562351] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target offboard_control_srv\x1b[0m\n'}
+[3.562744] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target aruco_position_publisher_node\x1b[0m\n'}
+[3.590029] (px4_ros_com) StdoutLine: {'line': b'[ 80%] Built target offboard_control\n'}
+[3.590908] (px4_ros_com) StdoutLine: {'line': b'[ 85%] Built target vertiport_land\n'}
+[3.593179] (px4_ros_com) StdoutLine: {'line': b'[ 85%] Built target ament_cmake_python_copy_px4_ros_com\n'}
+[3.597664] (px4_ros_com) StdoutLine: {'line': b'[ 90%] Built target offboard_control_srv\n'}
+[3.608185] (px4_ros_com) StdoutLine: {'line': b'[ 95%] Built target aruco_position_publisher_node\n'}
+[3.609161] (-) TimerEvent: {}
+[3.709459] (-) TimerEvent: {}
+[3.809949] (-) TimerEvent: {}
+[3.910435] (-) TimerEvent: {}
+[4.010848] (-) TimerEvent: {}
+[4.079689] (px4_ros_com) StdoutLine: {'line': b'running egg_info\n'}
+[4.081410] (px4_ros_com) StdoutLine: {'line': b'writing px4_ros_com.egg-info/PKG-INFO\n'}
+[4.082149] (px4_ros_com) StdoutLine: {'line': b'writing dependency_links to px4_ros_com.egg-info/dependency_links.txt\n'}
+[4.082480] (px4_ros_com) StdoutLine: {'line': b'writing top-level names to px4_ros_com.egg-info/top_level.txt\n'}
+[4.087374] (px4_ros_com) StdoutLine: {'line': b"reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[4.088734] (px4_ros_com) StdoutLine: {'line': b"writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[4.111018] (-) TimerEvent: {}
+[4.143543] (px4_ros_com) StdoutLine: {'line': b'[ 95%] Built target ament_cmake_python_build_px4_ros_com_egg\n'}
+[4.211269] (-) TimerEvent: {}
+[4.311668] (-) TimerEvent: {}
+[4.412149] (-) TimerEvent: {}
+[4.512637] (-) TimerEvent: {}
+[4.613129] (-) TimerEvent: {}
+[4.713598] (-) TimerEvent: {}
+[4.814197] (-) TimerEvent: {}
+[4.914752] (-) TimerEvent: {}
+[5.015261] (-) TimerEvent: {}
+[5.115709] (-) TimerEvent: {}
+[5.216147] (-) TimerEvent: {}
+[5.316620] (-) TimerEvent: {}
+[5.417188] (-) TimerEvent: {}
+[5.517748] (-) TimerEvent: {}
+[5.618314] (-) TimerEvent: {}
+[5.718877] (-) TimerEvent: {}
+[5.819419] (-) TimerEvent: {}
+[5.919872] (-) TimerEvent: {}
+[6.020305] (-) TimerEvent: {}
+[6.120726] (-) TimerEvent: {}
+[6.221181] (-) TimerEvent: {}
+[6.321635] (-) TimerEvent: {}
+[6.422221] (-) TimerEvent: {}
+[6.522783] (-) TimerEvent: {}
+[6.623204] (-) TimerEvent: {}
+[6.723698] (-) TimerEvent: {}
+[6.824178] (-) TimerEvent: {}
+[6.924615] (-) TimerEvent: {}
+[7.025026] (-) TimerEvent: {}
+[7.125462] (-) TimerEvent: {}
+[7.225903] (-) TimerEvent: {}
+[7.326419] (-) TimerEvent: {}
+[7.426870] (-) TimerEvent: {}
+[7.527355] (-) TimerEvent: {}
+[7.627775] (-) TimerEvent: {}
+[7.728215] (-) TimerEvent: {}
+[7.828666] (-) TimerEvent: {}
+[7.929058] (-) TimerEvent: {}
+[8.029572] (-) TimerEvent: {}
+[8.129987] (-) TimerEvent: {}
+[8.230498] (-) TimerEvent: {}
+[8.330942] (-) TimerEvent: {}
+[8.361902] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GoalAStarOctomapSafeNode::onOctomap(octomap_msgs::msg::Octomap_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.362182] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:172:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<octomap::AbstractOcTree>\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Krelease\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.362272] (px4_ros_com) StderrLine: {'line': b'  172 |     auto *oct = dynamic_cast<octomap::OcTree*>(tree.\x1b[01;31m\x1b[Krelease\x1b[m\x1b[K());\n'}
+[8.362335] (px4_ros_com) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.431060] (-) TimerEvent: {}
+[8.531614] (-) TimerEvent: {}
+[8.632013] (-) TimerEvent: {}
+[8.732576] (-) TimerEvent: {}
+[8.833002] (-) TimerEvent: {}
+[8.933403] (-) TimerEvent: {}
+[9.033793] (-) TimerEvent: {}
+[9.134349] (-) TimerEvent: {}
+[9.234783] (-) TimerEvent: {}
+[9.335234] (-) TimerEvent: {}
+[9.435611] (-) TimerEvent: {}
+[9.536022] (-) TimerEvent: {}
+[9.636504] (-) TimerEvent: {}
+[9.736949] (-) TimerEvent: {}
+[9.837402] (-) TimerEvent: {}
+[9.937780] (-) TimerEvent: {}
+[10.038201] (-) TimerEvent: {}
+[10.138643] (-) TimerEvent: {}
+[10.239076] (-) TimerEvent: {}
+[10.339461] (-) TimerEvent: {}
+[10.439822] (-) TimerEvent: {}
+[10.540204] (-) TimerEvent: {}
+[10.640701] (-) TimerEvent: {}
+[10.708353] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[10.708810] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[10.708968] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[10.709122] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[10.709264] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[10.709440] (px4_ros_com) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = interactive_markers::InteractiveMarkerServer; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; _Tp = interactive_markers::InteractiveMarkerServer]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.709587] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = interactive_markers::InteractiveMarkerServer; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; _Tp = interactive_markers::InteractiveMarkerServer; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<interactive_markers::InteractiveMarkerServer>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.709748] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; _Tp = interactive_markers::InteractiveMarkerServer; _Alloc = std::allocator<interactive_markers::InteractiveMarkerServer>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.709895] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = interactive_markers::InteractiveMarkerServer; _Alloc = std::allocator<interactive_markers::InteractiveMarkerServer>; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.710057] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<interactive_markers::InteractiveMarkerServer>; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; _Tp = interactive_markers::InteractiveMarkerServer; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.710231] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<interactive_markers::InteractiveMarkerServer>; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}; _Tp = interactive_markers::InteractiveMarkerServer]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.710422] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = interactive_markers::InteractiveMarkerServer; _Alloc = std::allocator<interactive_markers::InteractiveMarkerServer>; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.710570] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = interactive_markers::InteractiveMarkerServer; _Args = {std::shared_ptr<rclcpp::Node>, const char (&)[24]}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.710744] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:83:77:\x1b[m\x1b[K   required from here\n'}
+[10.710890] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kinteractive_markers::InteractiveMarkerServer::InteractiveMarkerServer(std::shared_ptr<rclcpp::Node>, const char [24])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.711036] (px4_ros_com) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[10.711208] (px4_ros_com) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.711349] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:8\x1b[m\x1b[K:\n'}
+[10.711473] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:89:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class NodePtr> interactive_markers::InteractiveMarkerServer::InteractiveMarkerServer(const string&, NodePtr, const rclcpp::QoS&, const rclcpp::QoS&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.711615] (px4_ros_com) StderrLine: {'line': b'   89 |   \x1b[01;36m\x1b[KInteractiveMarkerServer\x1b[m\x1b[K(\n'}
+[10.711736] (px4_ros_com) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.711856] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:89:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[10.711986] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[10.712116] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[10.712253] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[10.712374] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[10.712494] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:1\x1b[m\x1b[K:\n'}
+[10.712618] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::forward<std::shared_ptr<rclcpp::Node> >((* & __args#0))\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Node>\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kconst string&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<char>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[10.712747] (px4_ros_com) StderrLine: {'line': b'  162 |         { \x1b[01;36m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[10.712873] (px4_ros_com) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.713003] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:8\x1b[m\x1b[K:\n'}
+[10.713155] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:78:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kinteractive_markers::InteractiveMarkerServer::InteractiveMarkerServer(const string&, rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeTopicsInterface::SharedPtr, rclcpp::node_interfaces::NodeServicesInterface::SharedPtr, const rclcpp::QoS&, const rclcpp::QoS&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.713319] (px4_ros_com) StderrLine: {'line': b'   78 |   \x1b[01;36m\x1b[KInteractiveMarkerServer\x1b[m\x1b[K(\n'}
+[10.713447] (px4_ros_com) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.713574] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:78:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 8 arguments, 2 provided\n'}
+[10.740953] (-) TimerEvent: {}
+[10.841350] (-) TimerEvent: {}
+[10.941724] (-) TimerEvent: {}
+[11.042216] (-) TimerEvent: {}
+[11.142779] (-) TimerEvent: {}
+[11.243308] (-) TimerEvent: {}
+[11.343684] (-) TimerEvent: {}
+[11.444176] (-) TimerEvent: {}
+[11.544678] (-) TimerEvent: {}
+[11.645209] (-) TimerEvent: {}
+[11.745581] (-) TimerEvent: {}
+[11.846014] (-) TimerEvent: {}
+[11.946484] (-) TimerEvent: {}
+[12.046950] (-) TimerEvent: {}
+[12.147434] (-) TimerEvent: {}
+[12.247864] (-) TimerEvent: {}
+[12.348285] (-) TimerEvent: {}
+[12.448849] (-) TimerEvent: {}
+[12.549264] (-) TimerEvent: {}
+[12.649798] (-) TimerEvent: {}
+[12.750198] (-) TimerEvent: {}
+[12.850554] (-) TimerEvent: {}
+[12.950970] (-) TimerEvent: {}
+[13.051437] (-) TimerEvent: {}
+[13.151959] (-) TimerEvent: {}
+[13.252409] (-) TimerEvent: {}
+[13.352827] (-) TimerEvent: {}
+[13.453387] (-) TimerEvent: {}
+[13.553808] (-) TimerEvent: {}
+[13.654309] (-) TimerEvent: {}
+[13.754832] (-) TimerEvent: {}
+[13.855330] (-) TimerEvent: {}
+[13.955855] (-) TimerEvent: {}
+[14.056294] (-) TimerEvent: {}
+[14.056844] (px4_ros_com) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/goal_astar_octomap_safe_node.dir/build.make:76: CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o] Error 1\n'}
+[14.057270] (px4_ros_com) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/goal_astar_octomap_safe_node.dir/all] Error 2\n'}
+[14.057372] (px4_ros_com) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[14.156432] (-) TimerEvent: {}
+[14.256842] (-) TimerEvent: {}
+[14.357219] (-) TimerEvent: {}
+[14.457688] (-) TimerEvent: {}
+[14.558089] (-) TimerEvent: {}
+[14.658492] (-) TimerEvent: {}
+[14.758885] (-) TimerEvent: {}
+[14.859241] (-) TimerEvent: {}
+[14.959598] (-) TimerEvent: {}
+[15.060002] (-) TimerEvent: {}
+[15.160420] (-) TimerEvent: {}
+[15.260784] (-) TimerEvent: {}
+[15.361118] (-) TimerEvent: {}
+[15.461494] (-) TimerEvent: {}
+[15.561881] (-) TimerEvent: {}
+[15.662245] (-) TimerEvent: {}
+[15.762691] (-) TimerEvent: {}
+[15.863192] (-) TimerEvent: {}
+[15.963922] (-) TimerEvent: {}
+[16.064292] (-) TimerEvent: {}
+[16.164681] (-) TimerEvent: {}
+[16.265009] (-) TimerEvent: {}
+[16.365384] (-) TimerEvent: {}
+[16.465755] (-) TimerEvent: {}
+[16.566218] (-) TimerEvent: {}
+[16.666620] (-) TimerEvent: {}
+[16.767098] (-) TimerEvent: {}
+[16.867505] (-) TimerEvent: {}
+[16.967818] (-) TimerEvent: {}
+[17.068246] (-) TimerEvent: {}
+[17.168765] (-) TimerEvent: {}
+[17.269196] (-) TimerEvent: {}
+[17.369625] (-) TimerEvent: {}
+[17.470119] (-) TimerEvent: {}
+[17.570518] (-) TimerEvent: {}
+[17.670983] (-) TimerEvent: {}
+[17.771416] (-) TimerEvent: {}
+[17.871867] (-) TimerEvent: {}
+[17.972305] (-) TimerEvent: {}
+[18.072696] (-) TimerEvent: {}
+[18.173178] (-) TimerEvent: {}
+[18.273629] (-) TimerEvent: {}
+[18.374008] (-) TimerEvent: {}
+[18.474553] (-) TimerEvent: {}
+[18.574989] (-) TimerEvent: {}
+[18.675405] (-) TimerEvent: {}
+[18.775854] (-) TimerEvent: {}
+[18.876540] (-) TimerEvent: {}
+[18.977047] (-) TimerEvent: {}
+[19.077519] (-) TimerEvent: {}
+[19.178060] (-) TimerEvent: {}
+[19.278524] (-) TimerEvent: {}
+[19.378843] (-) TimerEvent: {}
+[19.479315] (-) TimerEvent: {}
+[19.579729] (-) TimerEvent: {}
+[19.680101] (-) TimerEvent: {}
+[19.780575] (-) TimerEvent: {}
+[19.881009] (-) TimerEvent: {}
+[19.981546] (-) TimerEvent: {}
+[20.081997] (-) TimerEvent: {}
+[20.182400] (-) TimerEvent: {}
+[20.282846] (-) TimerEvent: {}
+[20.383347] (-) TimerEvent: {}
+[20.483697] (-) TimerEvent: {}
+[20.584090] (-) TimerEvent: {}
+[20.684566] (-) TimerEvent: {}
+[20.784995] (-) TimerEvent: {}
+[20.885460] (-) TimerEvent: {}
+[20.985850] (-) TimerEvent: {}
+[21.086288] (-) TimerEvent: {}
+[21.186652] (-) TimerEvent: {}
+[21.287054] (-) TimerEvent: {}
+[21.387394] (-) TimerEvent: {}
+[21.487729] (-) TimerEvent: {}
+[21.588157] (-) TimerEvent: {}
+[21.688618] (-) TimerEvent: {}
+[21.789009] (-) TimerEvent: {}
+[21.889655] (-) TimerEvent: {}
+[21.990416] (-) TimerEvent: {}
+[22.090817] (-) TimerEvent: {}
+[22.191178] (-) TimerEvent: {}
+[22.291530] (-) TimerEvent: {}
+[22.391907] (-) TimerEvent: {}
+[22.492313] (-) TimerEvent: {}
+[22.592694] (-) TimerEvent: {}
+[22.693070] (-) TimerEvent: {}
+[22.793479] (-) TimerEvent: {}
+[22.893898] (-) TimerEvent: {}
+[22.994334] (-) TimerEvent: {}
+[23.094777] (-) TimerEvent: {}
+[23.195205] (-) TimerEvent: {}
+[23.295635] (-) TimerEvent: {}
+[23.396011] (-) TimerEvent: {}
+[23.496450] (-) TimerEvent: {}
+[23.596900] (-) TimerEvent: {}
+[23.697432] (-) TimerEvent: {}
+[23.797858] (-) TimerEvent: {}
+[23.898234] (-) TimerEvent: {}
+[23.998615] (-) TimerEvent: {}
+[24.099010] (-) TimerEvent: {}
+[24.199588] (-) TimerEvent: {}
+[24.299925] (-) TimerEvent: {}
+[24.400340] (-) TimerEvent: {}
+[24.500711] (-) TimerEvent: {}
+[24.601121] (-) TimerEvent: {}
+[24.701519] (-) TimerEvent: {}
+[24.801948] (-) TimerEvent: {}
+[24.902463] (-) TimerEvent: {}
+[25.002938] (-) TimerEvent: {}
+[25.103353] (-) TimerEvent: {}
+[25.203814] (-) TimerEvent: {}
+[25.304193] (-) TimerEvent: {}
+[25.404598] (-) TimerEvent: {}
+[25.504970] (-) TimerEvent: {}
+[25.605370] (-) TimerEvent: {}
+[25.705772] (-) TimerEvent: {}
+[25.806098] (-) TimerEvent: {}
+[25.906502] (-) TimerEvent: {}
+[26.006910] (-) TimerEvent: {}
+[26.107345] (-) TimerEvent: {}
+[26.207725] (-) TimerEvent: {}
+[26.308140] (-) TimerEvent: {}
+[26.408563] (-) TimerEvent: {}
+[26.508981] (-) TimerEvent: {}
+[26.609307] (-) TimerEvent: {}
+[26.709656] (-) TimerEvent: {}
+[26.810069] (-) TimerEvent: {}
+[26.910439] (-) TimerEvent: {}
+[27.010802] (-) TimerEvent: {}
+[27.111202] (-) TimerEvent: {}
+[27.211640] (-) TimerEvent: {}
+[27.312018] (-) TimerEvent: {}
+[27.412388] (-) TimerEvent: {}
+[27.512881] (-) TimerEvent: {}
+[27.613224] (-) TimerEvent: {}
+[27.713589] (-) TimerEvent: {}
+[27.813985] (-) TimerEvent: {}
+[27.914337] (-) TimerEvent: {}
+[28.014655] (-) TimerEvent: {}
+[28.115030] (-) TimerEvent: {}
+[28.215428] (-) TimerEvent: {}
+[28.315975] (-) TimerEvent: {}
+[28.416564] (-) TimerEvent: {}
+[28.516991] (-) TimerEvent: {}
+[28.617446] (-) TimerEvent: {}
+[28.717904] (-) TimerEvent: {}
+[28.818313] (-) TimerEvent: {}
+[28.918679] (-) TimerEvent: {}
+[28.982333] (px4_ros_com) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable path_follower\x1b[0m\n'}
+[29.018823] (-) TimerEvent: {}
+[29.119221] (-) TimerEvent: {}
+[29.219638] (-) TimerEvent: {}
+[29.320179] (-) TimerEvent: {}
+[29.420597] (-) TimerEvent: {}
+[29.520953] (-) TimerEvent: {}
+[29.621343] (-) TimerEvent: {}
+[29.721715] (-) TimerEvent: {}
+[29.822090] (-) TimerEvent: {}
+[29.922447] (-) TimerEvent: {}
+[30.022814] (-) TimerEvent: {}
+[30.123176] (-) TimerEvent: {}
+[30.223597] (-) TimerEvent: {}
+[30.323988] (-) TimerEvent: {}
+[30.424477] (-) TimerEvent: {}
+[30.524887] (-) TimerEvent: {}
+[30.625309] (-) TimerEvent: {}
+[30.725707] (-) TimerEvent: {}
+[30.826186] (-) TimerEvent: {}
+[30.926561] (-) TimerEvent: {}
+[31.026966] (-) TimerEvent: {}
+[31.127376] (-) TimerEvent: {}
+[31.227779] (-) TimerEvent: {}
+[31.328158] (-) TimerEvent: {}
+[31.428583] (-) TimerEvent: {}
+[31.452625] (px4_ros_com) StdoutLine: {'line': b'[ 97%] Built target path_follower\n'}
+[31.454245] (px4_ros_com) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[31.457743] (px4_ros_com) CommandEnded: {'returncode': 2}
+[31.482815] (px4_ros_com) JobEnded: {'identifier': 'px4_ros_com', 'rc': 2}
+[31.493493] (-) EventReactorShutdown: {}

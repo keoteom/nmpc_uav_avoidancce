@@ -1,0 +1,60 @@
+[35m[1mConsolidate compiler generated dependencies of target rrt_star_planner[0m
+[  4%] Built target frame_transforms
+[  8%] Built target vehicle_gps_position_listener
+[ 21%] Built target vtol_mission_node
+[ 13%] Built target gripper_send_two
+[ 26%] Built target goal_marker_pub
+[ 39%] Built target global_path
+[ 39%] Built target goal_to_path
+[ 39%] Built target landing_target_sender_mavros
+[ 43%] Built target sensor_combined_listener
+[ 45%] [32mBuilding CXX object CMakeFiles/rrt_star_planner.dir/src/rrt_star_planner.cpp.o[0m
+[ 50%] Built target gripper_send_zero
+[ 63%] Built target nav_path
+[ 63%] Built target path_follower
+[ 63%] Built target ground_odom
+[ 17%] Built target debug_vect_advertiser
+[ 67%] Built target local_path
+[ 71%] Built target aruco_position_sub
+[ 76%] Built target circle_flight
+[ 80%] Built target tf2_control
+[ 80%] Built target ament_cmake_python_copy_px4_ros_com
+[ 84%] Built target offboard_control
+[ 89%] Built target vertiport_land
+[ 93%] Built target aruco_position_publisher_node
+[ 97%] Built target offboard_control_srv
+running egg_info
+writing px4_ros_com.egg-info/PKG-INFO
+writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+writing top-level names to px4_ros_com.egg-info/top_level.txt
+reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_px4_ros_com_egg
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:[m[K In member function ‘[01m[Kvoid RRTStarPlanner::planPath()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:121:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+  121 |             double new_x = /* ... */[01;31m[K;[m[K double new_y = /* ... */; double new_z = /* ... */;
+      |                                     [01;31m[K^[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:121:63:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+  121 |           double new_x = /* ... */; double new_y = /* ... */[01;31m[K;[m[K double new_z = /* ... */;
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:121:89:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+  121 |  new_x = /* ... */; double new_y = /* ... */; double new_z = /* ... */[01;31m[K;[m[K
+      |                                                                       [01;31m[K^[m[K
+
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:127:66:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+  127 |             double dist_cost = /* distance from nearest to new */[01;31m[K;[m[K
+      |                                                                  [01;31m[K^[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:131:52:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K][m[K’ token
+  131 |             double total_cost = tree[/*nearest_id*/[01;31m[K][m[K.cost + dist_cost + deviation_penalty;
+      |                                                    [01;31m[K^[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:131:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktotal_cost[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  131 |             double [01;35m[Ktotal_cost[m[K = tree[/*nearest_id*/].cost + dist_cost + deviation_penalty;
+      |                    [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:[m[K In member function ‘[01m[Kvoid RRTStarPlanner::publishAndSavePath(const std::vector<RRTNode>&)[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/rrt_star_planner.cpp:141:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktree[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  141 |     void publishAndSavePath([01;35m[Kconst std::vector<RRTNode>& tree[m[K /*, int goal_id*/) {
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/rrt_star_planner.dir/build.make:76: CMakeFiles/rrt_star_planner.dir/src/rrt_star_planner.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:184: CMakeFiles/rrt_star_planner.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

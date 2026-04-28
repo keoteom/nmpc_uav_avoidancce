@@ -1,0 +1,720 @@
+[0.000000] (-) TimerEvent: {}
+[0.000653] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000746] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/hj926217/ros2ws/install/px4_msgs')])}
+[0.000797] (px4_ros_com) JobStarted: {'identifier': 'px4_ros_com'}
+[0.028773] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'cmake'}
+[0.033122] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'build'}
+[0.033706] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hj926217/ros2ws/build/px4_ros_com', '--', '-j16', '-l16'], 'cwd': '/home/hj926217/ros2ws/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hj926217'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/aruco/install/px4_ros2_cpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib'), ('HOME', '/home/hj926217'), ('OLDPWD', '/home/hj926217'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '10991'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hj926217'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hj926217'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/hj926217/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/hj926217-17Z90Q-GAFWK:@/tmp/.ICE-unix/1701,unix/hj926217-17Z90Q-GAFWK:/tmp/.ICE-unix/1701'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/94d257b5_2679_499c_9f90_91a52361575f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WT6QH3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.137'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/aruco/install/px4_ros2_cpp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hj926217/ros2ws/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/aruco/install/px4_ros2_cpp:/opt/ros/humble')]), 'shell': False}
+[0.097076] (-) TimerEvent: {}
+[0.100944] (px4_ros_com) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.197225] (-) TimerEvent: {}
+[0.299397] (-) TimerEvent: {}
+[0.402606] (-) TimerEvent: {}
+[0.475791] (px4_ros_com) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.502771] (-) TimerEvent: {}
+[0.552015] (px4_ros_com) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.557226] (px4_ros_com) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.573841] (px4_ros_com) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.601309] (px4_ros_com) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.602887] (-) TimerEvent: {}
+[0.634484] (px4_ros_com) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.663112] (px4_ros_com) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.666585] (px4_ros_com) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.703071] (-) TimerEvent: {}
+[0.742728] (px4_ros_com) StdoutLine: {'line': b'-- Found px4_msgs: 2.0.1 (/home/hj926217/aruco/install/px4_msgs/share/px4_msgs/cmake)\n'}
+[0.773299] (px4_ros_com) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.803205] (-) TimerEvent: {}
+[0.850770] (px4_ros_com) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.855678] (px4_ros_com) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.903362] (-) TimerEvent: {}
+[1.004174] (-) TimerEvent: {}
+[1.105081] (-) TimerEvent: {}
+[1.160188] (px4_ros_com) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.205197] (-) TimerEvent: {}
+[1.269902] (px4_ros_com) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.305350] (-) TimerEvent: {}
+[1.317165] (px4_ros_com) StdoutLine: {'line': b'-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.317616] (px4_ros_com) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.329693] (px4_ros_com) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.405588] (-) TimerEvent: {}
+[1.507593] (-) TimerEvent: {}
+[1.516412] (px4_ros_com) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.529638] (px4_ros_com) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.532711] (px4_ros_com) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.572124] (px4_ros_com) StdoutLine: {'line': b'-- Found px4_ros2_cpp: 0.0.1 (/home/hj926217/aruco/install/px4_ros2_cpp/share/px4_ros2_cpp/cmake)\n'}
+[1.603618] (px4_ros_com) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.607823] (-) TimerEvent: {}
+[1.708979] (-) TimerEvent: {}
+[1.809992] (-) TimerEvent: {}
+[1.812696] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.825857] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.826827] (px4_ros_com) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/hj926217/ros2ws/src/px4_ros_com/include;$<BUILD_INTERFACE:/home/hj926217/ros2ws/src/px4_ros_com/include/px4_ros_com>\n'}
+[1.829737] (px4_ros_com) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.837938] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.838268] (px4_ros_com) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.840054] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.844993] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.845572] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.857029] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.857417] (px4_ros_com) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.859603] (px4_ros_com) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.862108] (px4_ros_com) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.910161] (-) TimerEvent: {}
+[1.946413] (px4_ros_com) StdoutLine: {'line': b'-- Generating done\n'}
+[1.984328] (px4_ros_com) StdoutLine: {'line': b'-- Build files have been written to: /home/hj926217/ros2ws/build/px4_ros_com\n'}
+[2.012848] (-) TimerEvent: {}
+[2.064746] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target frame_transforms\x1b[0m\n'}
+[2.105143] (px4_ros_com) StdoutLine: {'line': b'[ 12%] Built target frame_transforms\n'}
+[2.116598] (-) TimerEvent: {}
+[2.170575] (px4_ros_com) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_px4_ros_com\n'}
+[2.202852] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target offboard_control_srv\x1b[0m\n'}
+[2.216769] (-) TimerEvent: {}
+[2.242680] (px4_ros_com) StdoutLine: {'line': b'[ 25%] Built target offboard_control_srv\n'}
+[2.316908] (-) TimerEvent: {}
+[2.417421] (-) TimerEvent: {}
+[2.520584] (-) TimerEvent: {}
+[2.621089] (-) TimerEvent: {}
+[2.721589] (-) TimerEvent: {}
+[2.822074] (-) TimerEvent: {}
+[2.922885] (-) TimerEvent: {}
+[2.963716] (px4_ros_com) StdoutLine: {'line': b'running egg_info\n'}
+[2.964062] (px4_ros_com) StdoutLine: {'line': b'writing px4_ros_com.egg-info/PKG-INFO\n'}
+[2.964194] (px4_ros_com) StdoutLine: {'line': b'writing dependency_links to px4_ros_com.egg-info/dependency_links.txt\n'}
+[2.964293] (px4_ros_com) StdoutLine: {'line': b'writing top-level names to px4_ros_com.egg-info/top_level.txt\n'}
+[2.970848] (px4_ros_com) StdoutLine: {'line': b"reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[2.971621] (px4_ros_com) StdoutLine: {'line': b"writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[3.022995] (-) TimerEvent: {}
+[3.040598] (px4_ros_com) StdoutLine: {'line': b'[ 25%] Built target ament_cmake_python_build_px4_ros_com_egg\n'}
+[3.067078] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target offboard_control\x1b[0m\n'}
+[3.111026] (px4_ros_com) StdoutLine: {'line': b'[ 37%] Built target offboard_control\n'}
+[3.123515] (-) TimerEvent: {}
+[3.161587] (px4_ros_com) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/vertiport_land.dir/src/examples/offboard/VertiportLand.cpp.o\x1b[0m\n'}
+[3.223638] (-) TimerEvent: {}
+[3.324158] (-) TimerEvent: {}
+[3.424830] (-) TimerEvent: {}
+[3.525743] (-) TimerEvent: {}
+[3.626738] (-) TimerEvent: {}
+[3.727211] (-) TimerEvent: {}
+[3.828566] (-) TimerEvent: {}
+[3.929060] (-) TimerEvent: {}
+[4.029598] (-) TimerEvent: {}
+[4.130081] (-) TimerEvent: {}
+[4.230595] (-) TimerEvent: {}
+[4.334600] (-) TimerEvent: {}
+[4.435136] (-) TimerEvent: {}
+[4.535703] (-) TimerEvent: {}
+[4.636252] (-) TimerEvent: {}
+[4.736857] (-) TimerEvent: {}
+[4.837544] (-) TimerEvent: {}
+[4.938446] (-) TimerEvent: {}
+[5.039028] (-) TimerEvent: {}
+[5.139697] (-) TimerEvent: {}
+[5.240274] (-) TimerEvent: {}
+[5.341173] (-) TimerEvent: {}
+[5.442235] (-) TimerEvent: {}
+[5.542791] (-) TimerEvent: {}
+[5.643278] (-) TimerEvent: {}
+[5.743848] (-) TimerEvent: {}
+[5.845008] (-) TimerEvent: {}
+[5.945569] (-) TimerEvent: {}
+[6.046627] (-) TimerEvent: {}
+[6.148775] (-) TimerEvent: {}
+[6.249898] (-) TimerEvent: {}
+[6.351134] (-) TimerEvent: {}
+[6.451925] (-) TimerEvent: {}
+[6.552393] (-) TimerEvent: {}
+[6.653419] (-) TimerEvent: {}
+[6.753951] (-) TimerEvent: {}
+[6.857797] (-) TimerEvent: {}
+[6.958264] (-) TimerEvent: {}
+[7.060593] (-) TimerEvent: {}
+[7.161162] (-) TimerEvent: {}
+[7.261778] (-) TimerEvent: {}
+[7.362453] (-) TimerEvent: {}
+[7.463145] (-) TimerEvent: {}
+[7.563646] (-) TimerEvent: {}
+[7.664124] (-) TimerEvent: {}
+[7.765213] (-) TimerEvent: {}
+[7.866054] (-) TimerEvent: {}
+[7.968597] (-) TimerEvent: {}
+[8.069088] (-) TimerEvent: {}
+[8.169613] (-) TimerEvent: {}
+[8.270152] (-) TimerEvent: {}
+[8.370815] (-) TimerEvent: {}
+[8.473114] (-) TimerEvent: {}
+[8.574080] (-) TimerEvent: {}
+[8.676532] (-) TimerEvent: {}
+[8.777378] (-) TimerEvent: {}
+[8.879583] (-) TimerEvent: {}
+[8.980116] (-) TimerEvent: {}
+[9.080680] (-) TimerEvent: {}
+[9.181185] (-) TimerEvent: {}
+[9.281905] (-) TimerEvent: {}
+[9.385590] (-) TimerEvent: {}
+[9.486192] (-) TimerEvent: {}
+[9.586718] (-) TimerEvent: {}
+[9.687259] (-) TimerEvent: {}
+[9.787808] (-) TimerEvent: {}
+[9.891805] (-) TimerEvent: {}
+[9.992367] (-) TimerEvent: {}
+[10.093218] (-) TimerEvent: {}
+[10.194733] (-) TimerEvent: {}
+[10.295275] (-) TimerEvent: {}
+[10.395809] (-) TimerEvent: {}
+[10.496408] (-) TimerEvent: {}
+[10.597541] (-) TimerEvent: {}
+[10.699702] (-) TimerEvent: {}
+[10.800291] (-) TimerEvent: {}
+[10.900952] (-) TimerEvent: {}
+[11.003673] (-) TimerEvent: {}
+[11.104180] (-) TimerEvent: {}
+[11.206770] (-) TimerEvent: {}
+[11.310266] (-) TimerEvent: {}
+[11.410794] (-) TimerEvent: {}
+[11.511403] (-) TimerEvent: {}
+[11.614743] (-) TimerEvent: {}
+[11.715461] (-) TimerEvent: {}
+[11.815917] (-) TimerEvent: {}
+[11.916384] (-) TimerEvent: {}
+[12.016906] (-) TimerEvent: {}
+[12.117848] (-) TimerEvent: {}
+[12.218626] (-) TimerEvent: {}
+[12.320761] (-) TimerEvent: {}
+[12.421548] (-) TimerEvent: {}
+[12.522058] (-) TimerEvent: {}
+[12.624121] (-) TimerEvent: {}
+[12.724657] (-) TimerEvent: {}
+[12.729005] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:13:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[12.729534] (px4_ros_com) StderrLine: {'line': b'   13 | \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::PrecisionLand(rclcpp::Node& node)\n'}
+[12.729823] (px4_ros_com) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.729990] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:33:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[12.730165] (px4_ros_com) StderrLine: {'line': b'   33 | void \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::loadParameters()\n'}
+[12.730380] (px4_ros_com) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.741734] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid loadParameters()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.742067] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:35:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_node\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.742556] (px4_ros_com) StderrLine: {'line': b'   35 |         \x1b[01;31m\x1b[K_node\x1b[m\x1b[K.declare_parameter<float>("descent_vel", 1.0);\n'}
+[12.742844] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.743019] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:35:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.743190] (px4_ros_com) StderrLine: {'line': b'   35 |         _node.declare_parameter<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>("descent_vel", 1.0);\n'}
+[12.743354] (px4_ros_com) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.743535] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:36:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.743730] (px4_ros_com) StderrLine: {'line': b'   36 |         _node.declare_parameter<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>("vel_p_gain", 1.5);\n'}
+[12.744038] (px4_ros_com) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.744269] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:37:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.744419] (px4_ros_com) StderrLine: {'line': b'   37 |         _node.declare_parameter<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>("vel_i_gain", 0.0);\n'}
+[12.744573] (px4_ros_com) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.744705] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:38:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.744854] (px4_ros_com) StderrLine: {'line': b'   38 |         _node.declare_parameter<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>("max_velocity", 3.0);\n'}
+[12.744992] (px4_ros_com) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.745122] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:39:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.745253] (px4_ros_com) StderrLine: {'line': b'   39 |         _node.declare_parameter<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>("target_timeout", 3.0);\n'}
+[12.745384] (px4_ros_com) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.745537] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:40:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.745710] (px4_ros_com) StderrLine: {'line': b'   40 |         _node.declare_parameter<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>("delta_position", 0.25);\n'}
+[12.745842] (px4_ros_com) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.745969] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:41:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.746105] (px4_ros_com) StderrLine: {'line': b'   41 |         _node.declare_parameter<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>("delta_velocity", 0.25);\n'}
+[12.746236] (px4_ros_com) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.767809] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:43:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_descent_vel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.768102] (px4_ros_com) StderrLine: {'line': b'   43 |         _node.get_parameter("descent_vel", \x1b[01;31m\x1b[K_param_descent_vel\x1b[m\x1b[K);\n'}
+[12.768198] (px4_ros_com) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.792043] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:44:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_vel_p_gain\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.792702] (px4_ros_com) StderrLine: {'line': b'   44 |         _node.get_parameter("vel_p_gain", \x1b[01;31m\x1b[K_param_vel_p_gain\x1b[m\x1b[K);\n'}
+[12.793051] (px4_ros_com) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.814134] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:45:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_vel_i_gain\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.814600] (px4_ros_com) StderrLine: {'line': b'   45 |         _node.get_parameter("vel_i_gain", \x1b[01;31m\x1b[K_param_vel_i_gain\x1b[m\x1b[K);\n'}
+[12.814771] (px4_ros_com) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.824812] (-) TimerEvent: {}
+[12.841563] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:46:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_max_velocity\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.842768] (px4_ros_com) StderrLine: {'line': b'   46 |         _node.get_parameter("max_velocity", \x1b[01;31m\x1b[K_param_max_velocity\x1b[m\x1b[K);\n'}
+[12.842977] (px4_ros_com) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.870639] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:47:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_target_timeout\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.871051] (px4_ros_com) StderrLine: {'line': b'   47 |         _node.get_parameter("target_timeout", \x1b[01;31m\x1b[K_param_target_timeout\x1b[m\x1b[K);\n'}
+[12.871222] (px4_ros_com) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.899113] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:48:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_delta_position\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.899926] (px4_ros_com) StderrLine: {'line': b'   48 |         _node.get_parameter("delta_position", \x1b[01;31m\x1b[K_param_delta_position\x1b[m\x1b[K);\n'}
+[12.900155] (px4_ros_com) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.925598] (-) TimerEvent: {}
+[12.930637] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:49:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_delta_velocity\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.930995] (px4_ros_com) StderrLine: {'line': b'   49 |         _node.get_parameter("delta_velocity", \x1b[01;31m\x1b[K_param_delta_velocity\x1b[m\x1b[K);\n'}
+[12.931181] (px4_ros_com) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.931353] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[12.931553] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.931735] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.931894] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.934821] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.935140] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.935313] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.935468] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.935659] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.935837] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.935984] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/aruco/install/px4_ros2_cpp/include/px4_ros2/components/mode.hpp:10\x1b[m\x1b[K,\n'}
+[12.936128] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.hpp:3\x1b[m\x1b[K,\n'}
+[12.936272] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:1\x1b[m\x1b[K:\n'}
+[12.936418] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:51:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[12.936595] (px4_ros_com) StderrLine: {'line': b'   51 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(_node.get_logger(), "descent_vel: %f", _param_descent_vel);\n'}
+[12.936744] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.936885] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:52:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[12.937048] (px4_ros_com) StderrLine: {'line': b'   52 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(_node.get_logger(), "vel_i_gain: %f", _param_vel_i_gain);\n'}
+[12.937212] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.937360] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K At global scope:\n'}
+[12.937538] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:55:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[12.937736] (px4_ros_com) StderrLine: {'line': b'   55 | void \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::vehicleLandDetectedCallback(const px4_msgs::msg::VehicleLandDetected::SharedPtr msg)\n'}
+[12.937886] (px4_ros_com) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.965376] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid vehicleLandDetectedCallback(px4_msgs::msg::VehicleLandDetected_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.965752] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:57:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_land_detected\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.965952] (px4_ros_com) StderrLine: {'line': b'   57 |         \x1b[01;31m\x1b[K_land_detected\x1b[m\x1b[K = msg->landed;\n'}
+[12.966105] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.966254] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K At global scope:\n'}
+[12.966407] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:60:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[12.966600] (px4_ros_com) StderrLine: {'line': b'   60 | void \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::targetPoseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr msg)\n'}
+[12.966756] (px4_ros_com) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.966903] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:60:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoseStamped\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KPointStamped\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.967059] (px4_ros_com) StderrLine: {'line': b'   60 | ecisionLand::targetPoseCallback(const geometry_msgs::msg::\x1b[01;31m\x1b[KPoseStamped\x1b[m\x1b[K::SharedPtr msg)\n'}
+[12.967215] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.967362] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[KPointStamped\x1b[m\x1b[K\n'}
+[12.967515] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:60:89:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.967678] (px4_ros_com) StderrLine: {'line': b'   60 | getPoseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[12.967819] (px4_ros_com) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[12.967980] (px4_ros_com) StderrLine: {'line': b'\n'}
+[12.968122] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:60:88:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.968270] (px4_ros_com) StderrLine: {'line': b'   60 | getPoseCallback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst geometry_msgs::msg::PoseStamped::SharedPtr\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[12.969815] (px4_ros_com) StderrLine: {'line': b'      |                \x1b[34m\x1b[K~\x1b[m\x1b[K                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~\x1b[m\x1b[K\n'}
+[12.970071] (px4_ros_com) StderrLine: {'line': b'      |                                                                 \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[12.970237] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:60:89:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.970389] (px4_ros_com) StderrLine: {'line': b'   60 | getPoseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[12.970556] (px4_ros_com) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[12.970712] (px4_ros_com) StderrLine: {'line': b'\n'}
+[12.973714] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:75:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[12.974030] (px4_ros_com) StderrLine: {'line': b'   75 | \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::ArucoTag PrecisionLand::getTagWorld(const ArucoTag& tag)\n'}
+[12.974203] (px4_ros_com) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.974350] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:103:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[12.974509] (px4_ros_com) StderrLine: {'line': b'  103 | void \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::onActivate()\n'}
+[12.974675] (px4_ros_com) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.994288] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid onActivate()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.994646] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:105:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgenerateSearchWaypoints\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.994831] (px4_ros_com) StderrLine: {'line': b'  105 |         \x1b[01;31m\x1b[KgenerateSearchWaypoints\x1b[m\x1b[K();\n'}
+[12.994994] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.018588] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:106:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_search_started\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.018983] (px4_ros_com) StderrLine: {'line': b'  106 |         \x1b[01;31m\x1b[K_search_started\x1b[m\x1b[K = true;\n'}
+[13.019145] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.019294] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:107:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.019460] (px4_ros_com) StderrLine: {'line': b'  107 |         switchToState(\x1b[01;31m\x1b[KState\x1b[m\x1b[K::Search);\n'}
+[13.019653] (px4_ros_com) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.025824] (-) TimerEvent: {}
+[13.031761] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:107:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KswitchToState\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.032129] (px4_ros_com) StderrLine: {'line': b'  107 |         \x1b[01;31m\x1b[KswitchToState\x1b[m\x1b[K(State::Search);\n'}
+[13.032296] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.032443] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K At global scope:\n'}
+[13.035792] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:110:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.035961] (px4_ros_com) StderrLine: {'line': b'  110 | void \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::onDeactivate()\n'}
+[13.036112] (px4_ros_com) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.036248] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:115:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.036380] (px4_ros_com) StderrLine: {'line': b'  115 | void \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::updateSetpoint(float dt_s)\n'}
+[13.036536] (px4_ros_com) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.051741] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid updateSetpoint(float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.052099] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:117:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcheckTargetTimeout\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.052257] (px4_ros_com) StderrLine: {'line': b'  117 |         bool target_lost = \x1b[01;31m\x1b[KcheckTargetTimeout\x1b[m\x1b[K();\n'}
+[13.052385] (px4_ros_com) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.071266] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:119:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_target_lost_prev\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktarget_lost\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.071843] (px4_ros_com) StderrLine: {'line': b'  119 |         if (target_lost && !\x1b[01;31m\x1b[K_target_lost_prev\x1b[m\x1b[K) {\n'}
+[13.072005] (px4_ros_com) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.072134] (px4_ros_com) StderrLine: {'line': b'      |                             \x1b[32m\x1b[Ktarget_lost\x1b[m\x1b[K\n'}
+[13.081292] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[13.081706] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[13.081848] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.081942] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.082290] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.082537] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[13.082807] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[13.083048] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.083287] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.083489] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.083713] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/aruco/install/px4_ros2_cpp/include/px4_ros2/components/mode.hpp:10\x1b[m\x1b[K,\n'}
+[13.084173] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.hpp:3\x1b[m\x1b[K,\n'}
+[13.084387] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:1\x1b[m\x1b[K:\n'}
+[13.084596] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:120:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_node\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.085066] (px4_ros_com) StderrLine: {'line': b'  120 |                 RCLCPP_INFO(\x1b[01;31m\x1b[K_node\x1b[m\x1b[K.get_logger(), "Target lost: State %s", stateName(_state).c_str());\n'}
+[13.085294] (px4_ros_com) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.085723] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:120:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.086039] (px4_ros_com) StderrLine: {'line': b'  120 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(_node.get_logger(), "Target lost: State %s", stateName(_state).c_str());\n'}
+[13.086134] (px4_ros_com) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.093130] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[13.093452] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[13.093592] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[13.093684] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.093770] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.093856] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.093932] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[13.094017] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[13.094097] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.094170] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.094239] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.094306] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/aruco/install/px4_ros2_cpp/include/px4_ros2/components/mode.hpp:10\x1b[m\x1b[K,\n'}
+[13.094383] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.hpp:3\x1b[m\x1b[K,\n'}
+[13.094450] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:1\x1b[m\x1b[K:\n'}
+[13.094563] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:120:84:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_state\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[K_xstate\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.095196] (px4_ros_com) StderrLine: {'line': b'  120 | FO(_node.get_logger(), "Target lost: State %s", stateName(\x1b[01;31m\x1b[K_state\x1b[m\x1b[K).c_str());\n'}
+[13.095425] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[13.095646] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.106767] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:120:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KstateName\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kttyname\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.107097] (px4_ros_com) StderrLine: {'line': b'  120 |  RCLCPP_INFO(_node.get_logger(), "Target lost: State %s", \x1b[01;31m\x1b[KstateName\x1b[m\x1b[K(_state).c_str());\n'}
+[13.107215] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[13.107311] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.116061] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[13.116418] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[13.116547] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.116660] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.116777] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.116900] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[13.117020] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[13.117112] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.117210] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.117326] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.117418] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/aruco/install/px4_ros2_cpp/include/px4_ros2/components/mode.hpp:10\x1b[m\x1b[K,\n'}
+[13.117526] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.hpp:3\x1b[m\x1b[K,\n'}
+[13.117631] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:1\x1b[m\x1b[K:\n'}
+[13.117973] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:123:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_node\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.118263] (px4_ros_com) StderrLine: {'line': b'  123 |                 RCLCPP_INFO(\x1b[01;31m\x1b[K_node\x1b[m\x1b[K.get_logger(), "Target acquired");\n'}
+[13.118439] (px4_ros_com) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.118696] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:123:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.118785] (px4_ros_com) StderrLine: {'line': b'  123 |                 \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(_node.get_logger(), "Target acquired");\n'}
+[13.118879] (px4_ros_com) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.125984] (-) TimerEvent: {}
+[13.140529] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:126:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_target_lost_prev\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktarget_lost\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.141998] (px4_ros_com) StderrLine: {'line': b'  126 |         \x1b[01;31m\x1b[K_target_lost_prev\x1b[m\x1b[K = target_lost;\n'}
+[13.142136] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.142245] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ktarget_lost\x1b[m\x1b[K\n'}
+[13.152293] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:129:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_state\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[K_xstate\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.152660] (px4_ros_com) StderrLine: {'line': b'  129 |         switch (\x1b[01;31m\x1b[K_state\x1b[m\x1b[K) {\n'}
+[13.152841] (px4_ros_com) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[13.152991] (px4_ros_com) StderrLine: {'line': b'      |                 \x1b[32m\x1b[K_xstate\x1b[m\x1b[K\n'}
+[13.153296] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:130:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.153508] (px4_ros_com) StderrLine: {'line': b'  130 |         case \x1b[01;31m\x1b[KState\x1b[m\x1b[K::Idle: {\n'}
+[13.153669] (px4_ros_com) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.153802] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:135:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.153953] (px4_ros_com) StderrLine: {'line': b'  135 |         case \x1b[01;31m\x1b[KState\x1b[m\x1b[K::Search: {\n'}
+[13.154084] (px4_ros_com) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.161242] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:137:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_tag\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.161553] (px4_ros_com) StderrLine: {'line': b'  137 |                 if (!std::isnan(\x1b[01;31m\x1b[K_tag\x1b[m\x1b[K.position.x())) {\n'}
+[13.161696] (px4_ros_com) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[13.187366] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:138:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_approach_altitude\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.187709] (px4_ros_com) StderrLine: {'line': b'  138 |                         \x1b[01;31m\x1b[K_approach_altitude\x1b[m\x1b[K = _vehicle_local_position->positionNed().z();\n'}
+[13.187897] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.217773] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:138:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_vehicle_local_position\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.218162] (px4_ros_com) StderrLine: {'line': b'  138 |                         _approach_altitude = \x1b[01;31m\x1b[K_vehicle_local_position\x1b[m\x1b[K->positionNed().z();\n'}
+[13.218306] (px4_ros_com) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.218396] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:139:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.218504] (px4_ros_com) StderrLine: {'line': b'  139 |                         switchToState(\x1b[01;31m\x1b[KState\x1b[m\x1b[K::Approach);\n'}
+[13.218585] (px4_ros_com) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.226194] (-) TimerEvent: {}
+[13.234095] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:139:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KswitchToState\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.234426] (px4_ros_com) StderrLine: {'line': b'  139 |                         \x1b[01;31m\x1b[KswitchToState\x1b[m\x1b[K(State::Approach);\n'}
+[13.234758] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.251623] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:143:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_search_waypoints\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.251969] (px4_ros_com) StderrLine: {'line': b'  143 |                 auto waypoint_position = \x1b[01;31m\x1b[K_search_waypoints\x1b[m\x1b[K[_search_waypoint_index];\n'}
+[13.252076] (px4_ros_com) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.276344] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:143:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_search_waypoint_index\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.276780] (px4_ros_com) StderrLine: {'line': b'  143 |                auto waypoint_position = _search_waypoints[\x1b[01;31m\x1b[K_search_waypoint_index\x1b[m\x1b[K];\n'}
+[13.276985] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.277184] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.296387] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:145:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_trajectory_setpoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.297106] (px4_ros_com) StderrLine: {'line': b'  145 |                 \x1b[01;31m\x1b[K_trajectory_setpoint\x1b[m\x1b[K->updatePosition(waypoint_position);\n'}
+[13.297304] (px4_ros_com) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.308333] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:147:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpositionReached\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.308684] (px4_ros_com) StderrLine: {'line': b'  147 |                 if (\x1b[01;31m\x1b[KpositionReached\x1b[m\x1b[K(waypoint_position)) {\n'}
+[13.308837] (px4_ros_com) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.309171] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:159:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.309582] (px4_ros_com) StderrLine: {'line': b'  159 |         case \x1b[01;31m\x1b[KState\x1b[m\x1b[K::Approach: {\n'}
+[13.309682] (px4_ros_com) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.318573] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[13.318898] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[13.319007] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.319107] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.319210] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.319308] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[13.319433] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[13.319537] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.319650] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.319740] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.319820] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/aruco/install/px4_ros2_cpp/include/px4_ros2/components/mode.hpp:10\x1b[m\x1b[K,\n'}
+[13.319903] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.hpp:3\x1b[m\x1b[K,\n'}
+[13.320022] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:1\x1b[m\x1b[K:\n'}
+[13.320108] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:162:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_node\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.320202] (px4_ros_com) StderrLine: {'line': b'  162 |                         RCLCPP_INFO(\x1b[01;31m\x1b[K_node\x1b[m\x1b[K.get_logger(), "Failed! Target lost during %s", stateName(_state).c_str());\n'}
+[13.320311] (px4_ros_com) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.320400] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:162:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.320507] (px4_ros_com) StderrLine: {'line': b'  162 |                         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(_node.get_logger(), "Failed! Target lost during %s", stateName(_state).c_str());\n'}
+[13.320605] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.326304] (-) TimerEvent: {}
+[13.329551] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[13.330126] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[13.330424] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[13.330673] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.330971] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.331128] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.331261] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[13.331407] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[13.331554] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.331692] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.331785] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.331878] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/aruco/install/px4_ros2_cpp/include/px4_ros2/components/mode.hpp:10\x1b[m\x1b[K,\n'}
+[13.331977] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.hpp:3\x1b[m\x1b[K,\n'}
+[13.332078] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:1\x1b[m\x1b[K:\n'}
+[13.332170] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:162:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KstateName\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kttyname\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.332284] (px4_ros_com) StderrLine: {'line': b'  162 | INFO(_node.get_logger(), "Failed! Target lost during %s", \x1b[01;31m\x1b[KstateName\x1b[m\x1b[K(_state).c_str());\n'}
+[13.332380] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[13.332471] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.332586] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:163:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KModeBase\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.332694] (px4_ros_com) StderrLine: {'line': b'  163 |                         \x1b[01;31m\x1b[KModeBase\x1b[m\x1b[K::completed(px4_ros2::Result::ModeFailureOther);\n'}
+[13.332804] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.332914] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:164:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.333028] (px4_ros_com) StderrLine: {'line': b'  164 |                         switchToState(\x1b[01;31m\x1b[KState\x1b[m\x1b[K::Idle);\n'}
+[13.333137] (px4_ros_com) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.345374] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:164:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KswitchToState\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.355243] (px4_ros_com) StderrLine: {'line': b'  164 |                         \x1b[01;31m\x1b[KswitchToState\x1b[m\x1b[K(State::Idle);\n'}
+[13.355542] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.355976] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:169:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_tag\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.356348] (px4_ros_com) StderrLine: {'line': b'  169 |                 auto target_position = Eigen::Vector3f(\x1b[01;31m\x1b[K_tag\x1b[m\x1b[K.position.x(), _tag.position.y(), _approach_altitude);\n'}
+[13.356563] (px4_ros_com) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[13.384673] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:169:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_approach_altitude\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.385100] (px4_ros_com) StderrLine: {'line': b'  169 | n = Eigen::Vector3f(_tag.position.x(), _tag.position.y(), \x1b[01;31m\x1b[K_approach_altitude\x1b[m\x1b[K);\n'}
+[13.385293] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.386140] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.411416] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:171:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_trajectory_setpoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.412026] (px4_ros_com) StderrLine: {'line': b'  171 |                 \x1b[01;31m\x1b[K_trajectory_setpoint\x1b[m\x1b[K->updatePosition(target_position);\n'}
+[13.412287] (px4_ros_com) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.426454] (-) TimerEvent: {}
+[13.428710] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:173:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpositionReached\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.429034] (px4_ros_com) StderrLine: {'line': b'  173 |                 if (\x1b[01;31m\x1b[KpositionReached\x1b[m\x1b[K(target_position)) {\n'}
+[13.429204] (px4_ros_com) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.429361] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:174:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.429523] (px4_ros_com) StderrLine: {'line': b'  174 |                         switchToState(\x1b[01;31m\x1b[KState\x1b[m\x1b[K::Descend);\n'}
+[13.429646] (px4_ros_com) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.441669] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:174:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KswitchToState\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.442141] (px4_ros_com) StderrLine: {'line': b'  174 |                         \x1b[01;31m\x1b[KswitchToState\x1b[m\x1b[K(State::Descend);\n'}
+[13.442341] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.442508] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:180:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.442668] (px4_ros_com) StderrLine: {'line': b'  180 |         case \x1b[01;31m\x1b[KState\x1b[m\x1b[K::Descend: {\n'}
+[13.442816] (px4_ros_com) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.449989] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[13.450499] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[13.450730] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.450926] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.451106] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.451278] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[13.451432] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[13.451607] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.451756] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.451900] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.452043] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/aruco/install/px4_ros2_cpp/include/px4_ros2/components/mode.hpp:10\x1b[m\x1b[K,\n'}
+[13.452184] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.hpp:3\x1b[m\x1b[K,\n'}
+[13.452376] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:1\x1b[m\x1b[K:\n'}
+[13.452533] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:183:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_node\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.452685] (px4_ros_com) StderrLine: {'line': b'  183 |                         RCLCPP_INFO(\x1b[01;31m\x1b[K_node\x1b[m\x1b[K.get_logger(), "Failed! Target lost during %s", stateName(_state).c_str());\n'}
+[13.452820] (px4_ros_com) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.452950] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:183:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.453085] (px4_ros_com) StderrLine: {'line': b'  183 |                         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(_node.get_logger(), "Failed! Target lost during %s", stateName(_state).c_str());\n'}
+[13.453223] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.460281] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[13.460732] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[13.460968] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[13.461137] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[13.461277] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[13.461418] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[13.461598] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[13.461751] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[13.461898] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[13.462056] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[13.462204] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.462339] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/aruco/install/px4_ros2_cpp/include/px4_ros2/components/mode.hpp:10\x1b[m\x1b[K,\n'}
+[13.462493] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.hpp:3\x1b[m\x1b[K,\n'}
+[13.462677] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:1\x1b[m\x1b[K:\n'}
+[13.462835] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:183:90:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KstateName\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kttyname\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.463093] (px4_ros_com) StderrLine: {'line': b'  183 | INFO(_node.get_logger(), "Failed! Target lost during %s", \x1b[01;31m\x1b[KstateName\x1b[m\x1b[K(_state).c_str());\n'}
+[13.463319] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[13.463629] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.463795] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:184:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KModeBase\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.463961] (px4_ros_com) StderrLine: {'line': b'  184 |                         \x1b[01;31m\x1b[KModeBase\x1b[m\x1b[K::completed(px4_ros2::Result::ModeFailureOther);\n'}
+[13.464105] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.464227] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:185:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.464348] (px4_ros_com) StderrLine: {'line': b'  185 |                         switchToState(\x1b[01;31m\x1b[KState\x1b[m\x1b[K::Idle);\n'}
+[13.464468] (px4_ros_com) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.472437] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:185:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KswitchToState\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.472957] (px4_ros_com) StderrLine: {'line': b'  185 |                         \x1b[01;31m\x1b[KswitchToState\x1b[m\x1b[K(State::Idle);\n'}
+[13.473157] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.497578] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:190:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcalculateVelocitySetpointXY\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.497897] (px4_ros_com) StderrLine: {'line': b'  190 |                 Eigen::Vector2f vel = \x1b[01;31m\x1b[KcalculateVelocitySetpointXY\x1b[m\x1b[K();\n'}
+[13.498045] (px4_ros_com) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.522642] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:191:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_trajectory_setpoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.523015] (px4_ros_com) StderrLine: {'line': b'  191 |                 \x1b[01;31m\x1b[K_trajectory_setpoint\x1b[m\x1b[K->update(Eigen::Vector3f(vel.x(), vel.y(), _param_descent_vel), std::nullopt,\n'}
+[13.523218] (px4_ros_com) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.526579] (-) TimerEvent: {}
+[13.543882] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:191:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_descent_vel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.544184] (px4_ros_com) StderrLine: {'line': b'  191 | ectory_setpoint->update(Eigen::Vector3f(vel.x(), vel.y(), \x1b[01;31m\x1b[K_param_descent_vel\x1b[m\x1b[K), std::nullopt,\n'}
+[13.544296] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.544422] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.553793] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:192:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_tag\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.554327] (px4_ros_com) StderrLine: {'line': b'  192 |                                 px4_ros2::quaternionToYaw(\x1b[01;31m\x1b[K_tag\x1b[m\x1b[K.orientation));\n'}
+[13.554544] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[13.555822] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.574414] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:194:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_land_detected\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.575030] (px4_ros_com) StderrLine: {'line': b'  194 |                 if (\x1b[01;31m\x1b[K_land_detected\x1b[m\x1b[K) {\n'}
+[13.575201] (px4_ros_com) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.575323] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:195:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.575426] (px4_ros_com) StderrLine: {'line': b'  195 |                         switchToState(\x1b[01;31m\x1b[KState\x1b[m\x1b[K::Finished);\n'}
+[13.575540] (px4_ros_com) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.588967] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:195:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KswitchToState\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.589311] (px4_ros_com) StderrLine: {'line': b'  195 |                         \x1b[01;31m\x1b[KswitchToState\x1b[m\x1b[K(State::Finished);\n'}
+[13.589445] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.589567] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:201:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.589783] (px4_ros_com) StderrLine: {'line': b'  201 |         case \x1b[01;31m\x1b[KState\x1b[m\x1b[K::Finished: {\n'}
+[13.589943] (px4_ros_com) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.590063] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:202:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KModeBase\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.590208] (px4_ros_com) StderrLine: {'line': b'  202 |                 \x1b[01;31m\x1b[KModeBase\x1b[m\x1b[K::completed(px4_ros2::Result::Success);\n'}
+[13.590317] (px4_ros_com) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.591220] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:115:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdt_s\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.591583] (px4_ros_com) StderrLine: {'line': b'  115 | void PrecisionLand::updateSetpoint(\x1b[01;35m\x1b[Kfloat dt_s\x1b[m\x1b[K)\n'}
+[13.591736] (px4_ros_com) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~^~~~\x1b[m\x1b[K\n'}
+[13.591926] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K At global scope:\n'}
+[13.592082] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:208:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.592226] (px4_ros_com) StderrLine: {'line': b'  208 | Eigen::Vector2f \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::calculateVelocitySetpointXY()\n'}
+[13.592350] (px4_ros_com) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.614915] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KEigen::Vector2f calculateVelocitySetpointXY()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.615362] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:210:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_vel_p_gain\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.615844] (px4_ros_com) StderrLine: {'line': b'  210 |         float p_gain = \x1b[01;31m\x1b[K_param_vel_p_gain\x1b[m\x1b[K;\n'}
+[13.616012] (px4_ros_com) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.627311] (-) TimerEvent: {}
+[13.637679] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:211:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_vel_i_gain\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.638093] (px4_ros_com) StderrLine: {'line': b'  211 |         float i_gain = \x1b[01;31m\x1b[K_param_vel_i_gain\x1b[m\x1b[K;\n'}
+[13.638281] (px4_ros_com) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.665135] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:214:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_vehicle_local_position\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.666344] (px4_ros_com) StderrLine: {'line': b'  214 |         float delta_pos_x = \x1b[01;31m\x1b[K_vehicle_local_position\x1b[m\x1b[K->positionNed().x() - _tag.position.x();\n'}
+[13.666547] (px4_ros_com) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.673992] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:214:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_tag\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.674297] (px4_ros_com) StderrLine: {'line': b'  214 | elta_pos_x = _vehicle_local_position->positionNed().x() - \x1b[01;31m\x1b[K_tag\x1b[m\x1b[K.position.x();\n'}
+[13.674407] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[13.674570] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.694272] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:218:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_vel_x_integral\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.695244] (px4_ros_com) StderrLine: {'line': b'  218 |         \x1b[01;31m\x1b[K_vel_x_integral\x1b[m\x1b[K += delta_pos_x;\n'}
+[13.695384] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.716727] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:219:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_vel_y_integral\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.717055] (px4_ros_com) StderrLine: {'line': b'  219 |         \x1b[01;31m\x1b[K_vel_y_integral\x1b[m\x1b[K += delta_pos_y;\n'}
+[13.717160] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.727636] (-) TimerEvent: {}
+[13.738876] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:220:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_max_velocity\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.739253] (px4_ros_com) StderrLine: {'line': b'  220 |         float max_integral = \x1b[01;31m\x1b[K_param_max_velocity\x1b[m\x1b[K;\n'}
+[13.739420] (px4_ros_com) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.739747] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K At global scope:\n'}
+[13.739934] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:240:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.740351] (px4_ros_com) StderrLine: {'line': b'  240 | bool \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::checkTargetTimeout()\n'}
+[13.740490] (px4_ros_com) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.748969] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool checkTargetTimeout()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.749401] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:242:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_tag\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.749616] (px4_ros_com) StderrLine: {'line': b'  242 |         if (!\x1b[01;31m\x1b[K_tag\x1b[m\x1b[K.valid()) {\n'}
+[13.749784] (px4_ros_com) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[13.760791] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:246:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_node\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.761219] (px4_ros_com) StderrLine: {'line': b'  246 |         if (\x1b[01;31m\x1b[K_node\x1b[m\x1b[K.now().seconds() - _tag.timestamp.seconds() > _param_target_timeout) {\n'}
+[13.761421] (px4_ros_com) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.769524] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:246:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_tag\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.769920] (px4_ros_com) StderrLine: {'line': b'  246 |         if (_node.now().seconds() - \x1b[01;31m\x1b[K_tag\x1b[m\x1b[K.timestamp.seconds() > _param_target_timeout) {\n'}
+[13.770103] (px4_ros_com) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[13.795736] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:246:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_target_timeout\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.796212] (px4_ros_com) StderrLine: {'line': b'  246 |    if (_node.now().seconds() - _tag.timestamp.seconds() > \x1b[01;31m\x1b[K_param_target_timeout\x1b[m\x1b[K) {\n'}
+[13.796432] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.796798] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.796946] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K At global scope:\n'}
+[13.797095] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:253:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.797467] (px4_ros_com) StderrLine: {'line': b'  253 | void \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::generateSearchWaypoints()\n'}
+[13.797618] (px4_ros_com) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.826061] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid generateSearchWaypoints()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.826433] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:260:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_vehicle_local_position\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.826623] (px4_ros_com) StderrLine: {'line': b'  260 |         double current_z = \x1b[01;31m\x1b[K_vehicle_local_position\x1b[m\x1b[K->positionNed().z();\n'}
+[13.826775] (px4_ros_com) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.827742] (-) TimerEvent: {}
+[13.856076] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:311:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_search_waypoints\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.856449] (px4_ros_com) StderrLine: {'line': b'  311 |         \x1b[01;31m\x1b[K_search_waypoints\x1b[m\x1b[K = waypoints;\n'}
+[13.856681] (px4_ros_com) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.857039] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K At global scope:\n'}
+[13.857225] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:314:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.857380] (px4_ros_com) StderrLine: {'line': b'  314 | bool \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::positionReached(const Eigen::Vector3f& target) const\n'}
+[13.857623] (px4_ros_com) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.857785] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:314:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knon-member function \xe2\x80\x98\x1b[01m\x1b[Kbool positionReached(const Vector3f&)\x1b[m\x1b[K\xe2\x80\x99 cannot have cv-qualifier\n'}
+[13.857930] (px4_ros_com) StderrLine: {'line': b'  314 | l PrecisionLand::positionReached(const Eigen::Vector3f& target) \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K\n'}
+[13.858095] (px4_ros_com) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.858232] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.882183] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool positionReached(const Vector3f&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.882597] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:316:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_vehicle_local_position\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.882775] (px4_ros_com) StderrLine: {'line': b'  316 |         auto position = \x1b[01;31m\x1b[K_vehicle_local_position\x1b[m\x1b[K->positionNed();\n'}
+[13.883228] (px4_ros_com) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.906034] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:321:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_delta_position\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.906645] (px4_ros_com) StderrLine: {'line': b'  321 |         return (delta_pos.norm() < \x1b[01;31m\x1b[K_param_delta_position\x1b[m\x1b[K) && (velocity.norm() < _param_delta_velocity);\n'}
+[13.906775] (px4_ros_com) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.927976] (-) TimerEvent: {}
+[13.928613] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:321:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_param_delta_velocity\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.929139] (px4_ros_com) StderrLine: {'line': b'  321 | pos.norm() < _param_delta_position) && (velocity.norm() < \x1b[01;31m\x1b[K_param_delta_velocity\x1b[m\x1b[K);\n'}
+[13.929310] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.929472] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.929666] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K At global scope:\n'}
+[13.929826] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:324:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.929975] (px4_ros_com) StderrLine: {'line': b'  324 | std::string \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::stateName(State state)\n'}
+[13.930113] (px4_ros_com) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.939394] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:324:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[K_xstate\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.939815] (px4_ros_com) StderrLine: {'line': b'  324 | std::string PrecisionLand::stateName(\x1b[01;31m\x1b[KState\x1b[m\x1b[K state)\n'}
+[13.939957] (px4_ros_com) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.940067] (px4_ros_com) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[K_xstate\x1b[m\x1b[K\n'}
+[13.940185] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:325:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[13.940333] (px4_ros_com) StderrLine: {'line': b'  325 | \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[13.940441] (px4_ros_com) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.940599] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:347:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.940707] (px4_ros_com) StderrLine: {'line': b'  347 | void \x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K::switchToState(State state)\n'}
+[13.940779] (px4_ros_com) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.940856] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:347:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[KswitchToState\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[13.947172] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:347:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KState\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[K_xstate\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.947497] (px4_ros_com) StderrLine: {'line': b'  347 | void PrecisionLand::switchToState(\x1b[01;31m\x1b[KState\x1b[m\x1b[K state)\n'}
+[13.947637] (px4_ros_com) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.947794] (px4_ros_com) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[K_xstate\x1b[m\x1b[K\n'}
+[13.959439] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.959961] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:356:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPrecisionLand\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.960074] (px4_ros_com) StderrLine: {'line': b'  356 |      rclcpp::spin(std::make_shared<px4_ros2::NodeWithMode<\x1b[01;31m\x1b[KPrecisionLand\x1b[m\x1b[K>>(kModeName, kEnableDebugOutput));\n'}
+[13.960172] (px4_ros_com) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.960727] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.960837] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:356:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.961302] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:356:77:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >(const string&, const bool&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.961408] (px4_ros_com) StderrLine: {'line': b'  356 | in(\x1b[01;31m\x1b[Kstd::make_shared<px4_ros2::NodeWithMode<PrecisionLand>>(kModeName, kEnableDebugOutput)\x1b[m\x1b[K);\n'}
+[13.961500] (px4_ros_com) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.961592] (px4_ros_com) StderrLine: {'line': b'\n'}
+[13.961672] (px4_ros_com) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[13.961752] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[13.961874] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/aruco/install/px4_ros2_cpp/include/px4_ros2/components/mode.hpp:10\x1b[m\x1b[K,\n'}
+[13.961962] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.hpp:3\x1b[m\x1b[K,\n'}
+[13.962049] (px4_ros_com) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:1\x1b[m\x1b[K:\n'}
+[13.962133] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.962224] (px4_ros_com) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[13.962305] (px4_ros_com) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.962385] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.962467] (px4_ros_com) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hj926217/ros2ws/src/px4_ros_com/src/examples/offboard/VertiportLand.cpp:356:77:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.962567] (px4_ros_com) StderrLine: {'line': b'  356 | in(\x1b[01;31m\x1b[Kstd::make_shared<px4_ros2::NodeWithMode<PrecisionLand>>(kModeName, kEnableDebugOutput)\x1b[m\x1b[K);\n'}
+[13.962649] (px4_ros_com) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.962737] (px4_ros_com) StderrLine: {'line': b'\n'}
+[14.028376] (-) TimerEvent: {}
+[14.128893] (-) TimerEvent: {}
+[14.230182] (-) TimerEvent: {}
+[14.330702] (-) TimerEvent: {}
+[14.431689] (-) TimerEvent: {}
+[14.532589] (-) TimerEvent: {}
+[14.633222] (-) TimerEvent: {}
+[14.733827] (-) TimerEvent: {}
+[14.835857] (-) TimerEvent: {}
+[14.936392] (-) TimerEvent: {}
+[15.036990] (-) TimerEvent: {}
+[15.139601] (-) TimerEvent: {}
+[15.240115] (-) TimerEvent: {}
+[15.343268] (-) TimerEvent: {}
+[15.363820] (px4_ros_com) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/vertiport_land.dir/build.make:76: CMakeFiles/vertiport_land.dir/src/examples/offboard/VertiportLand.cpp.o] Error 1\n'}
+[15.364515] (px4_ros_com) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:284: CMakeFiles/vertiport_land.dir/all] Error 2\n'}
+[15.365260] (px4_ros_com) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[15.370733] (px4_ros_com) CommandEnded: {'returncode': 2}
+[15.420951] (px4_ros_com) JobEnded: {'identifier': 'px4_ros_com', 'rc': 2}
+[15.450880] (-) TimerEvent: {}
+[15.451112] (-) EventReactorShutdown: {}

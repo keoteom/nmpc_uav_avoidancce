@@ -1,0 +1,399 @@
+[35m[1mConsolidate compiler generated dependencies of target aruco_position_sub[0m
+[  5%] Built target sensor_combined_listener
+[ 11%] Built target vehicle_gps_position_listener
+[ 17%] Built target landing_target_sender_mavros
+[ 23%] Built target ground_odom
+[ 29%] Built target path_follower
+[ 35%] Built target tf2_control
+[ 41%] Built target goal_marker_pub
+[ 47%] Built target frame_transforms
+[ 52%] Built target vertiport_land
+[ 58%] Built target nav_path
+[ 64%] Built target offboard_control
+[ 73%] Built target aruco_position_publisher_node
+[ 73%] [32mBuilding CXX object CMakeFiles/aruco_position_sub.dir/src/aruco_position_sub.cpp.o[0m
+[ 79%] Built target debug_vect_advertiser
+[ 85%] Built target circle_flight
+[ 91%] Built target goal_to_path
+[ 97%] Built target offboard_control_srv
+[ 97%] Built target ament_cmake_python_copy_px4_ros_com
+running egg_info
+writing px4_ros_com.egg-info/PKG-INFO
+writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+writing top-level names to px4_ros_com.egg-info/top_level.txt
+reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_px4_ros_com_egg
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:311:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  311 |     [01;31m[Kmsg[m[K.position[0] = target_x_;
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:312:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  312 |     [01;31m[Kmsg[m[K.position[1] = target_y_;
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:313:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  313 |     [01;31m[Kmsg[m[K.position[2] = target_z_;  // 계단식 1m step 목표 z
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:316:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  316 |     [01;31m[Kmsg[m[K.velocity = {0.0f, 0.0f, 0.0f};
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:316:38:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  316 |     msg.velocity = {0.0f, 0.0f, 0.0f}[01;35m[K;[m[K
+      |                                      [01;35m[K^[m[K
+      |                                      [31m[K-[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:319:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  319 |     [01;31m[Kif[m[K (descending_) {
+      |     [01;31m[K^~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:327:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  327 |     [01;31m[Kmsg[m[K.yaw = 1.57f;
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:328:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  328 |     [01;31m[Kmsg[m[K.timestamp = this->get_clock()->now().nanoseconds() / 1000;
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:329:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher_[m[K’ does not name a type
+  329 |     [01;31m[Ktrajectory_setpoint_publisher_[m[K->publish(msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:332:36:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ at top level
+  332 |     static rclcpp::Time last_log = [01;31m[Kthis[m[K->now();
+      |                                    [01;31m[K^~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:332:25:[m[K [01;31m[Kerror: [m[Kin-class initialization of static data member ‘[01m[Krclcpp::Time OffboardControl::last_log[m[K’ of non-literal type
+  332 |     static rclcpp::Time [01;31m[Klast_log[m[K = this->now();
+      |                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:332:46:[m[K [01;31m[Kerror: [m[Knon-constant in-class initialization invalid for non-inline static member ‘[01m[KOffboardControl::last_log[m[K’
+  332 |     static rclcpp::Time last_log = this->now([01;31m[K)[m[K;
+      |                                              [01;31m[K^[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:332:46:[m[K [01;36m[Knote: [m[K(an out of class initialization is required)
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:333:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  333 |     [01;31m[Kif[m[K ((this->now() - last_log).seconds() > 1.0) {
+      |     [01;31m[K^~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:341:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+  341 |   }
+      |    [01;31m[K^[m[K
+      |    [32m[K;[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In constructor ‘[01m[KOffboardControl::OffboardControl()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:30:5:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KOffboardControl[m[K’ does not have any field named ‘[01m[Koffboard_setpoint_counter_[m[K’
+   30 |     [01;31m[Koffboard_setpoint_counter_[m[K(0)
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_control_mode_publisher_[m[K’ was not declared in this scope
+   33 |     [01;31m[Koffboard_control_mode_publisher_[m[K =
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher_[m[K’ was not declared in this scope
+   35 |     [01;31m[Ktrajectory_setpoint_publisher_[m[K =
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:37:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_command_publisher_[m[K’ was not declared in this scope
+   37 |     [01;31m[Kvehicle_command_publisher_[m[K =
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_thrust_setpoint_publisher_[m[K’ was not declared in this scope
+   40 |     [01;31m[Kvehicle_thrust_setpoint_publisher_[m[K =
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_local_position_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[KVehicleLocalPosition[m[K’?
+   44 |     [01;31m[Kvehicle_local_position_sub_[m[K = this->create_subscription<VehicleLocalPosition>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[KVehicleLocalPosition[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kland_detected_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[KlandDetectedCb[m[K’?
+   50 |     [01;31m[Kland_detected_sub_[m[K = this->create_subscription<VehicleLandDetected>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[KlandDetectedCb[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:56:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_pose_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[KarucoPoseCb[m[K’?
+   56 |     [01;31m[Karuco_pose_sub_[m[K = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |     [32m[KarucoPoseCb[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:63:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   63 |     [01;31m[Ktimer_[m[K = this->create_wall_timer(50ms, std::bind(&OffboardControl::onTimer, this));
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Ktimer_t[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::vehiclePositionCb(px4_msgs::msg::VehicleLocalPosition_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:73:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_x_[m[K’ was not declared in this scope
+   73 |     [01;31m[Kcurrent_x_[m[K = msg->x;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:74:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_y_[m[K’ was not declared in this scope
+   74 |     [01;31m[Kcurrent_y_[m[K = msg->y;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:75:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_z_[m[K’ was not declared in this scope
+   75 |     [01;31m[Kcurrent_z_[m[K = msg->z;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_vehicle_pos_[m[K’ was not declared in this scope
+   76 |     [01;31m[Khave_vehicle_pos_[m[K = true;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::landDetectedCb(px4_msgs::msg::VehicleLandDetected_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:82:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclose_to_ground_or_skipped_check_[m[K’ was not declared in this scope
+   82 |     [01;31m[Kclose_to_ground_or_skipped_check_[m[K = msg->close_to_ground_or_skipped_check;
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::arucoPoseCb(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:88:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_x_[m[K’ was not declared in this scope
+   88 |     [01;31m[Karuco_rel_x_[m[K = static_cast<float>(msg->pose.position.x);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:89:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_y_[m[K’ was not declared in this scope
+   89 |     [01;31m[Karuco_rel_y_[m[K = static_cast<float>(msg->pose.position.y);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_z_[m[K’ was not declared in this scope
+   90 |     [01;31m[Karuco_rel_z_[m[K = static_cast<float>(msg->pose.position.z);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:92:5:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_aruco_[m[K’ was not declared in this scope
+   92 |     [01;31m[Khave_aruco_[m[K = true;
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:96:9:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_ready_[m[K’ was not declared in this scope
+   96 |     if ([01;31m[Koffboard_ready_[m[K && !offboard_started_) {
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:96:29:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_started_[m[K’ was not declared in this scope
+   96 |     if (offboard_ready_ && ![01;31m[Koffboard_started_[m[K) {
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:97:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_vehicle_command[m[K’ was not declared in this scope
+   97 |       [01;31m[Kpublish_vehicle_command[m[K(VehicleCommand::VEHICLE_CMD_DO_SET_MODE, 1.0f, 6.0f); // Offboard
+      |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::compute_offsets_from_aruco()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:108:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koffset_x_[m[K’ was not declared in this scope; did you mean ‘[01m[Koffsetof[m[K’?
+  108 |     [01;31m[Koffset_x_[m[K = aruco_rel_x_;
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Koffsetof[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:108:17:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_x_[m[K’ was not declared in this scope
+  108 |     offset_x_ = [01;31m[Karuco_rel_x_[m[K;
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:109:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koffset_y_[m[K’ was not declared in this scope; did you mean ‘[01m[Koffsetof[m[K’?
+  109 |     [01;31m[Koffset_y_[m[K = aruco_rel_y_;
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Koffsetof[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:109:17:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_y_[m[K’ was not declared in this scope
+  109 |     offset_y_ = [01;31m[Karuco_rel_y_[m[K;
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::try_lock_target()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:115:10:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_locked_[m[K’ was not declared in this scope
+  115 |     if (![01;31m[Ktarget_locked_[m[K && have_vehicle_pos_ && have_aruco_) {
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:115:28:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_vehicle_pos_[m[K’ was not declared in this scope
+  115 |     if (!target_locked_ && [01;31m[Khave_vehicle_pos_[m[K && have_aruco_) {
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:115:49:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_aruco_[m[K’ was not declared in this scope
+  115 |     if (!target_locked_ && have_vehicle_pos_ && [01;31m[Khave_aruco_[m[K) {
+      |                                                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:118:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_x_[m[K’ was not declared in this scope
+  118 |       [01;31m[Ktarget_x_[m[K = current_x_ - offset_x_;
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:118:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_x_[m[K’ was not declared in this scope
+  118 |       target_x_ = [01;31m[Kcurrent_x_[m[K - offset_x_;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:118:32:[m[K [01;31m[Kerror: [m[K‘[01m[Koffset_x_[m[K’ was not declared in this scope; did you mean ‘[01m[Koffsetof[m[K’?
+  118 |       target_x_ = current_x_ - [01;31m[Koffset_x_[m[K;
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                [32m[Koffsetof[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:119:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_y_[m[K’ was not declared in this scope
+  119 |       [01;31m[Ktarget_y_[m[K = current_y_ - offset_y_;
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:119:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_y_[m[K’ was not declared in this scope
+  119 |       target_y_ = [01;31m[Kcurrent_y_[m[K - offset_y_;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:119:32:[m[K [01;31m[Kerror: [m[K‘[01m[Koffset_y_[m[K’ was not declared in this scope; did you mean ‘[01m[Koffsetof[m[K’?
+  119 |       target_y_ = current_y_ - [01;31m[Koffset_y_[m[K;
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                [32m[Koffsetof[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:120:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_z_[m[K’ was not declared in this scope
+  120 |       [01;31m[Ktarget_z_[m[K = current_z_;
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:120:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_z_[m[K’ was not declared in this scope
+  120 |       target_z_ = [01;31m[Kcurrent_z_[m[K;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:123:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kdescending_[m[K’ was not declared in this scope
+  123 |       [01;31m[Kdescending_[m[K = false;
+      |       [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:10[m[K:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:128:19:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_x_[m[K’ was not declared in this scope
+  128 |                   [01;31m[Karuco_rel_x_[m[K, aruco_rel_y_, aruco_rel_z_,
+      |                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:128:33:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_y_[m[K’ was not declared in this scope
+  128 |                   aruco_rel_x_, [01;31m[Karuco_rel_y_[m[K, aruco_rel_z_,
+      |                                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:128:47:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_z_[m[K’ was not declared in this scope
+  128 |                   aruco_rel_x_, aruco_rel_y_, [01;31m[Karuco_rel_z_[m[K,
+      |                                               [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::try_update_target()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:136:9:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_vehicle_pos_[m[K’ was not declared in this scope
+  136 |     if ([01;31m[Khave_vehicle_pos_[m[K && have_aruco_) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:136:30:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_aruco_[m[K’ was not declared in this scope
+  136 |     if (have_vehicle_pos_ && [01;31m[Khave_aruco_[m[K) {
+      |                              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:139:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_x_[m[K’ was not declared in this scope
+  139 |       [01;31m[Ktarget_x_[m[K = current_x_ - offset_x_;
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:139:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_x_[m[K’ was not declared in this scope
+  139 |       target_x_ = [01;31m[Kcurrent_x_[m[K - offset_x_;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:139:32:[m[K [01;31m[Kerror: [m[K‘[01m[Koffset_x_[m[K’ was not declared in this scope; did you mean ‘[01m[Koffsetof[m[K’?
+  139 |       target_x_ = current_x_ - [01;31m[Koffset_x_[m[K;
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                [32m[Koffsetof[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:140:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_y_[m[K’ was not declared in this scope
+  140 |       [01;31m[Ktarget_y_[m[K = current_y_ - offset_y_;
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:140:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_y_[m[K’ was not declared in this scope
+  140 |       target_y_ = [01;31m[Kcurrent_y_[m[K - offset_y_;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:140:32:[m[K [01;31m[Kerror: [m[K‘[01m[Koffset_y_[m[K’ was not declared in this scope; did you mean ‘[01m[Koffsetof[m[K’?
+  140 |       target_y_ = current_y_ - [01;31m[Koffset_y_[m[K;
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                [32m[Koffsetof[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:10[m[K:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:144:41:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_z_[m[K’ was not declared in this scope
+  144 |                   target_x_, target_y_, [01;31m[Ktarget_z_[m[K,
+      |                                         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:145:19:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_x_[m[K’ was not declared in this scope
+  145 |                   [01;31m[Karuco_rel_x_[m[K, aruco_rel_y_, aruco_rel_z_);
+      |                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:145:33:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_y_[m[K’ was not declared in this scope
+  145 |                   aruco_rel_x_, [01;31m[Karuco_rel_y_[m[K, aruco_rel_z_);
+      |                                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:145:47:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_z_[m[K’ was not declared in this scope
+  145 |                   aruco_rel_x_, aruco_rel_y_, [01;31m[Karuco_rel_z_[m[K);
+      |                                               [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::onTimer()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:155:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_locked_[m[K’ was not declared in this scope
+  155 |     if ([01;31m[Ktarget_locked_[m[K) {
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:161:9:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_setpoint_counter_[m[K’ was not declared in this scope
+  161 |     if ([01;31m[Koffboard_setpoint_counter_[m[K < 1000000) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:166:10:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_ready_[m[K’ was not declared in this scope
+  166 |     if (![01;31m[Koffboard_ready_[m[K && offboard_setpoint_counter_ > 20) {
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:166:29:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_setpoint_counter_[m[K’ was not declared in this scope
+  166 |     if (!offboard_ready_ && [01;31m[Koffboard_setpoint_counter_[m[K > 20) {
+      |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::arm()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:175:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_vehicle_command[m[K’ was not declared in this scope
+  175 |     [01;31m[Kpublish_vehicle_command[m[K(VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 1.0f);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_offboard_control_mode()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:188:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koffboard_control_mode_publisher_[m[K’ was not declared in this scope
+  188 |     [01;31m[Koffboard_control_mode_publisher_[m[K->publish(msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_hold_setpoint()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:194:9:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_vehicle_pos_[m[K’ was not declared in this scope
+  194 |     if ([01;31m[Khave_vehicle_pos_[m[K) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:195:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_x_[m[K’ was not declared in this scope
+  195 |       msg.position = {[01;31m[Kcurrent_x_[m[K, current_y_, current_z_};
+      |                       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:195:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_y_[m[K’ was not declared in this scope
+  195 |       msg.position = {current_x_, [01;31m[Kcurrent_y_[m[K, current_z_};
+      |                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:195:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_z_[m[K’ was not declared in this scope
+  195 |       msg.position = {current_x_, current_y_, [01;31m[Kcurrent_z_[m[K};
+      |                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:195:57:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kpx4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kstd::array<float, 3>[m[K’} and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+  195 |       msg.position = {current_x_, current_y_, current_z_[01;31m[K}[m[K;
+      |                                                         [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/11/functional:54[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/home/hj926217/ros2ws/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:8[m[K,
+                 from [01m[K/home/hj926217/ros2ws/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp:7[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:1[m[K:
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(const std::array<float, 3>&)[m[K’
+   95 |     struct [01;36m[Karray[m[K
+      |            [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::array<float, 3>&[m[K’
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::array<float, 3>& std::array<float, 3>::operator=(std::array<float, 3>&&)[m[K’
+[01m[K/usr/include/c++/11/array:95:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::array<float, 3>&&[m[K’
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:204:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher_[m[K’ was not declared in this scope
+  204 |     [01;31m[Ktrajectory_setpoint_publisher_[m[K->publish(msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_locked_setpoint()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:216:10:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_vehicle_pos_[m[K’ was not declared in this scope
+  216 |     if (![01;31m[Khave_vehicle_pos_[m[K || !have_aruco_) {
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:216:32:[m[K [01;31m[Kerror: [m[K‘[01m[Khave_aruco_[m[K’ was not declared in this scope
+  216 |     if (!have_vehicle_pos_ || ![01;31m[Khave_aruco_[m[K) {
+      |                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:221:22:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_x_[m[K’ was not declared in this scope
+  221 |     const float dx = [01;31m[Ktarget_x_[m[K - current_x_;
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:221:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_x_[m[K’ was not declared in this scope
+  221 |     const float dx = target_x_ - [01;31m[Kcurrent_x_[m[K;
+      |                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:222:22:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_y_[m[K’ was not declared in this scope
+  222 |     const float dy = [01;31m[Ktarget_y_[m[K - current_y_;
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:222:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_y_[m[K’ was not declared in this scope
+  222 |     const float dy = target_y_ - [01;31m[Kcurrent_y_[m[K;
+      |                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:224:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_z_[m[K’ was not declared in this scope
+  224 |     const float z_err = std::fabs([01;31m[Ktarget_z_[m[K - current_z_);
+      |                                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:224:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_z_[m[K’ was not declared in this scope
+  224 |     const float z_err = std::fabs(target_z_ - [01;31m[Kcurrent_z_[m[K);
+      |                                               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:228:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_vehicle_command[m[K’ was not declared in this scope
+  228 |         [01;31m[Kpublish_vehicle_command[m[K(VehicleCommand::VEHICLE_CMD_NAV_LAND, 0.0f, 0.0f);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:236:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kdescending_[m[K’ was not declared in this scope
+  236 |     if (![01;31m[Kdescending_[m[K) {
+      |          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:275:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdescending_[m[K’ was not declared in this scope
+  275 |     if ([01;31m[Kdescending_[m[K) {
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:294:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_setpoint_publisher_[m[K’ was not declared in this scope
+  294 |     [01;31m[Ktrajectory_setpoint_publisher_[m[K->publish(msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:10[m[K:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:301:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kdescending_[m[K’ was not declared in this scope
+  301 |                     target_x_, target_y_, target_z_, xy_err, z_err, (int)[01;31m[Kdescending_[m[K,
+      |                                                                          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:302:21:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_x_[m[K’ was not declared in this scope
+  302 |                     [01;31m[Karuco_rel_x_[m[K, aruco_rel_y_, aruco_rel_z_,
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:302:35:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_y_[m[K’ was not declared in this scope
+  302 |                     aruco_rel_x_, [01;31m[Karuco_rel_y_[m[K, aruco_rel_z_,
+      |                                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:302:49:[m[K [01;31m[Kerror: [m[K‘[01m[Karuco_rel_z_[m[K’ was not declared in this scope
+  302 |                     aruco_rel_x_, aruco_rel_y_, [01;31m[Karuco_rel_z_[m[K,
+      |                                                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:303:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclose_to_ground_or_skipped_check_[m[K’ was not declared in this scope
+  303 |                     (int)[01;31m[Kclose_to_ground_or_skipped_check_[m[K, current_z_);
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In function ‘[01m[Kvoid publish_vehicle_command(uint16_t, float, float)[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:354:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  354 |     msg.timestamp = [01;31m[Kthis[m[K->get_clock()->now().nanoseconds() / 1000;
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:355:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvehicle_command_publisher_[m[K’ was not declared in this scope
+  355 |     [01;31m[Kvehicle_command_publisher_[m[K->publish(msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K At global scope:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:394:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  394 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/aruco_position_sub.dir/build.make:76: CMakeFiles/aruco_position_sub.dir/src/aruco_position_sub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:484: CMakeFiles/aruco_position_sub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

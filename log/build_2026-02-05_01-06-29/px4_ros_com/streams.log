@@ -1,0 +1,65 @@
+[0.043s] Invoking command in '/home/hj926217/ros2ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16
+[0.207s] [35m[1mConsolidate compiler generated dependencies of target goal_astar_octomap_safe_node[0m
+[0.310s] [  5%] Built target gripper_send_two
+[0.316s] [ 10%] Built target path_follower
+[0.316s] [ 15%] Built target goal_marker_pub
+[0.317s] [ 20%] Built target gripper_send_zero
+[0.320s] [ 22%] [32mBuilding CXX object CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o[0m
+[0.322s] [ 27%] Built target sensor_combined_listener
+[0.333s] [ 32%] Built target debug_vect_advertiser
+[0.335s] [ 37%] Built target frame_transforms
+[0.344s] [ 42%] Built target goal_to_path
+[0.344s] [ 47%] Built target nav_path
+[0.348s] [ 55%] Built target vehicle_gps_position_listener
+[0.349s] [ 57%] Built target tf2_control
+[0.351s] [ 62%] Built target ground_odom
+[0.351s] [ 67%] Built target landing_target_sender_mavros
+[0.363s] [ 72%] Built target circle_flight
+[0.364s] [ 77%] Built target aruco_position_sub
+[0.439s] [ 82%] Built target vertiport_land
+[0.449s] [ 87%] Built target offboard_control_srv
+[0.452s] [ 92%] Built target offboard_control
+[0.455s] [ 92%] Built target ament_cmake_python_copy_px4_ros_com
+[0.461s] [ 97%] Built target aruco_position_publisher_node
+[1.687s] running egg_info
+[1.691s] writing px4_ros_com.egg-info/PKG-INFO
+[1.691s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[1.692s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[1.701s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.703s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.791s] [ 97%] Built target ament_cmake_python_build_px4_ros_com_egg
+[9.761s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kvoid GoalAStarOctomapSafeNode::init()[m[K’:
+[9.762s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:70:22:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kstore[m[K’ in ‘[01m[K((GoalAStarOctomapSafeNode*)this)->GoalAStarOctomapSafeNode::need_replan_[m[K’, which is of non-class type ‘[01m[Kbool[m[K’
+[9.762s]    70 |         need_replan_.[01;31m[Kstore[m[K(true);
+[9.762s]       |                      [01;31m[K^~~~~[m[K
+[9.855s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kvoid GoalAStarOctomapSafeNode::makeMarker()[m[K’:
+[9.856s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:139:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kinteractive_markers::InteractiveMarkerServer::insert(visualization_msgs::msg::InteractiveMarker&, void (GoalAStarOctomapSafeNode::*)(const ConstSharedPtr&))[m[K’
+[9.856s]   139 |         [01;31m[Kserver_->insert(marker, &GoalAStarOctomapSafeNode::processFeedback)[m[K;
+[9.856s]       |         [01;31m[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.857s] In file included from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:8[m[K:
+[9.857s] [01m[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:118:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid interactive_markers::InteractiveMarkerServer::insert(const InteractiveMarker&)[m[K’
+[9.857s]   118 |   void [01;36m[Kinsert[m[K(const visualization_msgs::msg::InteractiveMarker & marker);
+[9.857s]       |        [01;36m[K^~~~~~[m[K
+[9.858s] [01m[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:118:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[9.858s] [01m[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:130:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid interactive_markers::InteractiveMarkerServer::insert(const InteractiveMarker&, interactive_markers::InteractiveMarkerServer::FeedbackCallback, uint8_t)[m[K’
+[9.859s]   130 |   void [01;36m[Kinsert[m[K(
+[9.859s]       |        [01;36m[K^~~~~~[m[K
+[9.860s] [01m[K/opt/ros/humble/include/interactive_markers/interactive_markers/interactive_marker_server.hpp:132:22:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kvoid (GoalAStarOctomapSafeNode::*)(const ConstSharedPtr&)[m[K’ {aka ‘[01m[Kvoid (GoalAStarOctomapSafeNode::*)(const std::shared_ptr<const visualization_msgs::msg::InteractiveMarkerFeedback_<std::allocator<void> > >&)[m[K’} to ‘[01m[Kinteractive_markers::InteractiveMarkerServer::FeedbackCallback[m[K’ {aka ‘[01m[Kstd::function<void(std::shared_ptr<const visualization_msgs::msg::InteractiveMarkerFeedback_<std::allocator<void> > >)>[m[K’}
+[9.860s]   132 |     [01;36m[KFeedbackCallback feedback_callback[m[K,
+[9.860s]       |     [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[10.045s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kstd::vector<GridKey> GoalAStarOctomapSafeNode::smoothShortcut(const std::vector<GridKey>&, const std::shared_ptr<octomap::OcTree>&, std::unordered_map<GridKey, bool, GridKeyHash>&) const[m[K’:
+[10.045s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:413:23:[m[K [01;31m[Kerror: [m[Kdecrement of member ‘[01m[KGoalAStarOctomapSafeNode::smoothing_max_checks_[m[K’ in read-only object
+[10.045s]   413 |                 if (--[01;31m[Ksmoothing_max_checks_[m[K <= 0) break;
+[10.045s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[10.047s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kvoid GoalAStarOctomapSafeNode::publishStopSetpoint()[m[K’:
+[10.047s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:446:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktype_mask[m[K’
+[10.047s]   446 |         sp.[01;31m[Ktype_mask[m[K = (1<<0);  // ignore velocity
+[10.047s]       |            [01;31m[K^~~~~~~~~[m[K
+[10.064s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kvoid GoalAStarOctomapSafeNode::onPublishTimer()[m[K’:
+[10.064s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:578:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktype_mask[m[K’
+[10.064s]   578 |         setpoint.[01;31m[Ktype_mask[m[K = (1<<1);  // ignore velocity
+[10.064s]       |                  [01;31m[K^~~~~~~~~[m[K
+[26.236s] gmake[2]: *** [CMakeFiles/goal_astar_octomap_safe_node.dir/build.make:76: CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o] Error 1
+[26.237s] gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/goal_astar_octomap_safe_node.dir/all] Error 2
+[26.237s] gmake: *** [Makefile:146: all] Error 2
+[26.243s] Invoked command in '/home/hj926217/ros2ws/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16

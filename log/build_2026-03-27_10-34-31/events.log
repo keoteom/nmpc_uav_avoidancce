@@ -1,0 +1,415 @@
+[0.000000] (-) TimerEvent: {}
+[0.001281] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.002234] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/home/hj926217/ros2ws/install/px4_msgs')])}
+[0.002426] (px4_ros_com) JobStarted: {'identifier': 'px4_ros_com'}
+[0.050311] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'cmake'}
+[0.054326] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'build'}
+[0.058623] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hj926217/ros2ws/build/px4_ros_com', '--', '-j16', '-l16'], 'cwd': '/home/hj926217/ros2ws/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hj926217'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hj926217'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '12328'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hj926217/ros2ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hj926217'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hj926217'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/hj926217/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/hj926217-17Z90Q-GAFWK:@/tmp/.ICE-unix/1732,unix/hj926217-17Z90Q-GAFWK:/tmp/.ICE-unix/1732'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7858f08_6672_4c49_b75e_f30c721061fe'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZNRQM3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.163'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hj926217/ros2ws/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble')]), 'shell': False}
+[0.098152] (-) TimerEvent: {}
+[0.201861] (-) TimerEvent: {}
+[0.212945] (px4_ros_com) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rrt_star_planner\x1b[0m\n'}
+[0.267614] (px4_ros_com) StdoutLine: {'line': b'[  4%] Built target frame_transforms\n'}
+[0.276656] (px4_ros_com) StdoutLine: {'line': b'[  8%] Built target vtol_mission_node\n'}
+[0.286742] (px4_ros_com) StdoutLine: {'line': b'[ 13%] Built target ground_odom\n'}
+[0.287346] (px4_ros_com) StdoutLine: {'line': b'[ 17%] Built target vehicle_gps_position_listener\n'}
+[0.293440] (px4_ros_com) StdoutLine: {'line': b'[ 21%] Built target landing_target_sender_mavros\n'}
+[0.296349] (px4_ros_com) StdoutLine: {'line': b'[ 26%] Built target sensor_combined_listener\n'}
+[0.302520] (px4_ros_com) StdoutLine: {'line': b'[ 30%] Built target gripper_send_zero\n'}
+[0.303340] (-) TimerEvent: {}
+[0.303788] (px4_ros_com) StdoutLine: {'line': b'[ 34%] Built target global_path\n'}
+[0.304197] (px4_ros_com) StdoutLine: {'line': b'[ 39%] Built target gripper_send_two\n'}
+[0.313746] (px4_ros_com) StdoutLine: {'line': b'[ 43%] Built target goal_marker_pub\n'}
+[0.326925] (px4_ros_com) StdoutLine: {'line': b'[ 47%] Built target debug_vect_advertiser\n'}
+[0.327586] (px4_ros_com) StdoutLine: {'line': b'[ 52%] Built target local_path\n'}
+[0.337699] (px4_ros_com) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/rrt_star_planner.dir/src/rrt_star_planner.cpp.o\x1b[0m\n'}
+[0.342370] (px4_ros_com) StdoutLine: {'line': b'[ 58%] Built target goal_to_path\n'}
+[0.349443] (px4_ros_com) StdoutLine: {'line': b'[ 63%] Built target path_follower\n'}
+[0.352998] (px4_ros_com) StdoutLine: {'line': b'[ 67%] Built target nav_path\n'}
+[0.394612] (px4_ros_com) StdoutLine: {'line': b'[ 71%] Built target circle_flight\n'}
+[0.402226] (px4_ros_com) StdoutLine: {'line': b'[ 76%] Built target offboard_control\n'}
+[0.403508] (-) TimerEvent: {}
+[0.417401] (px4_ros_com) StdoutLine: {'line': b'[ 80%] Built target offboard_control_srv\n'}
+[0.417961] (px4_ros_com) StdoutLine: {'line': b'[ 84%] Built target vertiport_land\n'}
+[0.418644] (px4_ros_com) StdoutLine: {'line': b'[ 89%] Built target aruco_position_sub\n'}
+[0.419802] (px4_ros_com) StdoutLine: {'line': b'[ 89%] Built target ament_cmake_python_copy_px4_ros_com\n'}
+[0.423118] (px4_ros_com) StdoutLine: {'line': b'[ 93%] Built target aruco_position_publisher_node\n'}
+[0.426552] (px4_ros_com) StdoutLine: {'line': b'[ 97%] Built target tf2_control\n'}
+[0.505116] (-) TimerEvent: {}
+[0.605769] (-) TimerEvent: {}
+[0.706344] (-) TimerEvent: {}
+[0.806887] (-) TimerEvent: {}
+[0.907601] (-) TimerEvent: {}
+[1.008147] (-) TimerEvent: {}
+[1.108654] (-) TimerEvent: {}
+[1.193278] (px4_ros_com) StdoutLine: {'line': b'running egg_info\n'}
+[1.196957] (px4_ros_com) StdoutLine: {'line': b'writing px4_ros_com.egg-info/PKG-INFO\n'}
+[1.197609] (px4_ros_com) StdoutLine: {'line': b'writing dependency_links to px4_ros_com.egg-info/dependency_links.txt\n'}
+[1.197998] (px4_ros_com) StdoutLine: {'line': b'writing top-level names to px4_ros_com.egg-info/top_level.txt\n'}
+[1.205835] (px4_ros_com) StdoutLine: {'line': b"reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[1.209559] (px4_ros_com) StdoutLine: {'line': b"writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'\n"}
+[1.210029] (-) TimerEvent: {}
+[1.304322] (px4_ros_com) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_px4_ros_com_egg\n'}
+[1.310188] (-) TimerEvent: {}
+[1.411049] (-) TimerEvent: {}
+[1.511760] (-) TimerEvent: {}
+[1.612557] (-) TimerEvent: {}
+[1.713105] (-) TimerEvent: {}
+[1.813625] (-) TimerEvent: {}
+[1.914223] (-) TimerEvent: {}
+[2.014804] (-) TimerEvent: {}
+[2.115359] (-) TimerEvent: {}
+[2.216015] (-) TimerEvent: {}
+[2.316815] (-) TimerEvent: {}
+[2.417404] (-) TimerEvent: {}
+[2.517932] (-) TimerEvent: {}
+[2.618488] (-) TimerEvent: {}
+[2.721806] (-) TimerEvent: {}
+[2.822513] (-) TimerEvent: {}
+[2.922964] (-) TimerEvent: {}
+[3.023525] (-) TimerEvent: {}
+[3.124198] (-) TimerEvent: {}
+[3.224840] (-) TimerEvent: {}
+[3.325477] (-) TimerEvent: {}
+[3.426178] (-) TimerEvent: {}
+[3.526696] (-) TimerEvent: {}
+[3.627188] (-) TimerEvent: {}
+[3.727701] (-) TimerEvent: {}
+[3.828730] (-) TimerEvent: {}
+[3.929519] (-) TimerEvent: {}
+[4.030114] (-) TimerEvent: {}
+[4.130724] (-) TimerEvent: {}
+[4.232229] (-) TimerEvent: {}
+[4.332634] (-) TimerEvent: {}
+[4.433136] (-) TimerEvent: {}
+[4.533654] (-) TimerEvent: {}
+[4.634482] (-) TimerEvent: {}
+[4.735258] (-) TimerEvent: {}
+[4.835865] (-) TimerEvent: {}
+[4.936404] (-) TimerEvent: {}
+[5.037111] (-) TimerEvent: {}
+[5.137672] (-) TimerEvent: {}
+[5.238318] (-) TimerEvent: {}
+[5.339608] (-) TimerEvent: {}
+[5.440326] (-) TimerEvent: {}
+[5.543010] (-) TimerEvent: {}
+[5.643528] (-) TimerEvent: {}
+[5.744106] (-) TimerEvent: {}
+[5.844754] (-) TimerEvent: {}
+[5.945428] (-) TimerEvent: {}
+[6.046052] (-) TimerEvent: {}
+[6.147147] (-) TimerEvent: {}
+[6.247851] (-) TimerEvent: {}
+[6.350280] (-) TimerEvent: {}
+[6.450855] (-) TimerEvent: {}
+[6.551809] (-) TimerEvent: {}
+[6.652384] (-) TimerEvent: {}
+[6.752937] (-) TimerEvent: {}
+[6.853604] (-) TimerEvent: {}
+[6.954180] (-) TimerEvent: {}
+[7.054822] (-) TimerEvent: {}
+[7.155388] (-) TimerEvent: {}
+[7.255895] (-) TimerEvent: {}
+[7.356437] (-) TimerEvent: {}
+[7.456957] (-) TimerEvent: {}
+[7.557453] (-) TimerEvent: {}
+[7.657904] (-) TimerEvent: {}
+[7.758592] (-) TimerEvent: {}
+[7.859199] (-) TimerEvent: {}
+[7.959745] (-) TimerEvent: {}
+[8.060331] (-) TimerEvent: {}
+[8.160861] (-) TimerEvent: {}
+[8.261643] (-) TimerEvent: {}
+[8.362519] (-) TimerEvent: {}
+[8.462989] (-) TimerEvent: {}
+[8.563474] (-) TimerEvent: {}
+[8.663955] (-) TimerEvent: {}
+[8.764500] (-) TimerEvent: {}
+[8.865016] (-) TimerEvent: {}
+[8.966159] (-) TimerEvent: {}
+[9.066651] (-) TimerEvent: {}
+[9.167305] (-) TimerEvent: {}
+[9.267890] (-) TimerEvent: {}
+[9.368457] (-) TimerEvent: {}
+[9.469096] (-) TimerEvent: {}
+[9.569674] (-) TimerEvent: {}
+[9.670323] (-) TimerEvent: {}
+[9.770917] (-) TimerEvent: {}
+[9.871676] (-) TimerEvent: {}
+[9.972256] (-) TimerEvent: {}
+[10.072732] (-) TimerEvent: {}
+[10.173189] (-) TimerEvent: {}
+[10.275363] (-) TimerEvent: {}
+[10.375974] (-) TimerEvent: {}
+[10.476495] (-) TimerEvent: {}
+[10.577091] (-) TimerEvent: {}
+[10.677721] (-) TimerEvent: {}
+[10.778255] (-) TimerEvent: {}
+[10.878774] (-) TimerEvent: {}
+[10.979337] (-) TimerEvent: {}
+[11.079885] (-) TimerEvent: {}
+[11.180365] (-) TimerEvent: {}
+[11.280817] (-) TimerEvent: {}
+[11.381315] (-) TimerEvent: {}
+[11.481814] (-) TimerEvent: {}
+[11.582350] (-) TimerEvent: {}
+[11.682903] (-) TimerEvent: {}
+[11.783488] (-) TimerEvent: {}
+[11.883996] (-) TimerEvent: {}
+[11.984502] (-) TimerEvent: {}
+[12.085146] (-) TimerEvent: {}
+[12.186056] (-) TimerEvent: {}
+[12.286829] (-) TimerEvent: {}
+[12.387587] (-) TimerEvent: {}
+[12.488154] (-) TimerEvent: {}
+[12.588692] (-) TimerEvent: {}
+[12.689261] (-) TimerEvent: {}
+[12.789814] (-) TimerEvent: {}
+[12.890446] (-) TimerEvent: {}
+[12.991018] (-) TimerEvent: {}
+[13.091679] (-) TimerEvent: {}
+[13.192755] (-) TimerEvent: {}
+[13.293646] (-) TimerEvent: {}
+[13.394346] (-) TimerEvent: {}
+[13.494896] (-) TimerEvent: {}
+[13.595547] (-) TimerEvent: {}
+[13.696155] (-) TimerEvent: {}
+[13.796766] (-) TimerEvent: {}
+[13.897306] (-) TimerEvent: {}
+[13.997843] (-) TimerEvent: {}
+[14.099450] (-) TimerEvent: {}
+[14.200038] (-) TimerEvent: {}
+[14.300654] (-) TimerEvent: {}
+[14.401215] (-) TimerEvent: {}
+[14.501733] (-) TimerEvent: {}
+[14.602225] (-) TimerEvent: {}
+[14.702719] (-) TimerEvent: {}
+[14.803312] (-) TimerEvent: {}
+[14.903765] (-) TimerEvent: {}
+[15.004239] (-) TimerEvent: {}
+[15.104818] (-) TimerEvent: {}
+[15.205475] (-) TimerEvent: {}
+[15.306057] (-) TimerEvent: {}
+[15.406610] (-) TimerEvent: {}
+[15.507315] (-) TimerEvent: {}
+[15.607948] (-) TimerEvent: {}
+[15.708479] (-) TimerEvent: {}
+[15.809160] (-) TimerEvent: {}
+[15.910545] (-) TimerEvent: {}
+[16.011037] (-) TimerEvent: {}
+[16.111783] (-) TimerEvent: {}
+[16.212321] (-) TimerEvent: {}
+[16.312969] (-) TimerEvent: {}
+[16.413460] (-) TimerEvent: {}
+[16.513948] (-) TimerEvent: {}
+[16.614528] (-) TimerEvent: {}
+[16.715042] (-) TimerEvent: {}
+[16.815625] (-) TimerEvent: {}
+[16.916117] (-) TimerEvent: {}
+[17.016538] (-) TimerEvent: {}
+[17.117266] (-) TimerEvent: {}
+[17.217830] (-) TimerEvent: {}
+[17.318550] (-) TimerEvent: {}
+[17.419201] (-) TimerEvent: {}
+[17.519759] (-) TimerEvent: {}
+[17.620359] (-) TimerEvent: {}
+[17.720896] (-) TimerEvent: {}
+[17.821640] (-) TimerEvent: {}
+[17.922148] (-) TimerEvent: {}
+[18.022644] (-) TimerEvent: {}
+[18.123220] (-) TimerEvent: {}
+[18.223822] (-) TimerEvent: {}
+[18.324417] (-) TimerEvent: {}
+[18.425181] (-) TimerEvent: {}
+[18.525730] (-) TimerEvent: {}
+[18.626305] (-) TimerEvent: {}
+[18.726828] (-) TimerEvent: {}
+[18.827315] (-) TimerEvent: {}
+[18.927889] (-) TimerEvent: {}
+[19.028463] (-) TimerEvent: {}
+[19.128976] (-) TimerEvent: {}
+[19.229479] (-) TimerEvent: {}
+[19.329970] (-) TimerEvent: {}
+[19.430517] (-) TimerEvent: {}
+[19.531038] (-) TimerEvent: {}
+[19.631670] (-) TimerEvent: {}
+[19.732249] (-) TimerEvent: {}
+[19.832816] (-) TimerEvent: {}
+[19.933463] (-) TimerEvent: {}
+[20.034097] (-) TimerEvent: {}
+[20.134717] (-) TimerEvent: {}
+[20.235402] (-) TimerEvent: {}
+[20.336252] (-) TimerEvent: {}
+[20.436880] (-) TimerEvent: {}
+[20.537545] (-) TimerEvent: {}
+[20.637977] (-) TimerEvent: {}
+[20.738536] (-) TimerEvent: {}
+[20.839011] (-) TimerEvent: {}
+[20.939600] (-) TimerEvent: {}
+[21.040189] (-) TimerEvent: {}
+[21.140860] (-) TimerEvent: {}
+[21.241381] (-) TimerEvent: {}
+[21.341902] (-) TimerEvent: {}
+[21.442514] (-) TimerEvent: {}
+[21.543100] (-) TimerEvent: {}
+[21.643614] (-) TimerEvent: {}
+[21.744175] (-) TimerEvent: {}
+[21.844719] (-) TimerEvent: {}
+[21.945305] (-) TimerEvent: {}
+[22.045990] (-) TimerEvent: {}
+[22.146595] (-) TimerEvent: {}
+[22.247163] (-) TimerEvent: {}
+[22.347866] (-) TimerEvent: {}
+[22.448485] (-) TimerEvent: {}
+[22.549158] (-) TimerEvent: {}
+[22.650085] (-) TimerEvent: {}
+[22.750657] (-) TimerEvent: {}
+[22.851317] (-) TimerEvent: {}
+[22.952030] (-) TimerEvent: {}
+[23.052739] (-) TimerEvent: {}
+[23.153404] (-) TimerEvent: {}
+[23.254055] (-) TimerEvent: {}
+[23.354576] (-) TimerEvent: {}
+[23.455484] (-) TimerEvent: {}
+[23.556643] (-) TimerEvent: {}
+[23.657794] (-) TimerEvent: {}
+[23.758452] (-) TimerEvent: {}
+[23.859124] (-) TimerEvent: {}
+[23.959691] (-) TimerEvent: {}
+[24.060337] (-) TimerEvent: {}
+[24.160976] (-) TimerEvent: {}
+[24.261528] (-) TimerEvent: {}
+[24.362050] (-) TimerEvent: {}
+[24.462583] (-) TimerEvent: {}
+[24.563117] (-) TimerEvent: {}
+[24.663733] (-) TimerEvent: {}
+[24.764259] (-) TimerEvent: {}
+[24.864765] (-) TimerEvent: {}
+[24.965258] (-) TimerEvent: {}
+[25.065745] (-) TimerEvent: {}
+[25.166394] (-) TimerEvent: {}
+[25.267124] (-) TimerEvent: {}
+[25.367721] (-) TimerEvent: {}
+[25.468354] (-) TimerEvent: {}
+[25.571189] (-) TimerEvent: {}
+[25.671769] (-) TimerEvent: {}
+[25.772304] (-) TimerEvent: {}
+[25.872843] (-) TimerEvent: {}
+[25.973575] (-) TimerEvent: {}
+[26.074433] (-) TimerEvent: {}
+[26.174934] (-) TimerEvent: {}
+[26.275517] (-) TimerEvent: {}
+[26.376040] (-) TimerEvent: {}
+[26.476568] (-) TimerEvent: {}
+[26.577320] (-) TimerEvent: {}
+[26.677967] (-) TimerEvent: {}
+[26.778511] (-) TimerEvent: {}
+[26.879342] (-) TimerEvent: {}
+[26.979848] (-) TimerEvent: {}
+[27.082234] (-) TimerEvent: {}
+[27.182886] (-) TimerEvent: {}
+[27.283582] (-) TimerEvent: {}
+[27.384234] (-) TimerEvent: {}
+[27.488212] (-) TimerEvent: {}
+[27.590723] (-) TimerEvent: {}
+[27.691338] (-) TimerEvent: {}
+[27.791813] (-) TimerEvent: {}
+[27.892218] (-) TimerEvent: {}
+[27.964151] (px4_ros_com) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable rrt_star_planner\x1b[0m\n'}
+[27.992409] (-) TimerEvent: {}
+[28.092975] (-) TimerEvent: {}
+[28.193622] (-) TimerEvent: {}
+[28.294201] (-) TimerEvent: {}
+[28.394750] (-) TimerEvent: {}
+[28.495476] (-) TimerEvent: {}
+[28.596171] (-) TimerEvent: {}
+[28.696734] (-) TimerEvent: {}
+[28.797311] (-) TimerEvent: {}
+[28.897978] (-) TimerEvent: {}
+[28.998454] (-) TimerEvent: {}
+[29.098957] (-) TimerEvent: {}
+[29.199614] (-) TimerEvent: {}
+[29.300286] (-) TimerEvent: {}
+[29.395532] (px4_ros_com) StdoutLine: {'line': b'[100%] Built target rrt_star_planner\n'}
+[29.400433] (-) TimerEvent: {}
+[29.425312] (px4_ros_com) CommandEnded: {'returncode': 0}
+[29.427077] (px4_ros_com) JobProgress: {'identifier': 'px4_ros_com', 'progress': 'install'}
+[29.444498] (px4_ros_com) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hj926217/ros2ws/build/px4_ros_com'], 'cwd': '/home/hj926217/ros2ws/build/px4_ros_com', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hj926217'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hj926217'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '12328'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hj926217/ros2ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hj926217'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hj926217'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/hj926217/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/hj926217-17Z90Q-GAFWK:@/tmp/.ICE-unix/1732,unix/hj926217-17Z90Q-GAFWK:/tmp/.ICE-unix/1732'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b7858f08_6672_4c49_b75e_f30c721061fe'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.ZNRQM3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.163'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/px4_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hj926217/ros2ws/build/px4_ros_com'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages:/home/hj926217/ros2ws/install/px4_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble')]), 'shell': False}
+[29.458297] (px4_ros_com) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.458836] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/rrt_star_planner\n'}
+[29.473874] (px4_ros_com) StdoutLine: {'line': b'-- Set runtime path of "/home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/rrt_star_planner" to ""\n'}
+[29.474376] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/vtol_mission_node\n'}
+[29.475439] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/local_path\n'}
+[29.475902] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/global_path\n'}
+[29.476414] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/landing_target_sender_mavros\n'}
+[29.477129] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/gripper_send_zero\n'}
+[29.477675] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/gripper_send_two\n'}
+[29.478258] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/path_follower\n'}
+[29.478891] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/goal_marker_pub\n'}
+[29.479541] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/goal_to_path\n'}
+[29.480401] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/ground_odom\n'}
+[29.480810] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/sensor_combined_listener\n'}
+[29.481344] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/vehicle_gps_position_listener\n'}
+[29.481954] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/debug_vect_advertiser\n'}
+[29.482564] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/nav_path\n'}
+[29.483088] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/circle_flight\n'}
+[29.483641] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/tf2_control\n'}
+[29.484189] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/aruco_position_sub\n'}
+[29.484753] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/vertiport_land\n'}
+[29.485358] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/aruco_position_publisher_node\n'}
+[29.485936] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/offboard_control\n'}
+[29.486490] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/offboard_control_srv\n'}
+[29.486810] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/environment/library_path.sh\n'}
+[29.487016] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/environment/library_path.dsv\n'}
+[29.487222] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/include/px4_ros_com\n'}
+[29.487527] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/include/px4_ros_com/frame_transforms.h\n'}
+[29.487729] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/libframe_transforms.so\n'}
+[29.487939] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//launch\n'}
+[29.488172] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//launch/lidar_octomap_launch.py\n'}
+[29.488548] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//launch/rtab_points.launch.py\n'}
+[29.488712] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//launch/path_follower_launch.py\n'}
+[29.488911] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//launch/offboard_control_launch.yaml\n'}
+[29.489073] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//launch/123.launch.py\n'}
+[29.489275] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//launch/sensor_combined_listener.launch.py\n'}
+[29.489488] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//test\n'}
+[29.489639] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//test/test_output.py\n'}
+[29.489796] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//test/__init__.py\n'}
+[29.489958] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//test/pipeline_io_test.py\n'}
+[29.490276] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com//test/test_input.py\n'}
+[29.490432] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.sh\n'}
+[29.490598] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/environment/pythonpath.dsv\n'}
+[29.490735] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info\n'}
+[29.490868] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[29.491000] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[29.491156] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[29.491307] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[29.491442] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com\n'}
+[29.491575] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/module_to_import.py\n'}
+[29.491707] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com/__init__.py\n'}
+[29.500563] (-) TimerEvent: {}
+[29.565146] (px4_ros_com) StdoutLine: {'line': b"Listing '/home/hj926217/ros2ws/install/px4_ros_com/local/lib/python3.10/dist-packages/px4_ros_com'...\n"}
+[29.577701] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/lib/px4_ros_com/offboard_control.py\n'}
+[29.578264] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/ament_index/resource_index/package_run_dependencies/px4_ros_com\n'}
+[29.578426] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/ament_index/resource_index/parent_prefix_path/px4_ros_com\n'}
+[29.579018] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.sh\n'}
+[29.579692] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/environment/ament_prefix_path.dsv\n'}
+[29.579987] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/environment/path.sh\n'}
+[29.580273] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/environment/path.dsv\n'}
+[29.580692] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/local_setup.bash\n'}
+[29.580928] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/local_setup.sh\n'}
+[29.581154] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/local_setup.zsh\n'}
+[29.581371] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/local_setup.dsv\n'}
+[29.581564] (px4_ros_com) StdoutLine: {'line': b'-- Installing: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/package.dsv\n'}
+[29.581748] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/ament_index/resource_index/packages/px4_ros_com\n'}
+[29.582178] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport.cmake\n'}
+[29.582655] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/cmake/export_frame_transformsExport-noconfig.cmake\n'}
+[29.583237] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[29.584291] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[29.586096] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[29.587023] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[29.587840] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig.cmake\n'}
+[29.588149] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/cmake/px4_ros_comConfig-version.cmake\n'}
+[29.588432] (px4_ros_com) StdoutLine: {'line': b'-- Up-to-date: /home/hj926217/ros2ws/install/px4_ros_com/share/px4_ros_com/package.xml\n'}
+[29.588635] (px4_ros_com) CommandEnded: {'returncode': 0}
+[29.600860] (-) TimerEvent: {}
+[29.651303] (px4_ros_com) JobEnded: {'identifier': 'px4_ros_com', 'rc': 0}
+[29.653417] (-) EventReactorShutdown: {}

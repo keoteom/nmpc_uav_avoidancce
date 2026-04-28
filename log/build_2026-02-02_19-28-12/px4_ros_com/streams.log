@@ -1,0 +1,48 @@
+[0.037s] Invoking command in '/home/hj926217/ros2ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16
+[0.299s] [  5%] Built target goal_astar_octomap_safe_node
+[0.348s] [ 10%] Built target aruco_position_sub
+[0.398s] [ 15%] Built target vertiport_land
+[0.469s] [ 20%] Built target aruco_position_publisher_node
+[0.516s] [ 25%] Built target offboard_control
+[0.563s] [ 30%] Built target offboard_control_srv
+[0.613s] [ 30%] Built target ament_cmake_python_copy_px4_ros_com
+[0.669s] [ 35%] Built target tf2_control
+[1.247s] running egg_info
+[1.249s] writing px4_ros_com.egg-info/PKG-INFO
+[1.249s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[1.249s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[1.254s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.255s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.311s] [ 35%] Built target ament_cmake_python_build_px4_ros_com_egg
+[1.360s] [ 40%] Built target circle_flight
+[1.404s] [ 45%] Built target nav_path
+[1.457s] [ 50%] Built target debug_vect_advertiser
+[1.518s] [ 55%] Built target vehicle_gps_position_listener
+[1.578s] [ 60%] Built target sensor_combined_listener
+[1.627s] [ 65%] Built target ground_odom
+[1.673s] [ 70%] Built target goal_to_path
+[1.718s] [ 75%] Built target goal_marker_pub
+[1.751s] [35m[1mConsolidate compiler generated dependencies of target path_follower[0m
+[1.793s] [ 77%] [32mBuilding CXX object CMakeFiles/path_follower.dir/src/path_follower.cpp.o[0m
+[6.817s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:[m[K In member function ‘[01m[Kuint64_t PathFollowerOffboardNode::nowMicrosPx4() const[m[K’:
+[6.817s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:99:32:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rclcpp::Clock[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.817s]    99 |     auto dt = [01;31m[Ksteady_clock_.now()[m[K - last_px4_steady_;
+[6.817s]       |               [01;31m[K~~~~~~~~~~~~~~~~~^~[m[K
+[6.817s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:27[m[K,
+[6.818s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:30[m[K,
+[6.818s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.818s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.818s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.818s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.818s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.818s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.818s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.819s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.819s]                  from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:1[m[K:
+[6.819s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:87:3:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Krclcpp::Time rclcpp::Clock::now()[m[K’
+[6.819s]    87 |   [01;36m[Know[m[K();
+[6.819s]       |   [01;36m[K^~~[m[K
+[14.083s] gmake[2]: *** [CMakeFiles/path_follower.dir/build.make:76: CMakeFiles/path_follower.dir/src/path_follower.cpp.o] Error 1
+[14.083s] gmake[1]: *** [CMakeFiles/Makefile2:308: CMakeFiles/path_follower.dir/all] Error 2
+[14.083s] gmake: *** [Makefile:146: all] Error 2
+[14.088s] Invoked command in '/home/hj926217/ros2ws/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16

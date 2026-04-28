@@ -1,0 +1,44 @@
+[0.016s] Invoking command in '/home/hj926217/ros2ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16
+[0.079s] [35m[1mConsolidate compiler generated dependencies of target aruco_position_sub[0m
+[0.104s] [  8%] Built target goal_to_path
+[0.107s] [ 23%] Built target sensor_combined_listener
+[0.107s] [ 11%] Built target debug_vect_advertiser
+[0.107s] [ 29%] Built target landing_target_sender_mavros
+[0.108s] [ 17%] Built target goal_marker_pub
+[0.108s] [ 35%] Built target frame_transforms
+[0.108s] [ 44%] Built target ground_odom
+[0.108s] [ 47%] Built target path_follower
+[0.111s] [ 52%] Built target vehicle_gps_position_listener
+[0.115s] [ 58%] Built target offboard_control
+[0.116s] [ 64%] Built target circle_flight
+[0.116s] [ 70%] Built target aruco_position_publisher_node
+[0.116s] [ 73%] [32mBuilding CXX object CMakeFiles/aruco_position_sub.dir/src/aruco_position_sub.cpp.o[0m
+[0.117s] [ 79%] Built target nav_path
+[0.118s] [ 85%] Built target vertiport_land
+[0.123s] [ 91%] Built target tf2_control
+[0.146s] [ 97%] Built target offboard_control_srv
+[0.151s] [ 97%] Built target ament_cmake_python_copy_px4_ros_com
+[0.377s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:173:126:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K@[m[K’ in program
+[0.378s]   173 |   }ros2 run ros_gz_bridge parameter_bridge /world/default/model/x500_mono_cam_down_0/link/lidar_sensor_link/sensor/lidar/scan[01;31m[K@[m[Ksensor_msgs/msg/LaserScan@gz.msgs.LaserScan
+[0.378s]       |                                                                                                                              [01;31m[K^[m[K
+[0.378s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:173:152:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K@[m[K’ in program
+[0.378s]   173 |   }ros2 run ros_gz_bridge parameter_bridge /world/default/model/x500_mono_cam_down_0/link/lidar_sensor_link/sensor/lidar/scan@sensor_msgs/msg/LaserScan[01;31m[K@[m[Kgz.msgs.LaserScan
+[0.378s]       |                                                                                                                                                        [01;31m[K^[m[K
+[0.523s] running egg_info
+[0.524s] writing px4_ros_com.egg-info/PKG-INFO
+[0.525s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[0.525s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[0.529s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.530s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[0.576s] [ 97%] Built target ament_cmake_python_build_px4_ros_com_egg
+[2.959s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:173:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kros2[m[K’ does not name a type
+[2.960s]   173 |   }[01;31m[Kros2[m[K run ros_gz_bridge parameter_bridge /world/default/model/x500_mono_cam_down_0/link/lidar_sensor_link/sensor/lidar/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan
+[2.960s]       |    [01;31m[K^~~~[m[K
+[3.182s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::arucoPoseCb(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.183s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:99:7:[m[K [01;31m[Kerror: [m[K‘[01m[Karm[m[K’ was not declared in this scope
+[3.183s]    99 |       [01;31m[Karm[m[K();
+[3.183s]       |       [01;31m[K^~~[m[K
+[9.491s] gmake[2]: *** [CMakeFiles/aruco_position_sub.dir/build.make:76: CMakeFiles/aruco_position_sub.dir/src/aruco_position_sub.cpp.o] Error 1
+[9.492s] gmake[1]: *** [CMakeFiles/Makefile2:484: CMakeFiles/aruco_position_sub.dir/all] Error 2
+[9.492s] gmake: *** [Makefile:146: all] Error 2
+[9.494s] Invoked command in '/home/hj926217/ros2ws/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16

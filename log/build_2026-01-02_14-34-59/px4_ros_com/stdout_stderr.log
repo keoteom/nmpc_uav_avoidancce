@@ -1,0 +1,77 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found px4_msgs: 2.0.1 (/home/hj926217/ros2ws/install/px4_msgs/share/px4_msgs/cmake)
+-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found cv_bridge: 4.1.0 (/home/hj926217/aruco/install/cv_bridge/share/cv_bridge/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/hj926217/ros2ws/src/px4_ros_com/include;$<BUILD_INTERFACE:/home/hj926217/ros2ws/src/px4_ros_com/include/px4_ros_com>;/home/hj926217/ros2ws/src/px4_ros_com/third_party/c_library_v2
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hj926217/ros2ws/build/px4_ros_com
+[35m[1mConsolidate compiler generated dependencies of target frame_transforms[0m
+[35m[1mConsolidate compiler generated dependencies of target offboard_control[0m
+[35m[1mConsolidate compiler generated dependencies of target vehicle_gps_position_listener[0m
+[35m[1mConsolidate compiler generated dependencies of target ground_odom[0m
+[35m[1mConsolidate compiler generated dependencies of target aruco_position_sub[0m
+[35m[1mConsolidate compiler generated dependencies of target sensor_combined_listener[0m
+[35m[1mConsolidate compiler generated dependencies of target tf2_control[0m
+[35m[1mConsolidate compiler generated dependencies of target vertiport_land[0m
+[35m[1mConsolidate compiler generated dependencies of target debug_vect_advertiser[0m
+[35m[1mConsolidate compiler generated dependencies of target offboard_control_srv[0m
+[35m[1mConsolidate compiler generated dependencies of target aruco_position_publisher_node[0m
+[  4%] [32mBuilding CXX object CMakeFiles/precisionland.dir/src/precisionland.cpp.o[0m
+[  4%] Built target ament_cmake_python_copy_px4_ros_com
+[ 12%] Built target frame_transforms
+[ 25%] Built target sensor_combined_listener
+[ 29%] Built target offboard_control_srv
+[ 37%] Built target debug_vect_advertiser
+[ 54%] Built target aruco_position_sub
+[ 54%] Built target vertiport_land
+[ 79%] Built target offboard_control
+[ 79%] Built target vehicle_gps_position_listener
+[ 79%] Built target aruco_position_publisher_node
+[ 87%] Built target ground_odom
+[ 95%] Built target tf2_control
+running egg_info
+writing px4_ros_com.egg-info/PKG-INFO
+writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+writing top-level names to px4_ros_com.egg-info/top_level.txt
+reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/precisionland.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/msg/vehicle_local_position_v1.hpp: No such file or directory
+   15 | #include [01;31m[K"px4_msgs/msg/vehicle_local_position_v1.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/precisionland.dir/build.make:76: CMakeFiles/precisionland.dir/src/precisionland.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:292: CMakeFiles/precisionland.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 95%] Built target ament_cmake_python_build_px4_ros_com_egg
+gmake: *** [Makefile:146: all] Error 2

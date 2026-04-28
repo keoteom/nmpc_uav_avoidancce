@@ -1,0 +1,49 @@
+[35m[1mConsolidate compiler generated dependencies of target path_follower[0m
+[ 10%] Built target gripper_send_zero
+[ 10%] Built target gripper_send_two
+[ 15%] Built target ground_odom
+[ 23%] Built target goal_marker_pub
+[ 28%] Built target debug_vect_advertiser
+[ 34%] Built target sensor_combined_listener
+[ 36%] Built target frame_transforms
+[ 42%] Built target vehicle_gps_position_listener
+[ 47%] Built target tf2_control
+[ 52%] Built target nav_path
+[ 57%] Built target landing_target_sender_mavros
+[ 63%] Built target circle_flight
+[ 68%] Built target aruco_position_sub
+[ 73%] Built target vertiport_land
+[ 78%] Built target goal_to_path
+[ 81%] [32mBuilding CXX object CMakeFiles/path_follower.dir/src/path_follower.cpp.o[0m
+[ 86%] Built target offboard_control
+[ 92%] Built target offboard_control_srv
+[ 92%] Built target ament_cmake_python_copy_px4_ros_com
+[ 97%] Built target aruco_position_publisher_node
+running egg_info
+writing px4_ros_com.egg-info/PKG-INFO
+writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+writing top-level names to px4_ros_com.egg-info/top_level.txt
+reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_px4_ros_com_egg
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:[m[K In member function ‘[01m[Kuint64_t LocalPathFollowerOffboardLocal::nowMicros() const[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:197:56:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kstd::__shared_ptr_access<const rclcpp::Clock, __gnu_cxx::_S_atomic, false, false>::element_type[m[K’ {aka ‘[01m[Kconst rclcpp::Clock[m[K’} as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  197 |     return static_cast<uint64_t>([01;31m[Kthis->get_clock()->now()[m[K.nanoseconds() / 1000ULL);
+      |                                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:27[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/path_follower.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:87:3:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Krclcpp::Time rclcpp::Clock::now()[m[K’
+   87 |   [01;36m[Know[m[K();
+      |   [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/path_follower.dir/build.make:76: CMakeFiles/path_follower.dir/src/path_follower.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:280: CMakeFiles/path_follower.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

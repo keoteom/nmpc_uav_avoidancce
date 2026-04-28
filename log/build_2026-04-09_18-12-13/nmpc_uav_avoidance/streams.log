@@ -1,0 +1,15 @@
+[0.023s] Invoking command in '/home/hj926217/ros2ws/build/nmpc_uav_avoidance': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/nmpc_uav_avoidance -- -j16 -l16
+[0.109s] [ 40%] Built target odom_publisher
+[0.111s] [ 60%] [32mBuilding CXX object CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o[0m
+[3.980s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:[m[K In constructor ‘[01m[Knmpc_uav::NMPCNode::NMPCNode()[m[K’:
+[3.980s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:105:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klookahead_step_[m[K’ was not declared in this scope
+[3.981s]   105 |     [01;31m[Klookahead_step_[m[K = this->get_parameter("lookahead_step").as_double();  // ← 추가
+[3.981s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.048s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:[m[K In member function ‘[01m[Kvoid nmpc_uav::NMPCNode::control_loop()[m[K’:
+[4.048s] [01m[K/home/hj926217/ros2ws/src/nmpc_uav_avoidance/src/nmpc_node.cpp:297:30:[m[K [01;31m[Kerror: [m[K‘[01m[Klookahead_step_[m[K’ was not declared in this scope
+[4.048s]   297 |         double target_dist = [01;31m[Klookahead_step_[m[K * (j + 1);
+[4.049s]       |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[12.158s] gmake[2]: *** [CMakeFiles/nmpc_node.dir/build.make:90: CMakeFiles/nmpc_node.dir/src/nmpc_node.cpp.o] Error 1
+[12.158s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/nmpc_node.dir/all] Error 2
+[12.158s] gmake: *** [Makefile:146: all] Error 2
+[12.162s] Invoked command in '/home/hj926217/ros2ws/build/nmpc_uav_avoidance' returned '2': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/ros2ws/install/nmpc_uav_avoidance:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/nmpc_uav_avoidance -- -j16 -l16

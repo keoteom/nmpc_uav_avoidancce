@@ -1,0 +1,29 @@
+[35m[1mConsolidate compiler generated dependencies of target aruco_position_sub[0m
+[ 10%] Built target frame_transforms
+[ 20%] Built target sensor_combined_listener
+[ 30%] Built target debug_vect_advertiser
+[ 40%] Built target vertiport_land
+[ 60%] Built target offboard_control
+[ 60%] Built target vehicle_gps_position_listener
+[ 70%] Built target offboard_control_srv
+[ 90%] Built target tf2_control
+[ 90%] Built target aruco_position_publisher_node
+[ 95%] [32mBuilding CXX object CMakeFiles/aruco_position_sub.dir/src/aruco_position_sub.cpp.o[0m
+[ 95%] Built target ament_cmake_python_copy_px4_ros_com
+running egg_info
+writing px4_ros_com.egg-info/PKG-INFO
+writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+writing top-level names to px4_ros_com.egg-info/top_level.txt
+reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[ 95%] Built target ament_cmake_python_build_px4_ros_com_egg
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:[m[K In member function ‘[01m[Kvoid OffboardControl::publish_locked_setpoint()[m[K’:
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:242:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleThrustSetpoint = struct px4_msgs::msg::VehicleThrustSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleThrustSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Khas_low_throttle[m[K’
+  242 |       thrust_msg.[01;31m[Khas_low_throttle[m[K = true;  // 이 플래그를 사용한다고 가정하는 부분
+      |                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/aruco_position_sub.cpp:245:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleThrustSetpoint = struct px4_msgs::msg::VehicleThrustSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleThrustSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Khas_low_throttle[m[K’
+  245 |       if (thrust_msg.[01;31m[Khas_low_throttle[m[K) {
+      |                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/aruco_position_sub.dir/build.make:76: CMakeFiles/aruco_position_sub.dir/src/aruco_position_sub.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:288: CMakeFiles/aruco_position_sub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

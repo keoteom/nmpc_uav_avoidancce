@@ -1,0 +1,114 @@
+[0.049s] Invoking command in '/home/hj926217/ros2ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16
+[0.193s] [35m[1mConsolidate compiler generated dependencies of target goal_astar_octomap_safe_node[0m
+[0.194s] [35m[1mConsolidate compiler generated dependencies of target path_follower[0m
+[0.274s] [  5%] Built target landing_target_sender_mavros
+[0.282s] [ 10%] Built target frame_transforms
+[0.299s] [ 12%] [32mBuilding CXX object CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o[0m
+[0.300s] [ 17%] Built target sensor_combined_listener
+[0.319s] [ 25%] Built target goal_marker_pub
+[0.320s] [ 27%] Built target goal_to_path
+[0.320s] [ 32%] Built target gripper_send_zero
+[0.320s] [ 37%] Built target path_follower
+[0.323s] [ 42%] Built target gripper_send_two
+[0.325s] [ 47%] Built target vehicle_gps_position_listener
+[0.329s] [ 52%] Built target circle_flight
+[0.347s] [ 57%] Built target debug_vect_advertiser
+[0.352s] [ 62%] Built target ground_odom
+[0.359s] [ 67%] Built target nav_path
+[0.370s] [ 72%] Built target aruco_position_sub
+[0.373s] [ 77%] Built target tf2_control
+[0.407s] [ 82%] Built target vertiport_land
+[0.412s] [ 87%] Built target aruco_position_publisher_node
+[0.424s] [ 92%] Built target offboard_control
+[0.432s] [ 97%] Built target offboard_control_srv
+[0.448s] [ 97%] Built target ament_cmake_python_copy_px4_ros_com
+[1.576s] running egg_info
+[1.579s] writing px4_ros_com.egg-info/PKG-INFO
+[1.580s] writing dependency_links to px4_ros_com.egg-info/dependency_links.txt
+[1.580s] writing top-level names to px4_ros_com.egg-info/top_level.txt
+[1.587s] reading manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.589s] writing manifest file 'px4_ros_com.egg-info/SOURCES.txt'
+[1.681s] [ 97%] Built target ament_cmake_python_build_px4_ros_com_egg
+[10.264s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kstd::vector<GridKey> GoalAStarOctomapSafeNode::removeCollinear(const std::vector<GridKey>&) const[m[K’:
+[10.265s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:416:33:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst GoalAStarOctomapSafeNode[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[10.265s]   416 |             GridKey d1 = [01;31m[KstepDir(path[i-1], path[i])[m[K;
+[10.265s]       |                          [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[10.265s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:426:13:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[KGridKey GoalAStarOctomapSafeNode::stepDir(const GridKey&, const GridKey&)[m[K’
+[10.266s]   426 |     GridKey [01;36m[KstepDir[m[K(const GridKey& a, const GridKey& b) {
+[10.266s]       |             [01;36m[K^~~~~~~[m[K
+[10.266s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:417:33:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst GoalAStarOctomapSafeNode[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[10.266s]   417 |             GridKey d2 = [01;31m[KstepDir(path[i], path[i+1])[m[K;
+[10.266s]       |                          [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[10.267s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:426:13:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[KGridKey GoalAStarOctomapSafeNode::stepDir(const GridKey&, const GridKey&)[m[K’
+[10.267s]   426 |     GridKey [01;36m[KstepDir[m[K(const GridKey& a, const GridKey& b) {
+[10.268s]       |             [01;36m[K^~~~~~~[m[K
+[10.268s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kvoid GoalAStarOctomapSafeNode::publishStopSetpoint()[m[K’:
+[10.269s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:498:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition_valid[m[K’
+[10.269s]   498 |         sp.[01;31m[Kposition_valid[m[K = true;
+[10.269s]       |            [01;31m[K^~~~~~~~~~~~~~[m[K
+[10.269s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:499:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity_valid[m[K’
+[10.270s]   499 |         sp.[01;31m[Kvelocity_valid[m[K = true;
+[10.270s]       |            [01;31m[K^~~~~~~~~~~~~~[m[K
+[10.270s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:500:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kyaw_valid[m[K’
+[10.270s]   500 |         sp.[01;31m[Kyaw_valid[m[K = true;
+[10.270s]       |            [01;31m[K^~~~~~~~~[m[K
+[10.278s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In lambda function:
+[10.278s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:570:9:[m[K [01;31m[Kerror: [m[Kjump to label ‘[01m[Kcleanup[m[K’
+[10.278s]   570 |         [01;31m[Kcleanup[m[K:
+[10.278s]       |         [01;31m[K^~~~~~~[m[K
+[10.278s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:541:22:[m[K [01;36m[Knote: [m[K  from here
+[10.279s]   541 |                 goto [01;36m[Kcleanup[m[K;
+[10.279s]       |                      [01;36m[K^~~~~~~[m[K
+[10.279s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:547:33:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Knav_msgs::msg::Path new_path[m[K’
+[10.279s]   547 |             nav_msgs::msg::Path [01;36m[Knew_path[m[K;
+[10.280s]       |                                 [01;36m[K^~~~~~~~[m[K
+[10.280s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:544:18:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kstd::vector<GridKey> grid_path[m[K’
+[10.280s]   544 |             auto [01;36m[Kgrid_path[m[K = smoothPath(*path_opt, tree_snap, occ_cache);
+[10.280s]       |                  [01;36m[K^~~~~~~~~[m[K
+[10.280s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:570:9:[m[K [01;31m[Kerror: [m[Kjump to label ‘[01m[Kcleanup[m[K’
+[10.281s]   570 |         [01;31m[Kcleanup[m[K:
+[10.281s]       |         [01;31m[K^~~~~~~[m[K
+[10.282s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:527:26:[m[K [01;36m[Knote: [m[K  from here
+[10.282s]   527 |                     goto [01;36m[Kcleanup[m[K;
+[10.282s]       |                          [01;36m[K^~~~~~~[m[K
+[10.282s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:547:33:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Knav_msgs::msg::Path new_path[m[K’
+[10.283s]   547 |             nav_msgs::msg::Path [01;36m[Knew_path[m[K;
+[10.283s]       |                                 [01;36m[K^~~~~~~~[m[K
+[10.283s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:544:18:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kstd::vector<GridKey> grid_path[m[K’
+[10.284s]   544 |             auto [01;36m[Kgrid_path[m[K = smoothPath(*path_opt, tree_snap, occ_cache);
+[10.284s]       |                  [01;36m[K^~~~~~~~~[m[K
+[10.284s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:538:18:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kstd::optional<std::vector<GridKey> > path_opt[m[K’
+[10.284s]   538 |             auto [01;36m[Kpath_opt[m[K = aStar3D(s_grid, g_grid, tree_snap, occ_cache);
+[10.285s]       |                  [01;36m[K^~~~~~~~[m[K
+[10.285s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:536:21:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[KGridKey g_grid[m[K’
+[10.285s]   536 |             GridKey [01;36m[Kg_grid[m[K = worldToGrid(goal_snap.pose.position.x, goal_snap.pose.position.y, goal_snap.pose.position.z);
+[10.285s]       |                     [01;36m[K^~~~~~[m[K
+[10.285s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:535:21:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[KGridKey s_grid[m[K’
+[10.286s]   535 |             GridKey [01;36m[Ks_grid[m[K = worldToGrid(start_snap.pose.position.x, start_snap.pose.position.y, start_snap.pose.position.z);
+[10.286s]       |                     [01;36m[K^~~~~~[m[K
+[10.286s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:534:60:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kstd::unordered_map<GridKey, bool, GridKeyHash> occ_cache[m[K’
+[10.286s]   534 |             std::unordered_map<GridKey, bool, GridKeyHash> [01;36m[Kocc_cache[m[K;
+[10.287s]       |                                                            [01;36m[K^~~~~~~~~[m[K
+[10.287s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:[m[K In member function ‘[01m[Kvoid GoalAStarOctomapSafeNode::onPublishTimer()[m[K’:
+[10.287s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:618:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition_valid[m[K’
+[10.287s]   618 |             sp.[01;31m[Kposition_valid[m[K = true;
+[10.288s]       |                [01;31m[K^~~~~~~~~~~~~~[m[K
+[10.288s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:619:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity_valid[m[K’
+[10.288s]   619 |             sp.[01;31m[Kvelocity_valid[m[K = true;
+[10.288s]       |                [01;31m[K^~~~~~~~~~~~~~[m[K
+[10.288s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:620:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kyaw_valid[m[K’
+[10.289s]   620 |             sp.[01;31m[Kyaw_valid[m[K = true;
+[10.289s]       |                [01;31m[K^~~~~~~~~[m[K
+[10.289s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:627:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition_valid[m[K’
+[10.289s]   627 |             sp.[01;31m[Kposition_valid[m[K = true;
+[10.290s]       |                [01;31m[K^~~~~~~~~~~~~~[m[K
+[10.290s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:628:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kvelocity_valid[m[K’
+[10.290s]   628 |             sp.[01;31m[Kvelocity_valid[m[K = true;
+[10.290s]       |                [01;31m[K^~~~~~~~~~~~~~[m[K
+[10.290s] [01m[K/home/hj926217/ros2ws/src/px4_ros_com/src/goal_astar_octomap_safe_node.cpp:629:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing TrajectorySetpoint = struct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::TrajectorySetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kyaw_valid[m[K’
+[10.291s]   629 |             sp.[01;31m[Kyaw_valid[m[K = true;
+[10.291s]       |                [01;31m[K^~~~~~~~~[m[K
+[26.515s] gmake[2]: *** [CMakeFiles/goal_astar_octomap_safe_node.dir/build.make:76: CMakeFiles/goal_astar_octomap_safe_node.dir/src/goal_astar_octomap_safe_node.cpp.o] Error 1
+[26.516s] gmake[1]: *** [CMakeFiles/Makefile2:178: CMakeFiles/goal_astar_octomap_safe_node.dir/all] Error 2
+[26.516s] gmake: *** [Makefile:146: all] Error 2
+[26.524s] Invoked command in '/home/hj926217/ros2ws/build/px4_ros_com' returned '2': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16

@@ -1,0 +1,54 @@
+[0.057s] Invoking command in '/home/hj926217/ros2ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/aruco/install/vision_opencv:/home/hj926217/aruco/install/vertiport_land:/home/hj926217/aruco/install/translation_node:/home/hj926217/aruco/install/precision_land:/home/hj926217/aruco/install/example_rover_velocity_mode_cpp:/home/hj926217/aruco/install/example_mode_with_executor_cpp:/home/hj926217/aruco/install/example_mode_vtol_cpp:/home/hj926217/aruco/install/example_mode_rtl_replacement_cpp:/home/hj926217/aruco/install/example_mode_mission_cpp:/home/hj926217/aruco/install/example_mode_manual_cpp:/home/hj926217/aruco/install/example_mode_goto_global_cpp:/home/hj926217/aruco/install/example_mode_goto_cpp:/home/hj926217/aruco/install/example_mode_fw_attitude_cpp:/home/hj926217/aruco/install/example_local_navigation_cpp:/home/hj926217/aruco/install/example_global_navigation_cpp:/home/hj926217/aruco/install/example_executor_with_multiple_modes_cpp:/home/hj926217/aruco/install/px4_ros2_cpp:/home/hj926217/aruco/install/px4_msgs_old:/home/hj926217/aruco/install/aruco_tracker:/home/hj926217/aruco/install/px4_msgs:/home/hj926217/aruco/install/image_geometry:/home/hj926217/aruco/install/cv_bridge:/home/hj926217/aruco/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/home/hj926217/aruco/install/translation_node/lib:/home/hj926217/aruco/install/px4_msgs_old/lib:/home/hj926217/aruco/install/px4_msgs/lib:/home/hj926217/aruco/install/image_geometry/lib:/home/hj926217/aruco/install/cv_bridge/lib:/home/hj926217/aruco/install/px4_ros2_cpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16
+[0.220s] [ 12%] Built target frame_transforms
+[0.291s] [ 12%] Built target ament_cmake_python_copy_px4_ros_com
+[0.358s] [ 25%] Built target offboard_control_srv
+[0.682s] Traceback (most recent call last):
+[0.682s]   File "/home/hj926217/ros2ws/build/px4_ros_com/ament_cmake_python/px4_ros_com/setup.py", line 1, in <module>
+[0.682s]     from setuptools import find_packages
+[0.683s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[0.683s]     import setuptools.version
+[0.683s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[0.683s]     import pkg_resources
+[0.683s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 78, in <module>
+[0.683s]     __import__('pkg_resources.extern.packaging.requirements')
+[0.684s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/requirements.py", line 10, in <module>
+[0.686s]     from pkg_resources.extern.pyparsing import (  # noqa
+[0.686s]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[0.687s]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[0.687s]   File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+[0.687s]   File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+[0.687s]   File "/usr/lib/python3/dist-packages/pkg_resources/extern/__init__.py", line 52, in create_module
+[0.688s]     return self.load_module(spec.name)
+[0.688s]   File "/usr/lib/python3/dist-packages/pkg_resources/extern/__init__.py", line 37, in load_module
+[0.688s]     __import__(extant)
+[0.688s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 5399, in <module>
+[0.692s]     class pyparsing_common:
+[0.692s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 5586, in pyparsing_common
+[0.692s]     ipv6_address = Combine((_full_ipv6_address | _mixed_ipv6_address | _short_ipv6_address).setName("IPv6 address")).setName("IPv6 address")
+[0.694s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 4255, in __init__
+[0.694s]     self.leaveWhitespace()
+[0.694s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 3747, in leaveWhitespace
+[0.695s]     self.expr.leaveWhitespace()
+[0.696s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 3294, in leaveWhitespace
+[0.696s]     e.leaveWhitespace()
+[0.697s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 3294, in leaveWhitespace
+[0.698s]     e.leaveWhitespace()
+[0.698s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 3294, in leaveWhitespace
+[0.699s]     e.leaveWhitespace()
+[0.700s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 3292, in leaveWhitespace
+[0.701s]     self.exprs = [ e.copy() for e in self.exprs ]
+[0.701s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 3292, in <listcomp>
+[0.702s]     self.exprs = [ e.copy() for e in self.exprs ]
+[0.702s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 3365, in copy
+[0.703s]     ret.exprs = [e.copy() for e in self.exprs]
+[0.703s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 3365, in <listcomp>
+[0.705s]     ret.exprs = [e.copy() for e in self.exprs]
+[0.705s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 1183, in copy
+[0.706s]     cpy = copy.copy( self )
+[0.706s]   File "/usr/lib/python3.10/copy.py", line 83, in copy
+[0.710s]     if copier is not None:
+[0.710s] KeyboardInterrupt
+[0.740s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_px4_ros_com_egg] Interrupt
+[0.740s] gmake[1]: *** [CMakeFiles/Makefile2:388: CMakeFiles/ament_cmake_python_build_px4_ros_com_egg.dir/all] Interrupt
+[0.741s] gmake: *** [Makefile:146: all] Interrupt
+[0.747s] Invoked command in '/home/hj926217/ros2ws/build/px4_ros_com' returned '-2': CMAKE_PREFIX_PATH=/home/hj926217/ros2ws/install/px4_msgs:/home/hj926217/ros2ws/install/px4_ros_com:/home/hj926217/aruco/install/vision_opencv:/home/hj926217/aruco/install/vertiport_land:/home/hj926217/aruco/install/translation_node:/home/hj926217/aruco/install/precision_land:/home/hj926217/aruco/install/example_rover_velocity_mode_cpp:/home/hj926217/aruco/install/example_mode_with_executor_cpp:/home/hj926217/aruco/install/example_mode_vtol_cpp:/home/hj926217/aruco/install/example_mode_rtl_replacement_cpp:/home/hj926217/aruco/install/example_mode_mission_cpp:/home/hj926217/aruco/install/example_mode_manual_cpp:/home/hj926217/aruco/install/example_mode_goto_global_cpp:/home/hj926217/aruco/install/example_mode_goto_cpp:/home/hj926217/aruco/install/example_mode_fw_attitude_cpp:/home/hj926217/aruco/install/example_local_navigation_cpp:/home/hj926217/aruco/install/example_global_navigation_cpp:/home/hj926217/aruco/install/example_executor_with_multiple_modes_cpp:/home/hj926217/aruco/install/px4_ros2_cpp:/home/hj926217/aruco/install/px4_msgs_old:/home/hj926217/aruco/install/aruco_tracker:/home/hj926217/aruco/install/px4_msgs:/home/hj926217/aruco/install/image_geometry:/home/hj926217/aruco/install/cv_bridge:/home/hj926217/aruco/install/opencv_tests:/opt/ros/humble LD_LIBRARY_PATH=/home/hj926217/ros2ws/install/px4_msgs/lib:/home/hj926217/ros2ws/install/px4_ros_com/lib:/home/hj926217/aruco/install/translation_node/lib:/home/hj926217/aruco/install/px4_msgs_old/lib:/home/hj926217/aruco/install/px4_msgs/lib:/home/hj926217/aruco/install/image_geometry/lib:/home/hj926217/aruco/install/cv_bridge/lib:/home/hj926217/aruco/install/px4_ros2_cpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib /usr/bin/cmake --build /home/hj926217/ros2ws/build/px4_ros_com -- -j16 -l16
