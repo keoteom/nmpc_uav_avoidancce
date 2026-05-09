@@ -12,12 +12,12 @@
 /**
  * Number of decision variables
  */
-#define NMPC_UAV_OBSTACLE_NUM_DECISION_VARIABLES 120
+#define NMPC_UAV_OBSTACLE_NUM_DECISION_VARIABLES 90
 
 /**
  * Number of parameters
  */
-#define NMPC_UAV_OBSTACLE_NUM_PARAMETERS 138
+#define NMPC_UAV_OBSTACLE_NUM_PARAMETERS 108
 
 /**
  * Number of parameters associated with augmented Lagrangian
@@ -27,7 +27,7 @@
 /**
  * Number of penalty constraints
  */
-#define NMPC_UAV_OBSTACLE_N2 201
+#define NMPC_UAV_OBSTACLE_N2 151
 
 /**
  * nmpc_uav_obstacle version of ExitStatus
@@ -123,8 +123,8 @@ struct nmpc_uav_obstacleCache *nmpc_uav_obstacle_new(void);
 
 /**
  * Solve the parametric optimization problem for a given parameter
- *
- *
+ * .
+ * .
  * # Arguments:
  * - `instance`: re-useable instance of AlmCache, which should be created using
  *   `nmpc_uav_obstacle_new` (and should be destroyed once it is not
@@ -137,15 +137,15 @@ struct nmpc_uav_obstacleCache *nmpc_uav_obstacle_new(void);
  *   be used; length: `NMPC_UAV_OBSTACLE_N1`)
  * - `c0`: Initial penalty parameter (provide `0` to use the default initial
  *   penalty parameter
- *
- *
+ * .
+ * .
  * # Returns:
  * Instance of `nmpc_uav_obstacleSolverStatus`, with the solver status
  * (e.g., number of inner/outer iterations, measures of accuracy, solver time,
  * and the array of Lagrange multipliers at the solution).
- *
- *
- *
+ * .
+ * .
+ * .
  * # Safety
  * All arguments must have been properly initialised
  */

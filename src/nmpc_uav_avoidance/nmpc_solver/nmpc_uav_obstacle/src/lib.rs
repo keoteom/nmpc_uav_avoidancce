@@ -49,16 +49,16 @@ const DO_PRECONDITIONING: bool = false;
 // ---Public Constants-----------------------------------------------------------------------------------
 
 /// Number of decision variables
-pub const NMPC_UAV_OBSTACLE_NUM_DECISION_VARIABLES: usize = 120;
+pub const NMPC_UAV_OBSTACLE_NUM_DECISION_VARIABLES: usize = 90;
 
 /// Number of parameters
-pub const NMPC_UAV_OBSTACLE_NUM_PARAMETERS: usize = 138;
+pub const NMPC_UAV_OBSTACLE_NUM_PARAMETERS: usize = 108;
 
 /// Number of parameters associated with augmented Lagrangian
 pub const NMPC_UAV_OBSTACLE_N1: usize = 0;
 
 /// Number of penalty constraints
-pub const NMPC_UAV_OBSTACLE_N2: usize = 201;
+pub const NMPC_UAV_OBSTACLE_N2: usize = 151;
 
 // ---Export functionality from Rust to C/C++------------------------------------------------------------
 
@@ -132,8 +132,8 @@ pub extern "C" fn nmpc_uav_obstacle_new() -> *mut nmpc_uav_obstacleCache {
 }
 
 /// Solve the parametric optimization problem for a given parameter
-///
-///
+/// .
+/// .
 /// # Arguments:
 /// - `instance`: re-useable instance of AlmCache, which should be created using
 ///   `nmpc_uav_obstacle_new` (and should be destroyed once it is not
@@ -146,15 +146,15 @@ pub extern "C" fn nmpc_uav_obstacle_new() -> *mut nmpc_uav_obstacleCache {
 ///   be used; length: `NMPC_UAV_OBSTACLE_N1`)
 /// - `c0`: Initial penalty parameter (provide `0` to use the default initial
 ///   penalty parameter
-///
-///
+/// .
+/// .
 /// # Returns:
 /// Instance of `nmpc_uav_obstacleSolverStatus`, with the solver status
 /// (e.g., number of inner/outer iterations, measures of accuracy, solver time,
 /// and the array of Lagrange multipliers at the solution).
-///
-///
-///
+/// .
+/// .
+/// .
 /// # Safety
 /// All arguments must have been properly initialised
 #[no_mangle]
@@ -175,13 +175,13 @@ pub unsafe extern "C" fn nmpc_uav_obstacle_solve(
     // "*mut c_double" to "&mut [f64]"
     let u : &mut [f64] = {
         assert!(!u.is_null());
-        std::slice::from_raw_parts_mut(u, NMPC_UAV_OBSTACLE_NUM_DECISION_VARIABLES)
+        std::slice::from_raw_parts_mut(u as *mut f64, NMPC_UAV_OBSTACLE_NUM_DECISION_VARIABLES)
     };
 
     // "*const c_double" to "&[f64]"
     let params : &[f64] = {
         assert!(!params.is_null());
-        std::slice::from_raw_parts(params, NMPC_UAV_OBSTACLE_NUM_PARAMETERS)
+        std::slice::from_raw_parts(params as *const f64, NMPC_UAV_OBSTACLE_NUM_PARAMETERS)
     };
 
     let c0_option: Option<f64> = if c0.is_null() {
@@ -230,14 +230,14 @@ pub unsafe extern "C" fn nmpc_uav_obstacle_solve(
                 SolverError::Cost => nmpc_uav_obstacleExitStatus::nmpc_uav_obstacleNotConvergedCost,
                 SolverError::NotFiniteComputation => nmpc_uav_obstacleExitStatus::nmpc_uav_obstacleNotConvergedNotFiniteComputation,
             },
-            num_outer_iterations: u64::MAX as c_ulong,
-            num_inner_iterations: u64::MAX as c_ulong,
-            last_problem_norm_fpr: f64::INFINITY,
-            solve_time_ns: u64::MAX as c_ulonglong,
-            penalty: f64::INFINITY as c_double,
-            delta_y_norm_over_c: f64::INFINITY as c_double,
-            f2_norm: f64::INFINITY as c_double,
-            cost: f64::INFINITY as c_double,
+            num_outer_iterations: std::u64::MAX as c_ulong,
+            num_inner_iterations: std::u64::MAX as c_ulong,
+            last_problem_norm_fpr: std::f64::INFINITY,
+            solve_time_ns: std::u64::MAX as c_ulonglong,
+            penalty: std::f64::INFINITY as c_double,
+            delta_y_norm_over_c: std::f64::INFINITY as c_double,
+            f2_norm: std::f64::INFINITY as c_double,
+            cost: std::f64::INFINITY as c_double,
             lagrange:std::ptr::null::<c_double>()
         },
     }
@@ -261,8 +261,8 @@ pub unsafe extern "C" fn nmpc_uav_obstacle_free(instance: *mut nmpc_uav_obstacle
 
 
 
-const CONSTRAINTS_XMIN :Option<&[f64]> = Some(&[5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,]);
-const CONSTRAINTS_XMAX :Option<&[f64]> = Some(&[13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,]);
+const CONSTRAINTS_XMIN :Option<&[f64]> = Some(&[5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,5.0,-0.35,-0.35,]);
+const CONSTRAINTS_XMAX :Option<&[f64]> = Some(&[13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,13.5,0.35,0.35,]);
 
 
 

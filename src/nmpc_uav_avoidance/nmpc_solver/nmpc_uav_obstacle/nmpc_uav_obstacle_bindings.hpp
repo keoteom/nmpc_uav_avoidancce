@@ -11,16 +11,16 @@
 #include <new>
 
 /// Number of decision variables
-static const uintptr_t NMPC_UAV_OBSTACLE_NUM_DECISION_VARIABLES = 120;
+static const uintptr_t NMPC_UAV_OBSTACLE_NUM_DECISION_VARIABLES = 90;
 
 /// Number of parameters
-static const uintptr_t NMPC_UAV_OBSTACLE_NUM_PARAMETERS = 138;
+static const uintptr_t NMPC_UAV_OBSTACLE_NUM_PARAMETERS = 108;
 
 /// Number of parameters associated with augmented Lagrangian
 static const uintptr_t NMPC_UAV_OBSTACLE_N1 = 0;
 
 /// Number of penalty constraints
-static const uintptr_t NMPC_UAV_OBSTACLE_N2 = 201;
+static const uintptr_t NMPC_UAV_OBSTACLE_N2 = 151;
 
 /// nmpc_uav_obstacle version of ExitStatus
 /// Structure: `nmpc_uav_obstacleExitStatus`
@@ -79,8 +79,8 @@ extern "C" {
 nmpc_uav_obstacleCache *nmpc_uav_obstacle_new();
 
 /// Solve the parametric optimization problem for a given parameter
-///
-///
+/// .
+/// .
 /// # Arguments:
 /// - `instance`: re-useable instance of AlmCache, which should be created using
 ///   `nmpc_uav_obstacle_new` (and should be destroyed once it is not
@@ -93,15 +93,15 @@ nmpc_uav_obstacleCache *nmpc_uav_obstacle_new();
 ///   be used; length: `NMPC_UAV_OBSTACLE_N1`)
 /// - `c0`: Initial penalty parameter (provide `0` to use the default initial
 ///   penalty parameter
-///
-///
+/// .
+/// .
 /// # Returns:
 /// Instance of `nmpc_uav_obstacleSolverStatus`, with the solver status
 /// (e.g., number of inner/outer iterations, measures of accuracy, solver time,
 /// and the array of Lagrange multipliers at the solution).
-///
-///
-///
+/// .
+/// .
+/// .
 /// # Safety
 /// All arguments must have been properly initialised
 nmpc_uav_obstacleSolverStatus nmpc_uav_obstacle_solve(nmpc_uav_obstacleCache *instance,

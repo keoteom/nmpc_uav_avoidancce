@@ -2,13 +2,13 @@
  * @file nmpc_node.cpp
  * @brief C++ NMPC UAV collision avoidance — dynamic obstacle version.
  *
- * Parameter layout (138 total):
+ * Parameter layout (118 total):
  *   [0:8]     x0
  *   [8:11]    u_prev
- *   [11:131]  p_ref × 40 timesteps (3×40 = 120)
- *   [131:134] p_obs   ← obstacle position (current)
- *   [134:137] v_obs   ← obstacle velocity  (NEW)
- *   [137]     r_obs
+ *   [11:101]  p_ref × 30 timesteps (3×30 = 90)
+ *   [101:104] p_obs
+ *   [104:107] v_obs
+ *   [107]     r_obs
  */
 
 #include "nmpc_uav_avoidance/nmpc_node.hpp"
@@ -21,7 +21,7 @@
 namespace nmpc_uav {
 
 // ============================================================================
-//  Free helper functions  (unchanged)
+//  Free helper functions
 // ============================================================================
 
 EulerAngles quaternion_to_euler(double qx, double qy, double qz, double qw) {
@@ -80,14 +80,13 @@ std::array<double, NX> dynamics_step(const std::array<double, NX>& x,
 // ============================================================================
 
 NMPCNode::NMPCNode() : Node("nmpc_uav_node") {
-    // --- static obstacle params replaced by dynamic obstacle defaults ---
-    this->declare_parameter<double>("obs_x",    3.0);
-    this->declare_parameter<double>("obs_y",    0.0);
-    this->declare_parameter<double>("obs_z",    1.0);
-    this->declare_parameter<double>("obs_vx",   0.0);   // NEW
-    this->declare_parameter<double>("obs_vy",   0.0);   // NEW
-    this->declare_parameter<double>("obs_vz",   0.0);   // NEW
-    this->declare_parameter<double>("r_obs",    1.0);
+    this->declare_parameter<double>("obs_x",      3.0);
+    this->declare_parameter<double>("obs_y",      0.0);
+    this->declare_parameter<double>("obs_z",      1.0);
+    this->declare_parameter<double>("obs_vx",     0.0);
+    this->declare_parameter<double>("obs_vy",     0.0);
+    this->declare_parameter<double>("obs_vz",     0.0);
+    this->declare_parameter<double>("r_obs",      1.0);
     this->declare_parameter<double>("thrust_max", 13.5);
     this->declare_parameter<double>("thrust_min", 5.0);
     this->declare_parameter<double>("yaw_gain",   1.0);
@@ -95,9 +94,9 @@ NMPCNode::NMPCNode() : Node("nmpc_uav_node") {
     obs_pos_[0] = this->get_parameter("obs_x").as_double();
     obs_pos_[1] = this->get_parameter("obs_y").as_double();
     obs_pos_[2] = this->get_parameter("obs_z").as_double();
-    obs_vel_[0] = this->get_parameter("obs_vx").as_double();  // NEW
-    obs_vel_[1] = this->get_parameter("obs_vy").as_double();  // NEW
-    obs_vel_[2] = this->get_parameter("obs_vz").as_double();  // NEW
+    obs_vel_[0] = this->get_parameter("obs_vx").as_double();
+    obs_vel_[1] = this->get_parameter("obs_vy").as_double();
+    obs_vel_[2] = this->get_parameter("obs_vz").as_double();
     r_obs_  = this->get_parameter("r_obs").as_double();
     T_max_  = this->get_parameter("thrust_max").as_double();
     T_min_  = this->get_parameter("thrust_min").as_double();
@@ -116,7 +115,6 @@ NMPCNode::NMPCNode() : Node("nmpc_uav_node") {
         "/odom_nmpc", 10,
         std::bind(&NMPCNode::odom_callback, this, std::placeholders::_1));
 
-    // NEW: subscribe to obstacle odometry (position + twist)
     sub_obs_odom_ = this->create_subscription<nav_msgs::msg::Odometry>(
         "/obstacle/odom", 10,
         std::bind(&NMPCNode::obs_odom_callback, this, std::placeholders::_1));
@@ -141,6 +139,14 @@ NMPCNode::NMPCNode() : Node("nmpc_uav_node") {
         "/nmpc/predicted_path", 10);
     pub_obs_marker_ = this->create_publisher<visualization_msgs::msg::Marker>(
         "/nmpc/obstacle_marker", 10);
+    pub_solver_time_ = this->create_publisher<std_msgs::msg::Float64>(
+        "/nmpc/solver_time_ms", 10);
+    pub_cost_function_ = this->create_publisher<std_msgs::msg::Float64>(
+        "/nmpc/cost_function", 10);
+    pub_control_input_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
+        "/nmpc/control_input", 10);
+    pub_jerk_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
+        "/nmpc/jerk", 10);
 
     timer_ = this->create_wall_timer(
         std::chrono::milliseconds(static_cast<int>(Ts * 1000)),
@@ -170,11 +176,10 @@ void NMPCNode::odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
     state_[3] = v.x;  state_[4] = v.y;  state_[5] = v.z;
     state_[6] = -euler.roll;
     state_[7] = -euler.pitch;
-    yaw_           = euler.yaw;
+    yaw_            = euler.yaw;
     state_received_ = true;
 }
 
-// NEW: obstacle odometry → update position and velocity
 void NMPCNode::obs_odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
     obs_pos_[0] = msg->pose.pose.position.x;
     obs_pos_[1] = msg->pose.pose.position.y;
@@ -194,7 +199,8 @@ void NMPCNode::path_callback(const nav_msgs::msg::Path::SharedPtr msg) {
             ps.pose.position.z
         });
     }
-    path_idx_ = 0;
+    path_idx_          = 0;
+    last_solve_time_s_ = Ts;  // 경로 갱신 시 솔버 시간 초기화
     RCLCPP_INFO(this->get_logger(),
                 "Received path with %zu waypoints.", path_points_.size());
 }
@@ -205,7 +211,7 @@ void NMPCNode::vehicle_status_callback(const px4_msgs::msg::VehicleStatus::Share
 }
 
 // ============================================================================
-//  PX4 Command helpers  (unchanged)
+//  PX4 Command helpers
 // ============================================================================
 
 void NMPCNode::publish_vehicle_command(uint16_t command,
@@ -232,22 +238,55 @@ void NMPCNode::arm()    { publish_vehicle_command(400, 1.0f); }
 void NMPCNode::disarm() { publish_vehicle_command(400, 0.0f); }
 
 // ============================================================================
-//  Waypoint management  (unchanged)
+//  Waypoint management — adaptive lookahead
 // ============================================================================
 
 void NMPCNode::update_reference() {
     if (path_points_.empty()) return;
 
+    // 1. 현재 idx 기준 앞으로만 nearest 탐색 (뒤로 안 감)
     double min_dist = 1e9;
-    size_t closest  = 0;
-    for (size_t i = 0; i < path_points_.size(); ++i) {
+    for (size_t i = path_idx_; i < path_points_.size(); ++i) {
         double dx = state_[0] - path_points_[i][0];
         double dy = state_[1] - path_points_[i][1];
         double dz = state_[2] - path_points_[i][2];
         double dist = std::sqrt(dx*dx + dy*dy + dz*dz);
-        if (dist < min_dist) { min_dist = dist; closest = i; }
+        if (dist < min_dist) { min_dist = dist; path_idx_ = i; }
     }
-    path_idx_ = closest;
+
+    // 2. 경로 보간 간격 계산 (nearest ~ nearest+1 사이 거리)
+    double seg_len = 0.1;  // 기본값 (경로 점이 1개뿐일 때 fallback)
+    if (path_idx_ + 1 < path_points_.size()) {
+        double dx = path_points_[path_idx_+1][0] - path_points_[path_idx_][0];
+        double dy = path_points_[path_idx_+1][1] - path_points_[path_idx_][1];
+        double dz = path_points_[path_idx_+1][2] - path_points_[path_idx_][2];
+        seg_len = std::sqrt(dx*dx + dy*dy + dz*dz);
+        seg_len = std::max(seg_len, 0.01);  // 0 나눔 방지
+    }
+
+    // 3. lookahead = 보간 간격 × (솔버 시간 / Ts)
+    //    → 솔버가 Ts마다 실행된다고 가정하면 한 스텝에 seg_len만큼 진행
+    double steps = last_solve_time_s_ / Ts;  // 솔버 지연이 몇 스텝인지
+    double lookahead_dist = seg_len * steps;
+    lookahead_dist = std::clamp(lookahead_dist, seg_len, seg_len * 10.0);
+
+    // 4. nearest에서 lookahead_dist만큼 앞으로
+    double accum = 0.0;
+    for (size_t i = path_idx_; i + 1 < path_points_.size(); ++i) {
+        double dx = path_points_[i+1][0] - path_points_[i][0];
+        double dy = path_points_[i+1][1] - path_points_[i][1];
+        double dz = path_points_[i+1][2] - path_points_[i][2];
+        accum += std::sqrt(dx*dx + dy*dy + dz*dz);
+        if (accum >= lookahead_dist) {
+            path_idx_ = i + 1;
+            break;
+        }
+    }
+
+    RCLCPP_DEBUG(this->get_logger(),
+        "seg=%.3fm steps=%.1f lookahead=%.2fm idx=%zu/%zu",
+        seg_len, steps, lookahead_dist,
+        path_idx_, path_points_.size());
 }
 
 void NMPCNode::global_to_body_angles(double phi_g, double theta_g,
@@ -274,14 +313,14 @@ void NMPCNode::control_loop() {
 
     update_reference();
 
-    // Build parameter vector (138 total)
+    // Build parameter vector (118 total)
     std::vector<double> params(N_PARAMS, 0.0);
 
     // [0:8] state, [8:11] u_prev
     for (int i = 0; i < NX; ++i) params[i]     = state_[i];
     for (int i = 0; i < NU; ++i) params[8 + i] = u_prev_[i];
 
-    // [11:131] reference trajectory
+    // [11:101] reference trajectory (N=30, 3×30=90)
     const int ref_start = 11;
     for (int j = 0; j < N; ++j) {
         size_t idx = path_idx_ + j;
@@ -298,22 +337,23 @@ void NMPCNode::control_loop() {
         }
     }
 
-    // [131:134] obstacle position (current)
-    params[131] = obs_pos_[0];
-    params[132] = obs_pos_[1];
-    params[133] = obs_pos_[2];
+    // [101:104] p_obs, [104:107] v_obs, [107] r_obs
+    params[101] = obs_pos_[0];
+    params[102] = obs_pos_[1];
+    params[103] = obs_pos_[2];
+    params[104] = obs_vel_[0];
+    params[105] = obs_vel_[1];
+    params[106] = obs_vel_[2];
+    params[107] = r_obs_;
 
-    // [134:137] obstacle velocity  (NEW)
-    params[134] = obs_vel_[0];
-    params[135] = obs_vel_[1];
-    params[136] = obs_vel_[2];
-
-    // [137] obstacle radius
-    params[137] = r_obs_;
+    if (!obs_received_) {
+        RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 2000,
+            "Obstacle odom not received yet, using default params.");
+    }
 
     RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,
-        "obs pos=[%.2f,%.2f,%.2f] vel=[%.2f,%.2f,%.2f] | "
-        "UAV pos=[%.1f,%.1f,%.1f] path_idx=%zu/%zu",
+        "obs=[%.2f,%.2f,%.2f] vel=[%.2f,%.2f,%.2f] | "
+        "UAV=[%.1f,%.1f,%.1f] idx=%zu/%zu",
         obs_pos_[0], obs_pos_[1], obs_pos_[2],
         obs_vel_[0], obs_vel_[1], obs_vel_[2],
         state_[0], state_[1], state_[2],
@@ -341,6 +381,9 @@ void NMPCNode::control_loop() {
         return;
     }
 
+    // ★ 솔버 시간 저장 → 다음 루프 lookahead에 반영
+    last_solve_time_s_ = result.solve_time_ms * 1e-3;
+
     double T_opt         = z_star[0];
     double phi_ref_opt   = z_star[1];
     double theta_ref_opt = z_star[2];
@@ -350,6 +393,50 @@ void NMPCNode::control_loop() {
         T_opt, phi_ref_opt, theta_ref_opt,
         result.exit_status.c_str(), result.solve_time_ms);
 
+    {
+        std_msgs::msg::Float64 msg;
+        msg.data = result.solve_time_ms;
+        pub_solver_time_->publish(msg);
+    }
+    {
+        std_msgs::msg::Float64 msg;
+        msg.data = result.cost;
+        pub_cost_function_->publish(msg);
+    }
+    {
+        std_msgs::msg::Float64MultiArray msg;
+        msg.data = {T_opt, phi_ref_opt, theta_ref_opt};
+        pub_control_input_->publish(msg);
+    }
+
+    {
+        std_msgs::msg::Float64MultiArray msg;
+        if (z_star.size() >= static_cast<size_t>(2 * NU)) {
+            std::array<double, NX> x0 = state_;
+            std::array<double, NU> u0 = {z_star[0],    z_star[1],    z_star[2]};
+            std::array<double, NU> u1 = {z_star[NU],   z_star[NU+1], z_star[NU+2]};
+
+            std::array<double, NX> x1 = dynamics_step(x0, u0);
+            std::array<double, NX> x2 = dynamics_step(x1, u1);
+
+            const double ax0 = (x1[3] - x0[3]) / Ts;
+            const double ay0 = (x1[4] - x0[4]) / Ts;
+            const double az0 = (x1[5] - x0[5]) / Ts;
+            const double ax1 = (x2[3] - x1[3]) / Ts;
+            const double ay1 = (x2[4] - x1[4]) / Ts;
+            const double az1 = (x2[5] - x1[5]) / Ts;
+
+            msg.data = {
+                (ax1 - ax0) / Ts,
+                (ay1 - ay0) / Ts,
+                (az1 - az0) / Ts
+            };
+        } else {
+            msg.data = {0.0, 0.0, 0.0};
+        }
+        pub_jerk_->publish(msg);
+    }
+
     u_prev_ = {T_opt, phi_ref_opt, theta_ref_opt};
 
     double phi_ref_b   = -phi_ref_opt;
@@ -357,7 +444,7 @@ void NMPCNode::control_loop() {
     double yaw_rate    = -K_psi_ * yaw_;
 
     double T_clamped   = std::clamp(T_opt, T_min_, T_max_);
-    double thrust_norm = std::sqrt(T_clamped / T_max_);
+    double thrust_norm = std::sqrt(T_clamped / T_max_);  // sqrt 유지
 
     {
         px4_msgs::msg::VehicleThrustSetpoint msg;
@@ -366,7 +453,6 @@ void NMPCNode::control_loop() {
         msg.xyz[2] = static_cast<float>(-thrust_norm);
         pub_thrust_->publish(msg);
     }
-
     {
         px4_msgs::msg::VehicleAttitudeSetpoint msg;
         msg.timestamp = px4_timestamp();
@@ -386,12 +472,12 @@ void NMPCNode::control_loop() {
 }
 
 // ============================================================================
-//  Fallback / helpers  (unchanged except marker)
+//  Fallback / helpers
 // ============================================================================
 
 void NMPCNode::publish_fallback_setpoint() {
     double T_clamped   = std::clamp(u_prev_[0], T_min_, T_max_);
-    double thrust_norm = std::sqrt(T_clamped / T_max_);
+    double thrust_norm = std::sqrt(T_clamped / T_max_);  // sqrt 유지
     double phi_b, theta_b;
     global_to_body_angles(u_prev_[1], u_prev_[2], phi_b, theta_b);
 
@@ -434,12 +520,11 @@ void NMPCNode::publish_predicted_path(const std::vector<double>& z_star) {
     pub_pred_path_->publish(path_msg);
 }
 
-// Marker shows obstacle at current position (real-time) 
 void NMPCNode::publish_obstacle_marker() {
     visualization_msgs::msg::Marker m;
     m.header.stamp    = this->now();
     m.header.frame_id = "map";
-    m.ns   = "obstacle";  m.id = 0;
+    m.ns   = "obstacle"; m.id = 0;
     m.type = visualization_msgs::msg::Marker::SPHERE;
     m.action = visualization_msgs::msg::Marker::ADD;
     m.pose.position.x  = obs_pos_[0];

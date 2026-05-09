@@ -18,10 +18,10 @@
  *   + version: 0.0.0
  *   + licence: MIT
  * + Problem
- *   + vars: 120
- *   + parameters: 138
+ *   + vars: 90
+ *   + parameters: 108
  *   + n1: 0
- *   + n2: 201
+ *   + n2: 151
  *
  */
 #include <stdlib.h>
@@ -37,16 +37,16 @@
 #include "casadi_memory.h"
 
 /* Number of input variables */
-#define NU_NMPC_UAV_OBSTACLE 120
+#define NU_NMPC_UAV_OBSTACLE 90
 
 /* Number of static parameters */
-#define NP_NMPC_UAV_OBSTACLE 138
+#define NP_NMPC_UAV_OBSTACLE 108
 
 /* Dimension of F1 (number of ALM constraints) */
 #define N1_NMPC_UAV_OBSTACLE 0
 
 /* Dimension of F2 (number of PM constraints) */
-#define N2_NMPC_UAV_OBSTACLE 201
+#define N2_NMPC_UAV_OBSTACLE 151
 
 /* Dimension of xi = (c, y) */
 #define NXI_NMPC_UAV_OBSTACLE 1

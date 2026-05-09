@@ -49,11 +49,11 @@ extern "C" {
   #endif
 #endif
 
-static const casadi_int casadi_s0[3] = {120, 1, 1};
-static const casadi_int casadi_s1[3] = {340, 1, 1};
+static const casadi_int casadi_s0[3] = {90, 1, 1};
+static const casadi_int casadi_s1[3] = {260, 1, 1};
 static const casadi_int casadi_s2[3] = {1, 1, 1};
 
-/* open_mapping_f1_nmpc_uav_obstacle:(i0[120],i1[340])->(o0) */
+/* open_mapping_f1_nmpc_uav_obstacle:(i0[90],i1[260])->(o0) */
 static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
   casadi_real a0;
   a0=0.;

@@ -63,6 +63,11 @@ CMAKE_BINARY_DIR = /home/hj926217/ros2ws/build/px4_ros_com
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/crazy_path.dir/all
+all: CMakeFiles/goal_interactive_marker.dir/all
+all: CMakeFiles/sfc_generator_node.dir/all
+all: CMakeFiles/octomap_boxes_rviz_node.dir/all
+all: CMakeFiles/tracking_error_node.dir/all
 all: CMakeFiles/offboard_circle_control.dir/all
 all: CMakeFiles/figure_eight_planner.dir/all
 all: CMakeFiles/obstacle_odom_publisher.dir/all
@@ -96,6 +101,11 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/px4_ros_com_uninstall.dir/clean
+clean: CMakeFiles/crazy_path.dir/clean
+clean: CMakeFiles/goal_interactive_marker.dir/clean
+clean: CMakeFiles/sfc_generator_node.dir/clean
+clean: CMakeFiles/octomap_boxes_rviz_node.dir/clean
+clean: CMakeFiles/tracking_error_node.dir/clean
 clean: CMakeFiles/offboard_circle_control.dir/clean
 clean: CMakeFiles/figure_eight_planner.dir/clean
 clean: CMakeFiles/obstacle_odom_publisher.dir/clean
@@ -176,13 +186,143 @@ CMakeFiles/px4_ros_com_uninstall.dir/clean:
 .PHONY : CMakeFiles/px4_ros_com_uninstall.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/crazy_path.dir
+
+# All Build rule for target.
+CMakeFiles/crazy_path.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crazy_path.dir/build.make CMakeFiles/crazy_path.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crazy_path.dir/build.make CMakeFiles/crazy_path.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=7,8 "Built target crazy_path"
+.PHONY : CMakeFiles/crazy_path.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/crazy_path.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/crazy_path.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles 0
+.PHONY : CMakeFiles/crazy_path.dir/rule
+
+# Convenience name for target.
+crazy_path: CMakeFiles/crazy_path.dir/rule
+.PHONY : crazy_path
+
+# clean rule for target.
+CMakeFiles/crazy_path.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crazy_path.dir/build.make CMakeFiles/crazy_path.dir/clean
+.PHONY : CMakeFiles/crazy_path.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/goal_interactive_marker.dir
+
+# All Build rule for target.
+CMakeFiles/goal_interactive_marker.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_interactive_marker.dir/build.make CMakeFiles/goal_interactive_marker.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_interactive_marker.dir/build.make CMakeFiles/goal_interactive_marker.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=17,18 "Built target goal_interactive_marker"
+.PHONY : CMakeFiles/goal_interactive_marker.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/goal_interactive_marker.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/goal_interactive_marker.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles 0
+.PHONY : CMakeFiles/goal_interactive_marker.dir/rule
+
+# Convenience name for target.
+goal_interactive_marker: CMakeFiles/goal_interactive_marker.dir/rule
+.PHONY : goal_interactive_marker
+
+# clean rule for target.
+CMakeFiles/goal_interactive_marker.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_interactive_marker.dir/build.make CMakeFiles/goal_interactive_marker.dir/clean
+.PHONY : CMakeFiles/goal_interactive_marker.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sfc_generator_node.dir
+
+# All Build rule for target.
+CMakeFiles/sfc_generator_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfc_generator_node.dir/build.make CMakeFiles/sfc_generator_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfc_generator_node.dir/build.make CMakeFiles/sfc_generator_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=45,46 "Built target sfc_generator_node"
+.PHONY : CMakeFiles/sfc_generator_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sfc_generator_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sfc_generator_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles 0
+.PHONY : CMakeFiles/sfc_generator_node.dir/rule
+
+# Convenience name for target.
+sfc_generator_node: CMakeFiles/sfc_generator_node.dir/rule
+.PHONY : sfc_generator_node
+
+# clean rule for target.
+CMakeFiles/sfc_generator_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfc_generator_node.dir/build.make CMakeFiles/sfc_generator_node.dir/clean
+.PHONY : CMakeFiles/sfc_generator_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/octomap_boxes_rviz_node.dir
+
+# All Build rule for target.
+CMakeFiles/octomap_boxes_rviz_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/octomap_boxes_rviz_node.dir/build.make CMakeFiles/octomap_boxes_rviz_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/octomap_boxes_rviz_node.dir/build.make CMakeFiles/octomap_boxes_rviz_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=31,32 "Built target octomap_boxes_rviz_node"
+.PHONY : CMakeFiles/octomap_boxes_rviz_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/octomap_boxes_rviz_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/octomap_boxes_rviz_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles 0
+.PHONY : CMakeFiles/octomap_boxes_rviz_node.dir/rule
+
+# Convenience name for target.
+octomap_boxes_rviz_node: CMakeFiles/octomap_boxes_rviz_node.dir/rule
+.PHONY : octomap_boxes_rviz_node
+
+# clean rule for target.
+CMakeFiles/octomap_boxes_rviz_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/octomap_boxes_rviz_node.dir/build.make CMakeFiles/octomap_boxes_rviz_node.dir/clean
+.PHONY : CMakeFiles/octomap_boxes_rviz_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tracking_error_node.dir
+
+# All Build rule for target.
+CMakeFiles/tracking_error_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracking_error_node.dir/build.make CMakeFiles/tracking_error_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracking_error_node.dir/build.make CMakeFiles/tracking_error_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=49,50 "Built target tracking_error_node"
+.PHONY : CMakeFiles/tracking_error_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tracking_error_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tracking_error_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles 0
+.PHONY : CMakeFiles/tracking_error_node.dir/rule
+
+# Convenience name for target.
+tracking_error_node: CMakeFiles/tracking_error_node.dir/rule
+.PHONY : tracking_error_node
+
+# clean rule for target.
+CMakeFiles/tracking_error_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracking_error_node.dir/build.make CMakeFiles/tracking_error_node.dir/clean
+.PHONY : CMakeFiles/tracking_error_node.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/offboard_circle_control.dir
 
 # All Build rule for target.
 CMakeFiles/offboard_circle_control.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_circle_control.dir/build.make CMakeFiles/offboard_circle_control.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_circle_control.dir/build.make CMakeFiles/offboard_circle_control.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=27,28 "Built target offboard_circle_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=33,34 "Built target offboard_circle_control"
 .PHONY : CMakeFiles/offboard_circle_control.dir/all
 
 # Build rule for subdir invocation for target.
@@ -208,7 +348,7 @@ CMakeFiles/offboard_circle_control.dir/clean:
 CMakeFiles/figure_eight_planner.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/figure_eight_planner.dir/build.make CMakeFiles/figure_eight_planner.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/figure_eight_planner.dir/build.make CMakeFiles/figure_eight_planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=9,10 "Built target figure_eight_planner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=11,12 "Built target figure_eight_planner"
 .PHONY : CMakeFiles/figure_eight_planner.dir/all
 
 # Build rule for subdir invocation for target.
@@ -234,7 +374,7 @@ CMakeFiles/figure_eight_planner.dir/clean:
 CMakeFiles/obstacle_odom_publisher.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle_odom_publisher.dir/build.make CMakeFiles/obstacle_odom_publisher.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle_odom_publisher.dir/build.make CMakeFiles/obstacle_odom_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=25,26 "Built target obstacle_odom_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=29,30 "Built target obstacle_odom_publisher"
 .PHONY : CMakeFiles/obstacle_odom_publisher.dir/all
 
 # Build rule for subdir invocation for target.
@@ -260,7 +400,7 @@ CMakeFiles/obstacle_odom_publisher.dir/clean:
 CMakeFiles/rrt_star_planner.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rrt_star_planner.dir/build.make CMakeFiles/rrt_star_planner.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rrt_star_planner.dir/build.make CMakeFiles/rrt_star_planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=35,36 "Built target rrt_star_planner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=41,42 "Built target rrt_star_planner"
 .PHONY : CMakeFiles/rrt_star_planner.dir/all
 
 # Build rule for subdir invocation for target.
@@ -286,7 +426,7 @@ CMakeFiles/rrt_star_planner.dir/clean:
 CMakeFiles/vtol_mission_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vtol_mission_node.dir/build.make CMakeFiles/vtol_mission_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vtol_mission_node.dir/build.make CMakeFiles/vtol_mission_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=45,46 "Built target vtol_mission_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=55,56 "Built target vtol_mission_node"
 .PHONY : CMakeFiles/vtol_mission_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -312,7 +452,7 @@ CMakeFiles/vtol_mission_node.dir/clean:
 CMakeFiles/local_path.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_path.dir/build.make CMakeFiles/local_path.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/local_path.dir/build.make CMakeFiles/local_path.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=21,22 "Built target local_path"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=25,26 "Built target local_path"
 .PHONY : CMakeFiles/local_path.dir/all
 
 # Build rule for subdir invocation for target.
@@ -338,7 +478,7 @@ CMakeFiles/local_path.dir/clean:
 CMakeFiles/global_path.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/global_path.dir/build.make CMakeFiles/global_path.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/global_path.dir/build.make CMakeFiles/global_path.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=13,14 "Built target global_path"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=15,16 "Built target global_path"
 .PHONY : CMakeFiles/global_path.dir/all
 
 # Build rule for subdir invocation for target.
@@ -364,7 +504,7 @@ CMakeFiles/global_path.dir/clean:
 CMakeFiles/frame_transforms.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/frame_transforms.dir/build.make CMakeFiles/frame_transforms.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/frame_transforms.dir/build.make CMakeFiles/frame_transforms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=11,12 "Built target frame_transforms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=13,14 "Built target frame_transforms"
 .PHONY : CMakeFiles/frame_transforms.dir/all
 
 # Build rule for subdir invocation for target.
@@ -390,7 +530,7 @@ CMakeFiles/frame_transforms.dir/clean:
 CMakeFiles/path_follower.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_follower.dir/build.make CMakeFiles/path_follower.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_follower.dir/build.make CMakeFiles/path_follower.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=33,34 "Built target path_follower"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=39,40 "Built target path_follower"
 .PHONY : CMakeFiles/path_follower.dir/all
 
 # Build rule for subdir invocation for target.
@@ -416,7 +556,7 @@ CMakeFiles/path_follower.dir/clean:
 CMakeFiles/goal_marker_pub.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_marker_pub.dir/build.make CMakeFiles/goal_marker_pub.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_marker_pub.dir/build.make CMakeFiles/goal_marker_pub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=15,16 "Built target goal_marker_pub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=19,20 "Built target goal_marker_pub"
 .PHONY : CMakeFiles/goal_marker_pub.dir/all
 
 # Build rule for subdir invocation for target.
@@ -442,7 +582,7 @@ CMakeFiles/goal_marker_pub.dir/clean:
 CMakeFiles/goal_to_path.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_to_path.dir/build.make CMakeFiles/goal_to_path.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_to_path.dir/build.make CMakeFiles/goal_to_path.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=17,18 "Built target goal_to_path"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=21,22 "Built target goal_to_path"
 .PHONY : CMakeFiles/goal_to_path.dir/all
 
 # Build rule for subdir invocation for target.
@@ -468,7 +608,7 @@ CMakeFiles/goal_to_path.dir/clean:
 CMakeFiles/ground_odom.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ground_odom.dir/build.make CMakeFiles/ground_odom.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ground_odom.dir/build.make CMakeFiles/ground_odom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=19,20 "Built target ground_odom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=23,24 "Built target ground_odom"
 .PHONY : CMakeFiles/ground_odom.dir/all
 
 # Build rule for subdir invocation for target.
@@ -494,7 +634,7 @@ CMakeFiles/ground_odom.dir/clean:
 CMakeFiles/sensor_combined_listener.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_combined_listener.dir/build.make CMakeFiles/sensor_combined_listener.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_combined_listener.dir/build.make CMakeFiles/sensor_combined_listener.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=37,38 "Built target sensor_combined_listener"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=43,44 "Built target sensor_combined_listener"
 .PHONY : CMakeFiles/sensor_combined_listener.dir/all
 
 # Build rule for subdir invocation for target.
@@ -520,7 +660,7 @@ CMakeFiles/sensor_combined_listener.dir/clean:
 CMakeFiles/vehicle_gps_position_listener.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vehicle_gps_position_listener.dir/build.make CMakeFiles/vehicle_gps_position_listener.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vehicle_gps_position_listener.dir/build.make CMakeFiles/vehicle_gps_position_listener.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=41,42 "Built target vehicle_gps_position_listener"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=51,52 "Built target vehicle_gps_position_listener"
 .PHONY : CMakeFiles/vehicle_gps_position_listener.dir/all
 
 # Build rule for subdir invocation for target.
@@ -546,7 +686,7 @@ CMakeFiles/vehicle_gps_position_listener.dir/clean:
 CMakeFiles/debug_vect_advertiser.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_vect_advertiser.dir/build.make CMakeFiles/debug_vect_advertiser.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/debug_vect_advertiser.dir/build.make CMakeFiles/debug_vect_advertiser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=7,8 "Built target debug_vect_advertiser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=9,10 "Built target debug_vect_advertiser"
 .PHONY : CMakeFiles/debug_vect_advertiser.dir/all
 
 # Build rule for subdir invocation for target.
@@ -572,7 +712,7 @@ CMakeFiles/debug_vect_advertiser.dir/clean:
 CMakeFiles/nav_path.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav_path.dir/build.make CMakeFiles/nav_path.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav_path.dir/build.make CMakeFiles/nav_path.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=23,24 "Built target nav_path"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=27,28 "Built target nav_path"
 .PHONY : CMakeFiles/nav_path.dir/all
 
 # Build rule for subdir invocation for target.
@@ -624,7 +764,7 @@ CMakeFiles/circle_flight.dir/clean:
 CMakeFiles/tf2_control.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tf2_control.dir/build.make CMakeFiles/tf2_control.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tf2_control.dir/build.make CMakeFiles/tf2_control.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=39,40 "Built target tf2_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=47,48 "Built target tf2_control"
 .PHONY : CMakeFiles/tf2_control.dir/all
 
 # Build rule for subdir invocation for target.
@@ -676,7 +816,7 @@ CMakeFiles/aruco_position_sub.dir/clean:
 CMakeFiles/vertiport_land.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vertiport_land.dir/build.make CMakeFiles/vertiport_land.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vertiport_land.dir/build.make CMakeFiles/vertiport_land.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=43,44 "Built target vertiport_land"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=53,54 "Built target vertiport_land"
 .PHONY : CMakeFiles/vertiport_land.dir/all
 
 # Build rule for subdir invocation for target.
@@ -728,7 +868,7 @@ CMakeFiles/aruco_position_publisher_node.dir/clean:
 CMakeFiles/offboard_control.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control.dir/build.make CMakeFiles/offboard_control.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control.dir/build.make CMakeFiles/offboard_control.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=29,30 "Built target offboard_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=35,36 "Built target offboard_control"
 .PHONY : CMakeFiles/offboard_control.dir/all
 
 # Build rule for subdir invocation for target.
@@ -754,7 +894,7 @@ CMakeFiles/offboard_control.dir/clean:
 CMakeFiles/offboard_control_srv.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control_srv.dir/build.make CMakeFiles/offboard_control_srv.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/offboard_control_srv.dir/build.make CMakeFiles/offboard_control_srv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=31,32 "Built target offboard_control_srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hj926217/ros2ws/build/px4_ros_com/CMakeFiles --progress-num=37,38 "Built target offboard_control_srv"
 .PHONY : CMakeFiles/offboard_control_srv.dir/all
 
 # Build rule for subdir invocation for target.

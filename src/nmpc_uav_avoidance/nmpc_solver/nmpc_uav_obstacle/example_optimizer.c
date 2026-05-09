@@ -3,20 +3,11 @@
  *
  * Compile with:
  *
- * $ gcc -Wall -std=c99 -pedantic \
+ * gcc -Wall -std=c99 -pedantic \
     example_optimizer.c -l:libnmpc_uav_obstacle.a \
     -L./target/release -pthread -lm -ldl \
     -o optimizer
  *
- * OR ... 
- * 
- * $ gcc -Wall -std=c99 -pedantic \
-    example_optimizer.c -lnmpc_uav_obstacle \
-    -L./target/release -pthread -lm -ldl \
-    -o optimizer
- *
- * Or simply do: 
- *  cmake .; make run
  */
 
 #include <stdio.h>
@@ -26,7 +17,7 @@
  * Feel free to customize the following code...
  */
 
-int main(void) {
+int main() {
     int i;
 
     /* parameters             */

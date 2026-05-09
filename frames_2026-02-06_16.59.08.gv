@@ -1,9 +1,0 @@
-digraph G {
-"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 278.289\nBuffer length: 2.828\nMost recent transform: 119.056\nOldest transform: 116.228\n"];
-"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
-"base_link" -> "camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
-edge [style=invis];
- subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
-"Recorded at time: 1770364748.7817426"[ shape=plaintext ] ;
-}->"map";
-}

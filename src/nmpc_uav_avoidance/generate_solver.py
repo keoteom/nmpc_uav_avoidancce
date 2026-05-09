@@ -16,7 +16,7 @@ import opengen as og
 import numpy as np
 import os
 
-N = 40
+N = 30
 Ts = 0.05
 nx = 8
 nu = 3

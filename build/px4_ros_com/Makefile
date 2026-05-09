@@ -198,6 +198,71 @@ px4_ros_com_uninstall/fast:
 .PHONY : px4_ros_com_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named crazy_path
+
+# Build rule for target.
+crazy_path: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 crazy_path
+.PHONY : crazy_path
+
+# fast build rule for target.
+crazy_path/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crazy_path.dir/build.make CMakeFiles/crazy_path.dir/build
+.PHONY : crazy_path/fast
+
+#=============================================================================
+# Target rules for targets named goal_interactive_marker
+
+# Build rule for target.
+goal_interactive_marker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 goal_interactive_marker
+.PHONY : goal_interactive_marker
+
+# fast build rule for target.
+goal_interactive_marker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_interactive_marker.dir/build.make CMakeFiles/goal_interactive_marker.dir/build
+.PHONY : goal_interactive_marker/fast
+
+#=============================================================================
+# Target rules for targets named sfc_generator_node
+
+# Build rule for target.
+sfc_generator_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfc_generator_node
+.PHONY : sfc_generator_node
+
+# fast build rule for target.
+sfc_generator_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfc_generator_node.dir/build.make CMakeFiles/sfc_generator_node.dir/build
+.PHONY : sfc_generator_node/fast
+
+#=============================================================================
+# Target rules for targets named octomap_boxes_rviz_node
+
+# Build rule for target.
+octomap_boxes_rviz_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 octomap_boxes_rviz_node
+.PHONY : octomap_boxes_rviz_node
+
+# fast build rule for target.
+octomap_boxes_rviz_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/octomap_boxes_rviz_node.dir/build.make CMakeFiles/octomap_boxes_rviz_node.dir/build
+.PHONY : octomap_boxes_rviz_node/fast
+
+#=============================================================================
+# Target rules for targets named tracking_error_node
+
+# Build rule for target.
+tracking_error_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tracking_error_node
+.PHONY : tracking_error_node
+
+# fast build rule for target.
+tracking_error_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracking_error_node.dir/build.make CMakeFiles/tracking_error_node.dir/build
+.PHONY : tracking_error_node/fast
+
+#=============================================================================
 # Target rules for targets named offboard_circle_control
 
 # Build rule for target.
@@ -594,6 +659,54 @@ src/circle_flight.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/circle_flight.dir/build.make CMakeFiles/circle_flight.dir/src/circle_flight.cpp.s
 .PHONY : src/circle_flight.cpp.s
 
+src/crazyflie/crazy_path.o: src/crazyflie/crazy_path.cpp.o
+.PHONY : src/crazyflie/crazy_path.o
+
+# target to build an object file
+src/crazyflie/crazy_path.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crazy_path.dir/build.make CMakeFiles/crazy_path.dir/src/crazyflie/crazy_path.cpp.o
+.PHONY : src/crazyflie/crazy_path.cpp.o
+
+src/crazyflie/crazy_path.i: src/crazyflie/crazy_path.cpp.i
+.PHONY : src/crazyflie/crazy_path.i
+
+# target to preprocess a source file
+src/crazyflie/crazy_path.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crazy_path.dir/build.make CMakeFiles/crazy_path.dir/src/crazyflie/crazy_path.cpp.i
+.PHONY : src/crazyflie/crazy_path.cpp.i
+
+src/crazyflie/crazy_path.s: src/crazyflie/crazy_path.cpp.s
+.PHONY : src/crazyflie/crazy_path.s
+
+# target to generate assembly for a file
+src/crazyflie/crazy_path.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/crazy_path.dir/build.make CMakeFiles/crazy_path.dir/src/crazyflie/crazy_path.cpp.s
+.PHONY : src/crazyflie/crazy_path.cpp.s
+
+src/crazyflie/goal_interactive_marker.o: src/crazyflie/goal_interactive_marker.cpp.o
+.PHONY : src/crazyflie/goal_interactive_marker.o
+
+# target to build an object file
+src/crazyflie/goal_interactive_marker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_interactive_marker.dir/build.make CMakeFiles/goal_interactive_marker.dir/src/crazyflie/goal_interactive_marker.cpp.o
+.PHONY : src/crazyflie/goal_interactive_marker.cpp.o
+
+src/crazyflie/goal_interactive_marker.i: src/crazyflie/goal_interactive_marker.cpp.i
+.PHONY : src/crazyflie/goal_interactive_marker.i
+
+# target to preprocess a source file
+src/crazyflie/goal_interactive_marker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_interactive_marker.dir/build.make CMakeFiles/goal_interactive_marker.dir/src/crazyflie/goal_interactive_marker.cpp.i
+.PHONY : src/crazyflie/goal_interactive_marker.cpp.i
+
+src/crazyflie/goal_interactive_marker.s: src/crazyflie/goal_interactive_marker.cpp.s
+.PHONY : src/crazyflie/goal_interactive_marker.s
+
+# target to generate assembly for a file
+src/crazyflie/goal_interactive_marker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_interactive_marker.dir/build.make CMakeFiles/goal_interactive_marker.dir/src/crazyflie/goal_interactive_marker.cpp.s
+.PHONY : src/crazyflie/goal_interactive_marker.cpp.s
+
 src/examples/advertisers/debug_vect_advertiser.o: src/examples/advertisers/debug_vect_advertiser.cpp.o
 .PHONY : src/examples/advertisers/debug_vect_advertiser.o
 
@@ -978,6 +1091,30 @@ src/obstacle_odom_publisher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacle_odom_publisher.dir/build.make CMakeFiles/obstacle_odom_publisher.dir/src/obstacle_odom_publisher.cpp.s
 .PHONY : src/obstacle_odom_publisher.cpp.s
 
+src/octomap_boxes_rviz_node.o: src/octomap_boxes_rviz_node.cpp.o
+.PHONY : src/octomap_boxes_rviz_node.o
+
+# target to build an object file
+src/octomap_boxes_rviz_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/octomap_boxes_rviz_node.dir/build.make CMakeFiles/octomap_boxes_rviz_node.dir/src/octomap_boxes_rviz_node.cpp.o
+.PHONY : src/octomap_boxes_rviz_node.cpp.o
+
+src/octomap_boxes_rviz_node.i: src/octomap_boxes_rviz_node.cpp.i
+.PHONY : src/octomap_boxes_rviz_node.i
+
+# target to preprocess a source file
+src/octomap_boxes_rviz_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/octomap_boxes_rviz_node.dir/build.make CMakeFiles/octomap_boxes_rviz_node.dir/src/octomap_boxes_rviz_node.cpp.i
+.PHONY : src/octomap_boxes_rviz_node.cpp.i
+
+src/octomap_boxes_rviz_node.s: src/octomap_boxes_rviz_node.cpp.s
+.PHONY : src/octomap_boxes_rviz_node.s
+
+# target to generate assembly for a file
+src/octomap_boxes_rviz_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/octomap_boxes_rviz_node.dir/build.make CMakeFiles/octomap_boxes_rviz_node.dir/src/octomap_boxes_rviz_node.cpp.s
+.PHONY : src/octomap_boxes_rviz_node.cpp.s
+
 src/offboard_circle_control.o: src/offboard_circle_control.cpp.o
 .PHONY : src/offboard_circle_control.o
 
@@ -1050,6 +1187,54 @@ src/rrt_star_planner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rrt_star_planner.dir/build.make CMakeFiles/rrt_star_planner.dir/src/rrt_star_planner.cpp.s
 .PHONY : src/rrt_star_planner.cpp.s
 
+src/sfc_generator_node.o: src/sfc_generator_node.cpp.o
+.PHONY : src/sfc_generator_node.o
+
+# target to build an object file
+src/sfc_generator_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfc_generator_node.dir/build.make CMakeFiles/sfc_generator_node.dir/src/sfc_generator_node.cpp.o
+.PHONY : src/sfc_generator_node.cpp.o
+
+src/sfc_generator_node.i: src/sfc_generator_node.cpp.i
+.PHONY : src/sfc_generator_node.i
+
+# target to preprocess a source file
+src/sfc_generator_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfc_generator_node.dir/build.make CMakeFiles/sfc_generator_node.dir/src/sfc_generator_node.cpp.i
+.PHONY : src/sfc_generator_node.cpp.i
+
+src/sfc_generator_node.s: src/sfc_generator_node.cpp.s
+.PHONY : src/sfc_generator_node.s
+
+# target to generate assembly for a file
+src/sfc_generator_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sfc_generator_node.dir/build.make CMakeFiles/sfc_generator_node.dir/src/sfc_generator_node.cpp.s
+.PHONY : src/sfc_generator_node.cpp.s
+
+src/tracking_error_node.o: src/tracking_error_node.cpp.o
+.PHONY : src/tracking_error_node.o
+
+# target to build an object file
+src/tracking_error_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracking_error_node.dir/build.make CMakeFiles/tracking_error_node.dir/src/tracking_error_node.cpp.o
+.PHONY : src/tracking_error_node.cpp.o
+
+src/tracking_error_node.i: src/tracking_error_node.cpp.i
+.PHONY : src/tracking_error_node.i
+
+# target to preprocess a source file
+src/tracking_error_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracking_error_node.dir/build.make CMakeFiles/tracking_error_node.dir/src/tracking_error_node.cpp.i
+.PHONY : src/tracking_error_node.cpp.i
+
+src/tracking_error_node.s: src/tracking_error_node.cpp.s
+.PHONY : src/tracking_error_node.s
+
+# target to generate assembly for a file
+src/tracking_error_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tracking_error_node.dir/build.make CMakeFiles/tracking_error_node.dir/src/tracking_error_node.cpp.s
+.PHONY : src/tracking_error_node.cpp.s
+
 src/vtol_mission_node.o: src/vtol_mission_node.cpp.o
 .PHONY : src/vtol_mission_node.o
 
@@ -1094,23 +1279,28 @@ help:
 	@echo "... aruco_position_publisher_node"
 	@echo "... aruco_position_sub"
 	@echo "... circle_flight"
+	@echo "... crazy_path"
 	@echo "... debug_vect_advertiser"
 	@echo "... figure_eight_planner"
 	@echo "... frame_transforms"
 	@echo "... global_path"
+	@echo "... goal_interactive_marker"
 	@echo "... goal_marker_pub"
 	@echo "... goal_to_path"
 	@echo "... ground_odom"
 	@echo "... local_path"
 	@echo "... nav_path"
 	@echo "... obstacle_odom_publisher"
+	@echo "... octomap_boxes_rviz_node"
 	@echo "... offboard_circle_control"
 	@echo "... offboard_control"
 	@echo "... offboard_control_srv"
 	@echo "... path_follower"
 	@echo "... rrt_star_planner"
 	@echo "... sensor_combined_listener"
+	@echo "... sfc_generator_node"
 	@echo "... tf2_control"
+	@echo "... tracking_error_node"
 	@echo "... vehicle_gps_position_listener"
 	@echo "... vertiport_land"
 	@echo "... vtol_mission_node"
@@ -1123,6 +1313,12 @@ help:
 	@echo "... src/circle_flight.o"
 	@echo "... src/circle_flight.i"
 	@echo "... src/circle_flight.s"
+	@echo "... src/crazyflie/crazy_path.o"
+	@echo "... src/crazyflie/crazy_path.i"
+	@echo "... src/crazyflie/crazy_path.s"
+	@echo "... src/crazyflie/goal_interactive_marker.o"
+	@echo "... src/crazyflie/goal_interactive_marker.i"
+	@echo "... src/crazyflie/goal_interactive_marker.s"
 	@echo "... src/examples/advertisers/debug_vect_advertiser.o"
 	@echo "... src/examples/advertisers/debug_vect_advertiser.i"
 	@echo "... src/examples/advertisers/debug_vect_advertiser.s"
@@ -1171,6 +1367,9 @@ help:
 	@echo "... src/obstacle_odom_publisher.o"
 	@echo "... src/obstacle_odom_publisher.i"
 	@echo "... src/obstacle_odom_publisher.s"
+	@echo "... src/octomap_boxes_rviz_node.o"
+	@echo "... src/octomap_boxes_rviz_node.i"
+	@echo "... src/octomap_boxes_rviz_node.s"
 	@echo "... src/offboard_circle_control.o"
 	@echo "... src/offboard_circle_control.i"
 	@echo "... src/offboard_circle_control.s"
@@ -1180,6 +1379,12 @@ help:
 	@echo "... src/rrt_star_planner.o"
 	@echo "... src/rrt_star_planner.i"
 	@echo "... src/rrt_star_planner.s"
+	@echo "... src/sfc_generator_node.o"
+	@echo "... src/sfc_generator_node.i"
+	@echo "... src/sfc_generator_node.s"
+	@echo "... src/tracking_error_node.o"
+	@echo "... src/tracking_error_node.i"
+	@echo "... src/tracking_error_node.s"
 	@echo "... src/vtol_mission_node.o"
 	@echo "... src/vtol_mission_node.i"
 	@echo "... src/vtol_mission_node.s"
